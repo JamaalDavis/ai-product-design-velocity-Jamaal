@@ -1,0 +1,1801 @@
+account_id,account_name,plan_tier,vertical,company_size,acquisition_channel,integration_count,account_age_days,contract_value_aud,churned_90d,upgraded_90d
+acc_000000,"Rodriguez, Figueroa and Sanchez",pro,finance,small,paid_search,3,407,7844.91,False,False
+acc_000001,Doyle Ltd,pro,revops,mid,paid_search,1,77,9935.48,False,False
+acc_000002,"Mcclain, Miller and Henderson",pro,finance,small,outbound,1,309,13551.36,True,False
+acc_000003,Davis and Sons,starter,hr,large,organic,0,111,3713.3,False,False
+acc_000004,"Guzman, Hoffman and Baldwin",starter,finance,large,referral,2,77,2567.74,False,False
+acc_000005,"Gardner, Robinson and Lawrence",starter,hr,small,paid_search,2,265,3130.42,False,False
+acc_000006,Blake and Sons,enterprise,hr,mid,organic,2,346,109690.66,False,False
+acc_000007,"Henderson, Ramirez and Lewis",starter,finance,small,outbound,2,425,2241.8,False,False
+acc_000008,Garcia-James,starter,hr,small,paid_search,2,355,4202.8,False,False
+acc_000009,Abbott-Munoz,starter,hr,mid,organic,2,379,3532.93,False,False
+acc_000010,Blair PLC,pro,finance,mid,paid_search,4,224,10859.06,True,False
+acc_000011,Dudley Group,enterprise,customer_success,small,referral,2,423,99839.99,False,False
+acc_000012,Arnold Ltd,starter,finance,small,paid_search,2,138,4487.29,True,False
+acc_000013,"Mcclure, Ward and Lee",pro,customer_success,small,referral,5,482,22461.86,True,False
+acc_000014,Williams and Sons,starter,hr,small,outbound,2,164,3889.25,False,False
+acc_000015,Galloway-Wyatt,starter,revops,small,partner,2,100,3034.29,False,True
+acc_000016,James Group,starter,finance,small,outbound,2,435,3649.73,False,True
+acc_000017,"Flowers, Martin and Kelly",pro,revops,mid,referral,3,158,23479.41,False,False
+acc_000018,"Adams, Zuniga and Wong",pro,finance,mid,outbound,1,304,19515.8,False,False
+acc_000019,"Reid, Ferguson and Sanchez",pro,hr,small,paid_search,2,31,23168.69,False,False
+acc_000020,Gray-Mayo,pro,hr,mid,paid_search,2,497,7915.39,True,False
+acc_000021,"Watts, Robinson and Nguyen",pro,it_ops,mid,paid_search,2,221,19725.19,False,False
+acc_000022,Perez Inc,pro,it_ops,mid,paid_search,5,195,14794.9,False,False
+acc_000023,Morales-Jones,starter,hr,large,organic,2,152,1408.53,False,False
+acc_000024,"Walter, Edwards and Rios",pro,mixed,small,referral,3,65,23603.72,False,True
+acc_000025,Wilkerson-Day,pro,finance,mid,partner,3,114,10771.02,False,False
+acc_000026,Baker and Sons,pro,revops,small,outbound,2,403,18417.62,False,False
+acc_000027,"Hoffman, Baker and Richards",pro,revops,mid,referral,5,490,15316.37,False,True
+acc_000028,"Ross, Robinson and Bright",starter,hr,small,outbound,1,147,3318.38,True,False
+acc_000029,"Snyder, Campos and Callahan",starter,customer_success,small,paid_search,1,46,4294.69,False,False
+acc_000030,Burton Ltd,starter,hr,mid,paid_search,2,97,3804.07,False,False
+acc_000031,Carlson-Cruz,enterprise,revops,small,referral,1,238,47136.89,False,False
+acc_000032,"Ferrell, Rice and Maddox",starter,revops,small,referral,1,403,1395.02,False,False
+acc_000033,Frazier Inc,pro,customer_success,small,organic,3,439,21510.11,True,False
+acc_000034,"Dyer, Potter and Mack",starter,finance,small,referral,2,172,2865.46,True,False
+acc_000035,Rodriguez-Graham,pro,finance,mid,organic,4,80,6910.59,False,False
+acc_000036,Smith-Bowen,enterprise,it_ops,large,partner,4,464,51274.15,False,False
+acc_000037,"Baker, Mason and White",starter,revops,large,partner,2,114,2564.3,False,False
+acc_000038,Harrell LLC,enterprise,hr,mid,referral,1,246,92693.24,False,False
+acc_000039,"Romero, Gonzalez and Brooks",pro,it_ops,mid,referral,2,127,11340.74,False,False
+acc_000040,Ryan PLC,enterprise,revops,mid,organic,2,59,34512.81,False,False
+acc_000041,George Group,starter,mixed,mid,paid_search,2,290,1488.4,True,False
+acc_000042,Rodriguez LLC,starter,revops,mid,paid_search,2,91,4589.75,False,False
+acc_000043,Allen-Allen,pro,revops,small,paid_search,5,366,16506.1,False,False
+acc_000044,"Arroyo, Miller and Tucker",pro,mixed,small,organic,1,152,10781.06,True,False
+acc_000045,Spence PLC,starter,customer_success,mid,partner,2,509,1461.16,False,False
+acc_000046,Anderson Group,starter,mixed,large,paid_search,2,139,3021.18,False,True
+acc_000047,"Martin, Rose and Obrien",starter,hr,small,paid_search,2,175,1767.89,True,False
+acc_000048,Hickman Ltd,pro,customer_success,mid,partner,0,364,15520.93,False,False
+acc_000049,"Harris, Collins and Carney",pro,revops,large,paid_search,1,479,8417.24,True,False
+acc_000050,"Brooks, Lam and Hayes",starter,finance,mid,paid_search,2,339,1958.27,False,True
+acc_000051,Walker LLC,starter,customer_success,large,outbound,1,158,4459.21,False,False
+acc_000052,Chapman and Sons,pro,finance,small,paid_search,4,31,12004.02,False,False
+acc_000053,"Robinson, Jones and Welch",starter,mixed,small,referral,2,391,2739.67,False,False
+acc_000054,Jones Inc,starter,finance,large,partner,2,309,1329.7,False,False
+acc_000055,Jones-Young,starter,revops,small,paid_search,2,216,4436.33,False,False
+acc_000056,"Washington, Ryan and Cummings",pro,it_ops,large,paid_search,4,157,18004.8,False,False
+acc_000057,"Johnston, Sanchez and Kennedy",starter,revops,large,partner,2,413,1756.39,False,False
+acc_000058,Lee-Davis,enterprise,it_ops,large,organic,3,481,67106.5,False,False
+acc_000059,Gomez-Jenkins,starter,mixed,mid,referral,2,372,4310.63,False,False
+acc_000060,"Brown, Valdez and Lucas",pro,hr,mid,paid_search,2,476,6697.04,False,False
+acc_000061,Powell LLC,starter,finance,large,referral,2,450,4063.24,False,False
+acc_000062,Wright and Sons,starter,finance,small,referral,1,472,1449.91,False,False
+acc_000063,"West, Henderson and Ramirez",pro,hr,mid,outbound,6,461,15651.88,False,False
+acc_000064,Baxter Inc,enterprise,finance,large,paid_search,3,522,118519.55,False,False
+acc_000065,Morton-Chase,starter,revops,small,organic,2,253,3382.35,False,False
+acc_000066,Williams PLC,pro,revops,mid,paid_search,0,392,13849.04,False,False
+acc_000067,Novak and Sons,pro,it_ops,mid,partner,3,407,18071.31,False,False
+acc_000068,Russell Group,starter,finance,mid,referral,2,190,3588.19,False,False
+acc_000069,Hancock Inc,starter,mixed,mid,outbound,2,197,2648.64,False,False
+acc_000070,Gray Group,starter,finance,small,partner,2,376,3893.28,True,False
+acc_000071,House-Glover,starter,revops,small,organic,2,185,2232.89,False,False
+acc_000072,Henderson-Bernard,starter,revops,mid,referral,2,256,3632.26,False,False
+acc_000073,"Stanley, Tucker and Lee",pro,it_ops,large,organic,4,367,7526.32,False,False
+acc_000074,Novak PLC,pro,customer_success,small,organic,1,414,10227.63,False,False
+acc_000075,"Daniels, Adkins and Brown",starter,it_ops,small,paid_search,2,533,2910.49,False,False
+acc_000076,"Woods, Calhoun and Schmidt",pro,finance,small,outbound,1,129,18930.23,True,False
+acc_000077,Yu Inc,starter,revops,small,outbound,2,487,3903.47,False,False
+acc_000078,Jones Inc,pro,finance,small,paid_search,1,520,18526.41,False,False
+acc_000079,"Hensley, Powell and David",starter,revops,large,paid_search,1,98,4085.1,False,False
+acc_000080,"Sanchez, Wheeler and Harvey",pro,mixed,mid,partner,1,486,13966.32,False,False
+acc_000081,Sandoval-Cunningham,pro,mixed,small,partner,4,258,22149.75,False,True
+acc_000082,Donovan-Harris,pro,revops,small,paid_search,7,356,10991.6,True,False
+acc_000083,"Edwards, Baker and Anderson",pro,revops,small,referral,4,395,11143.11,False,True
+acc_000084,"Evans, Stewart and Walton",starter,hr,mid,paid_search,0,148,2578.93,True,False
+acc_000085,Smith PLC,starter,hr,small,referral,1,268,2696.79,False,True
+acc_000086,"Ferrell, Jones and Lewis",starter,revops,large,outbound,1,386,1270.32,False,False
+acc_000087,Anderson-Bailey,enterprise,revops,mid,partner,3,182,97812.76,False,False
+acc_000088,Suarez LLC,pro,mixed,small,organic,2,309,20397.63,True,False
+acc_000089,Moore-Bass,enterprise,revops,small,referral,0,229,60251.66,True,False
+acc_000090,"Turner, Riggs and Roman",pro,revops,small,referral,2,95,23653.0,False,False
+acc_000091,"Smith, Montoya and Evans",pro,mixed,mid,outbound,3,72,17569.49,False,False
+acc_000092,"Garcia, Humphrey and Baker",starter,revops,small,referral,2,138,2836.92,False,False
+acc_000093,Newton and Sons,starter,it_ops,small,partner,2,245,2108.18,False,False
+acc_000094,Campbell-Clark,starter,finance,mid,partner,2,209,2007.2,False,False
+acc_000095,Harris-Walters,starter,mixed,small,paid_search,2,156,1917.7,False,False
+acc_000096,Wagner-King,starter,finance,small,outbound,1,318,4611.93,True,False
+acc_000097,Davis Group,starter,hr,small,outbound,2,523,3892.53,False,False
+acc_000098,Williams-Cook,starter,it_ops,large,paid_search,1,43,4543.99,True,False
+acc_000099,Walsh LLC,pro,mixed,small,partner,3,131,7367.94,False,False
+acc_000100,Figueroa PLC,pro,customer_success,small,organic,2,465,18316.66,True,False
+acc_000101,"Patterson, Smith and Jones",pro,it_ops,mid,paid_search,2,302,13710.8,False,False
+acc_000102,"Mckee, Gardner and Davenport",starter,revops,small,organic,1,451,2964.73,False,False
+acc_000103,"Tran, Jordan and Williams",starter,hr,large,referral,2,108,2767.75,False,False
+acc_000104,Nolan-Flynn,pro,mixed,small,organic,3,305,19943.55,True,False
+acc_000105,Nolan and Sons,starter,it_ops,mid,referral,2,155,4190.63,False,False
+acc_000106,"Wright, Garcia and Deleon",starter,mixed,small,referral,1,342,3605.48,False,False
+acc_000107,Dickson-Brady,starter,revops,small,referral,2,211,4072.2,False,False
+acc_000108,Hancock and Sons,starter,mixed,mid,paid_search,2,35,3059.86,True,False
+acc_000109,Johnson-Doyle,starter,hr,small,outbound,2,153,3686.19,False,False
+acc_000110,Patton-Jenkins,pro,revops,mid,paid_search,0,143,13279.22,False,False
+acc_000111,"Shields, Cochran and Adams",starter,customer_success,small,outbound,1,206,2731.81,True,False
+acc_000112,"Rodriguez, Brennan and Garrison",pro,hr,mid,paid_search,1,158,10149.68,False,False
+acc_000113,Gonzalez Group,pro,hr,mid,partner,1,383,9332.7,False,False
+acc_000114,Torres-Pope,starter,revops,mid,partner,2,298,3348.45,False,False
+acc_000115,Walker Ltd,enterprise,it_ops,small,referral,1,184,31273.35,False,False
+acc_000116,Ross LLC,pro,hr,large,outbound,2,387,22993.61,False,False
+acc_000117,Rasmussen LLC,pro,it_ops,small,paid_search,3,175,14449.15,True,False
+acc_000118,May-Ross,starter,finance,small,partner,2,274,1610.71,True,False
+acc_000119,"Rivera, Johnson and Wiley",starter,revops,mid,outbound,2,107,1737.11,False,True
+acc_000120,White-Estes,pro,hr,large,paid_search,7,421,13491.13,False,False
+acc_000121,Johnson-Carlson,pro,customer_success,mid,referral,4,495,13968.98,False,False
+acc_000122,Chandler-Edwards,pro,mixed,small,outbound,5,342,23281.96,False,False
+acc_000123,"Joyce, Wilson and Lam",starter,it_ops,mid,paid_search,0,71,1765.41,False,False
+acc_000124,Scott Ltd,starter,finance,small,referral,2,334,2891.68,False,False
+acc_000125,Smith-Frost,starter,hr,small,organic,1,66,3674.59,False,False
+acc_000126,"Mcdaniel, Bentley and Mclaughlin",enterprise,it_ops,mid,outbound,3,508,47803.73,False,False
+acc_000127,Diaz Inc,starter,hr,small,paid_search,1,102,1457.08,True,False
+acc_000128,"Mccall, Hanson and Alvarado",starter,hr,mid,outbound,2,177,2780.95,False,False
+acc_000129,Cortez LLC,starter,hr,small,paid_search,1,306,2977.66,True,False
+acc_000130,"Parker, Ortiz and Powell",starter,finance,small,referral,2,158,1293.11,False,True
+acc_000131,Spencer-Lee,starter,customer_success,large,outbound,2,40,4798.46,False,False
+acc_000132,"Bentley, Byrd and Orr",pro,hr,small,organic,3,270,15341.35,True,False
+acc_000133,"Carroll, Sullivan and Bass",starter,hr,large,referral,2,446,2970.21,False,False
+acc_000134,Mitchell-Jordan,starter,hr,small,outbound,2,469,1778.97,False,False
+acc_000135,"Lawson, Morris and Ramos",starter,revops,mid,referral,2,419,3180.35,False,True
+acc_000136,"Lewis, Kennedy and Santana",starter,hr,small,partner,2,236,4313.68,False,False
+acc_000137,"Jackson, Miller and Robertson",pro,finance,large,referral,2,57,9376.49,False,False
+acc_000138,"Harvey, Davis and Crane",starter,it_ops,mid,organic,1,134,2161.4,False,True
+acc_000139,Chambers and Sons,starter,hr,large,referral,2,44,4703.33,False,False
+acc_000140,Hernandez Inc,pro,hr,small,outbound,1,312,13343.83,False,False
+acc_000141,Riggs PLC,starter,it_ops,small,partner,2,361,4195.72,False,False
+acc_000142,Gibson Ltd,starter,customer_success,mid,paid_search,0,457,2937.0,False,False
+acc_000143,"Lee, Horton and Snyder",starter,revops,small,paid_search,1,336,3029.67,False,False
+acc_000144,Hernandez Ltd,pro,it_ops,small,organic,1,242,12117.75,True,False
+acc_000145,Stafford Inc,pro,hr,small,organic,3,458,16564.88,False,False
+acc_000146,Robinson-Brock,enterprise,revops,small,outbound,0,206,59919.6,True,False
+acc_000147,"Holmes, Williams and Wright",pro,hr,large,organic,2,532,18554.97,False,False
+acc_000148,Bryant Group,pro,hr,mid,paid_search,1,411,14513.57,False,False
+acc_000149,"Schmidt, Hansen and Stewart",enterprise,revops,large,organic,2,363,118273.63,False,False
+acc_000150,Salazar-Ball,starter,finance,mid,outbound,1,475,1561.31,False,False
+acc_000151,"Simmons, Meadows and Griffin",pro,finance,large,paid_search,1,103,13379.62,True,False
+acc_000152,Manning Group,pro,finance,mid,partner,5,203,17218.67,False,False
+acc_000153,Green-Wright,starter,finance,small,outbound,2,303,2568.03,False,False
+acc_000154,"Ramirez, Strickland and Washington",starter,customer_success,mid,organic,2,48,3422.85,False,False
+acc_000155,Hill Inc,starter,customer_success,small,paid_search,2,76,2762.3,False,False
+acc_000156,"Mitchell, Nelson and Flores",starter,customer_success,large,referral,1,385,2278.08,False,True
+acc_000157,"Miller, Hernandez and Reyes",starter,hr,small,referral,1,250,1724.05,True,False
+acc_000158,Mccarthy Inc,pro,revops,mid,paid_search,1,70,16970.85,False,False
+acc_000159,Russell-Daniels,starter,customer_success,mid,outbound,0,148,2860.14,True,False
+acc_000160,Brown-Wall,starter,hr,small,organic,2,491,2235.47,False,False
+acc_000161,Stein-Silva,pro,finance,large,partner,3,183,17500.9,False,False
+acc_000162,"Smith, Gilmore and Johnston",starter,hr,large,paid_search,2,226,4272.01,True,False
+acc_000163,Smith-Bell,starter,revops,small,referral,2,388,2262.83,True,False
+acc_000164,Castaneda-Ashley,enterprise,customer_success,small,outbound,3,381,100048.05,False,False
+acc_000165,Medina-Navarro,enterprise,mixed,mid,organic,1,492,55757.47,False,False
+acc_000166,"Hurst, Freeman and Nelson",pro,customer_success,small,outbound,3,347,10511.28,False,False
+acc_000167,Johnson-Rogers,pro,it_ops,mid,paid_search,3,79,22261.27,False,False
+acc_000168,"Yates, Ramsey and Pittman",pro,hr,small,outbound,0,404,8365.41,True,False
+acc_000169,Hooper PLC,enterprise,hr,small,paid_search,3,432,78546.7,False,False
+acc_000170,Meadows PLC,enterprise,revops,large,organic,5,161,112264.41,True,False
+acc_000171,"Alvarado, Miller and Patterson",enterprise,mixed,small,organic,0,441,40365.27,False,False
+acc_000172,White-Green,enterprise,finance,large,organic,1,400,90696.56,False,False
+acc_000173,Lewis-Murphy,starter,it_ops,mid,paid_search,2,232,1250.11,False,True
+acc_000174,Ramirez-Bean,pro,revops,mid,outbound,3,329,12858.46,False,False
+acc_000175,King-Miller,pro,hr,mid,referral,3,347,21916.23,False,False
+acc_000176,Curry Inc,pro,mixed,small,paid_search,2,451,14356.82,False,False
+acc_000177,Walker-Jones,pro,customer_success,small,paid_search,3,49,11478.56,True,False
+acc_000178,"Williams, Johnson and Wright",starter,finance,large,paid_search,2,262,2535.64,False,False
+acc_000179,Howell and Sons,enterprise,customer_success,mid,outbound,3,402,43907.06,False,False
+acc_000180,Wells Inc,starter,finance,mid,referral,2,517,2207.06,False,False
+acc_000181,"Gould, Marshall and Scott",pro,hr,small,paid_search,2,215,7788.38,False,False
+acc_000182,Jackson-Lawson,pro,revops,large,referral,5,233,10965.87,False,False
+acc_000183,"Higgins, Strickland and Martin",enterprise,mixed,mid,paid_search,3,138,87753.4,False,False
+acc_000184,Rodriguez-Johnson,pro,finance,mid,paid_search,5,94,20165.61,False,False
+acc_000185,Johnston-Odonnell,starter,it_ops,mid,outbound,2,446,4330.9,False,False
+acc_000186,Sanders-Espinoza,starter,finance,large,paid_search,2,469,4742.5,True,False
+acc_000187,Vargas Ltd,enterprise,revops,mid,paid_search,1,473,32320.21,False,False
+acc_000188,Garcia LLC,starter,it_ops,small,referral,0,119,2155.32,False,False
+acc_000189,"Burke, Martinez and Riggs",starter,revops,small,paid_search,2,259,4000.86,False,False
+acc_000190,Reed Group,pro,finance,mid,partner,0,52,19090.37,False,True
+acc_000191,"Wood, Hunter and Peterson",enterprise,customer_success,small,outbound,4,45,35474.29,True,False
+acc_000192,Short-Garcia,starter,revops,mid,referral,1,495,2796.82,False,False
+acc_000193,Reid-Poole,enterprise,hr,small,paid_search,5,349,86976.91,False,False
+acc_000194,"Hernandez, Thompson and Boyd",pro,hr,large,outbound,3,262,15099.92,False,False
+acc_000195,"Nelson, Morton and Medina",starter,it_ops,small,outbound,2,479,3968.27,False,False
+acc_000196,Marshall-Petersen,pro,hr,mid,paid_search,1,203,20893.55,False,False
+acc_000197,"Adams, Christian and Rivas",starter,customer_success,small,referral,1,160,2547.48,False,True
+acc_000198,Ramirez Group,starter,mixed,small,organic,2,77,2754.76,False,False
+acc_000199,Christensen PLC,pro,hr,small,paid_search,5,519,16108.56,True,False
+acc_000200,"Barnett, Rogers and Snyder",starter,finance,small,outbound,2,414,2722.57,False,False
+acc_000201,White-Lewis,enterprise,finance,small,referral,2,83,82012.67,False,False
+acc_000202,Peterson-Beard,starter,customer_success,small,paid_search,2,462,3202.56,False,False
+acc_000203,"Beard, Peters and Black",starter,hr,small,referral,2,317,4708.37,True,False
+acc_000204,Miller Ltd,pro,customer_success,mid,paid_search,1,505,17840.96,True,False
+acc_000205,Freeman-Chang,pro,finance,small,organic,4,501,12116.84,False,True
+acc_000206,"Alvarez, Joseph and West",starter,it_ops,mid,referral,0,102,3867.49,False,False
+acc_000207,Davis and Sons,enterprise,finance,mid,referral,4,262,60680.64,False,False
+acc_000208,Holt-Torres,starter,customer_success,mid,outbound,1,73,4380.03,False,False
+acc_000209,"Wood, Tran and Cooper",starter,it_ops,small,paid_search,2,256,3582.98,True,False
+acc_000210,"Pierce, Bell and Chavez",starter,revops,small,organic,2,88,2442.62,False,False
+acc_000211,King-Martinez,starter,customer_success,mid,outbound,1,187,1363.5,False,False
+acc_000212,Stewart Ltd,starter,revops,small,referral,1,138,3962.46,False,False
+acc_000213,"Tapia, Vaughn and Lee",pro,hr,small,referral,2,250,9162.51,False,False
+acc_000214,"Washington, Hardy and Bray",starter,customer_success,mid,organic,2,442,2475.0,False,False
+acc_000215,"Carlson, Hooper and Wall",starter,customer_success,small,referral,2,69,4303.6,True,False
+acc_000216,Perez-White,pro,revops,mid,referral,3,88,13290.58,False,True
+acc_000217,Erickson and Sons,enterprise,finance,large,referral,3,383,112779.28,False,False
+acc_000218,Williams-Brown,starter,it_ops,small,outbound,2,298,1483.13,True,False
+acc_000219,Terry-Martinez,pro,customer_success,small,organic,3,69,15188.7,False,False
+acc_000220,Garcia-Smith,starter,revops,large,referral,1,402,4649.6,False,False
+acc_000221,Harrison-Alexander,pro,finance,small,paid_search,1,118,16843.18,False,False
+acc_000222,Sheppard LLC,pro,customer_success,small,organic,3,282,14351.16,False,False
+acc_000223,Wilson-Jones,pro,revops,mid,partner,3,359,17435.37,False,False
+acc_000224,Jones-Soto,pro,it_ops,mid,paid_search,1,64,14440.58,False,False
+acc_000225,Hernandez PLC,pro,it_ops,mid,referral,3,67,11587.34,False,False
+acc_000226,Miller-Wright,starter,finance,large,paid_search,2,472,4718.53,False,False
+acc_000227,"Duran, Obrien and Gibbs",starter,revops,small,outbound,1,518,4050.54,False,True
+acc_000228,Rowe Group,enterprise,revops,mid,outbound,1,194,84450.53,False,False
+acc_000229,Kerr-Evans,pro,mixed,mid,organic,2,458,12181.88,True,False
+acc_000230,"Branch, Torres and Oliver",pro,revops,small,paid_search,4,254,23837.75,True,False
+acc_000231,"Choi, Garcia and Farmer",pro,customer_success,small,partner,1,228,13357.85,False,False
+acc_000232,"Clark, Guerrero and Moore",starter,revops,mid,outbound,1,63,2386.89,False,False
+acc_000233,Arnold and Sons,pro,revops,small,organic,3,523,22314.17,False,False
+acc_000234,Ortiz Ltd,pro,hr,mid,paid_search,3,209,11584.17,False,False
+acc_000235,"Harrison, Johnson and Roberts",pro,customer_success,small,organic,4,73,11572.47,True,False
+acc_000236,Warner-Gibson,starter,it_ops,mid,outbound,1,454,4609.59,False,False
+acc_000237,"Hall, Baker and Moody",enterprise,mixed,small,outbound,3,290,62564.53,False,False
+acc_000238,"Guerrero, Peck and Coleman",starter,finance,small,partner,2,278,1891.22,False,False
+acc_000239,"Walker, Hernandez and Baker",enterprise,finance,small,organic,4,289,99378.72,False,False
+acc_000240,Jones and Sons,pro,mixed,small,referral,2,422,17124.57,False,False
+acc_000241,Larson-Holloway,pro,finance,small,outbound,0,349,20562.79,True,False
+acc_000242,Gonzales-Harrison,starter,revops,small,outbound,2,151,4690.52,True,False
+acc_000243,Lyons-Bender,pro,it_ops,mid,paid_search,2,152,11570.42,False,False
+acc_000244,"Fernandez, Kim and George",pro,revops,large,referral,6,514,16267.55,False,True
+acc_000245,Navarro-Munoz,starter,it_ops,mid,outbound,2,244,4678.57,True,False
+acc_000246,Davis Ltd,pro,it_ops,small,paid_search,1,358,14650.63,True,False
+acc_000247,"Matthews, Smith and Hubbard",starter,mixed,mid,outbound,2,93,2226.23,False,False
+acc_000248,Johnston-Hines,pro,hr,large,paid_search,0,253,7650.84,False,False
+acc_000249,Ruiz Ltd,enterprise,it_ops,large,partner,1,242,34793.12,False,False
+acc_000250,Moon-White,pro,hr,large,referral,5,44,11736.33,False,False
+acc_000251,"Graham, Olsen and Costa",starter,customer_success,small,paid_search,2,49,2232.77,False,False
+acc_000252,Bailey-Cook,pro,customer_success,small,organic,4,259,17076.27,False,False
+acc_000253,"Garcia, Martin and Jenkins",enterprise,finance,small,paid_search,4,511,95451.13,False,False
+acc_000254,Roberts-Landry,pro,finance,small,referral,1,54,10291.91,False,True
+acc_000255,"Johnson, Miller and King",pro,customer_success,small,organic,1,285,16741.3,False,False
+acc_000256,Cordova Group,starter,revops,small,paid_search,2,249,1205.63,True,False
+acc_000257,"Bryan, Smith and Booth",starter,revops,small,outbound,2,298,4708.76,False,False
+acc_000258,Gutierrez-Lopez,starter,revops,mid,partner,2,313,1273.2,False,False
+acc_000259,Dean-Jimenez,pro,finance,small,referral,1,412,6292.36,False,False
+acc_000260,Wolf-Harris,pro,hr,mid,outbound,2,425,16474.26,False,False
+acc_000261,"Anderson, Roberts and Gilmore",pro,finance,small,referral,4,359,9151.6,False,False
+acc_000262,Martinez-Dudley,pro,revops,mid,outbound,6,445,8427.35,False,True
+acc_000263,"Lloyd, Mckinney and Collins",pro,mixed,small,paid_search,1,435,9590.46,True,False
+acc_000264,Tran Inc,starter,mixed,mid,partner,2,308,2904.24,True,False
+acc_000265,Gay Inc,starter,customer_success,small,organic,2,54,4316.87,True,False
+acc_000266,Valentine-Holland,starter,finance,small,partner,0,410,2783.05,False,False
+acc_000267,Jimenez Ltd,enterprise,hr,small,outbound,2,218,113187.94,False,False
+acc_000268,Hicks-Hill,pro,it_ops,mid,paid_search,1,338,23911.77,False,False
+acc_000269,Baird-Sanchez,starter,hr,small,referral,2,181,2303.39,True,False
+acc_000270,"Thomas, Lee and Greene",pro,revops,mid,referral,5,51,19082.66,False,True
+acc_000271,"Suarez, Shields and Hill",enterprise,customer_success,small,outbound,7,435,115311.39,False,False
+acc_000272,Morgan-French,starter,customer_success,small,organic,2,377,1775.95,False,False
+acc_000273,Hoover-Campbell,starter,it_ops,mid,referral,2,94,1442.04,False,False
+acc_000274,Monroe-Carpenter,pro,hr,small,outbound,2,339,8761.89,False,False
+acc_000275,"Burns, Hernandez and Ryan",starter,hr,small,paid_search,2,100,3106.06,False,True
+acc_000276,Cook-Hines,starter,customer_success,small,paid_search,2,406,1869.77,False,False
+acc_000277,Gibson-Morris,pro,mixed,small,organic,3,390,14032.92,True,False
+acc_000278,Pollard and Sons,enterprise,hr,large,referral,2,92,42215.56,False,False
+acc_000279,"Reyes, Chase and Jenkins",starter,finance,mid,partner,2,444,3654.95,False,True
+acc_000280,Garner-Thornton,pro,hr,small,paid_search,1,307,11226.52,False,False
+acc_000281,Hughes-Alvarado,starter,finance,mid,organic,2,119,4057.31,False,True
+acc_000282,"Pollard, Simpson and Johnson",pro,finance,small,paid_search,3,434,14892.39,False,False
+acc_000283,"Sanford, Rivera and Garcia",starter,revops,mid,partner,2,96,3403.01,False,False
+acc_000284,Garcia-Lozano,starter,hr,large,organic,2,299,2678.86,False,False
+acc_000285,Bowen Group,starter,revops,small,referral,2,67,2819.91,False,False
+acc_000286,"Booker, Jones and Harrington",pro,hr,large,organic,5,357,16580.15,False,True
+acc_000287,Morgan-Schwartz,pro,finance,mid,organic,2,455,8234.9,False,False
+acc_000288,"Miller, Murphy and Craig",starter,finance,small,organic,2,207,4610.94,False,False
+acc_000289,"James, Stewart and Higgins",pro,hr,small,paid_search,1,519,15915.15,False,False
+acc_000290,Brennan-Johnson,starter,hr,mid,outbound,2,116,3330.51,False,False
+acc_000291,Young Ltd,pro,finance,mid,partner,3,202,21165.54,False,False
+acc_000292,Bright-Francis,pro,it_ops,small,paid_search,2,358,19878.4,False,False
+acc_000293,Good-Hodges,starter,hr,mid,outbound,1,45,2992.94,False,False
+acc_000294,"Brennan, Wallace and Benson",pro,hr,large,referral,3,442,20532.29,False,False
+acc_000295,Williams Inc,starter,revops,mid,paid_search,1,242,2943.3,True,False
+acc_000296,Howard-Jordan,starter,customer_success,small,organic,2,405,4756.88,True,False
+acc_000297,Schmidt PLC,starter,revops,mid,outbound,2,84,2348.82,False,False
+acc_000298,"Sparks, Jackson and Miller",starter,hr,small,paid_search,1,178,4603.39,False,False
+acc_000299,Harvey-Allen,pro,revops,large,partner,3,446,11893.84,False,False
+acc_000300,"Thomas, Murray and King",pro,hr,mid,referral,1,293,14402.67,False,False
+acc_000301,Estrada-Nolan,pro,revops,small,referral,4,264,23400.36,False,True
+acc_000302,Santana-Byrd,starter,hr,small,referral,2,481,4234.26,False,False
+acc_000303,Jones LLC,pro,hr,small,paid_search,3,98,21884.2,False,False
+acc_000304,"Evans, Hayden and Vaughn",pro,it_ops,small,referral,0,321,16112.7,True,False
+acc_000305,Bruce-Gonzalez,starter,hr,small,referral,2,311,2206.99,False,False
+acc_000306,Castaneda-Rodriguez,enterprise,customer_success,small,partner,4,231,63587.85,False,False
+acc_000307,Armstrong-Andrews,enterprise,revops,small,paid_search,1,338,75821.03,False,False
+acc_000308,"Phillips, Spence and Barrett",pro,finance,small,referral,4,272,15347.99,False,False
+acc_000309,Smith-Grimes,starter,mixed,small,partner,1,193,1785.01,False,False
+acc_000310,"Beltran, Lozano and Mcgee",enterprise,customer_success,small,referral,1,454,75874.27,False,False
+acc_000311,Parsons-Hall,starter,revops,mid,paid_search,0,199,3625.7,True,False
+acc_000312,Robinson-Lee,enterprise,revops,mid,organic,4,382,86633.44,False,False
+acc_000313,Byrd-Le,pro,hr,mid,partner,2,326,16397.42,False,False
+acc_000314,"Becker, Taylor and Davis",pro,revops,small,outbound,5,347,19942.91,False,True
+acc_000315,"Lucas, Parker and Alexander",starter,it_ops,small,outbound,1,388,1595.62,False,False
+acc_000316,"Diaz, Anderson and Browning",starter,hr,small,outbound,2,240,3006.55,True,False
+acc_000317,Burgess-Thompson,pro,revops,large,organic,4,391,8485.48,False,True
+acc_000318,Buchanan LLC,starter,hr,mid,outbound,2,190,4644.07,False,False
+acc_000319,"Shaw, Nelson and Martin",starter,revops,mid,outbound,2,474,3795.33,False,False
+acc_000320,Coffey-Phillips,pro,customer_success,mid,paid_search,3,156,11022.12,False,True
+acc_000321,Brock-Mcdonald,starter,mixed,large,organic,2,390,1946.2,False,False
+acc_000322,Taylor and Sons,pro,hr,small,partner,3,437,18989.96,False,True
+acc_000323,"Ramsey, Whitney and Coffey",starter,revops,mid,partner,1,232,4146.16,False,False
+acc_000324,"Diaz, Gibbs and Smith",enterprise,it_ops,small,referral,3,395,37112.65,False,False
+acc_000325,"Martinez, Richardson and Curry",enterprise,customer_success,mid,paid_search,2,453,78472.01,True,False
+acc_000326,Richards-Carson,enterprise,customer_success,small,outbound,1,330,51535.39,False,False
+acc_000327,Rodriguez-Hall,starter,mixed,small,paid_search,2,81,2687.88,True,False
+acc_000328,Harvey PLC,pro,finance,mid,paid_search,3,311,23602.39,True,False
+acc_000329,Herman-Walker,starter,customer_success,large,referral,2,363,1918.04,False,False
+acc_000330,Reid Group,enterprise,hr,mid,partner,3,75,88706.89,True,False
+acc_000331,"Turner, Ortiz and Taylor",starter,customer_success,large,paid_search,2,501,1830.23,False,False
+acc_000332,Torres Group,enterprise,finance,large,partner,0,233,100916.46,False,False
+acc_000333,Davis PLC,starter,customer_success,large,referral,1,49,1233.36,False,False
+acc_000334,Price LLC,pro,finance,large,referral,2,536,17543.62,False,False
+acc_000335,"Avery, Horton and Fernandez",pro,mixed,small,outbound,3,169,9470.61,False,False
+acc_000336,"Newton, Moore and Perry",starter,finance,mid,paid_search,2,125,1250.7,True,False
+acc_000337,Bass PLC,starter,hr,mid,paid_search,1,342,4282.13,False,False
+acc_000338,Crosby-Ramirez,enterprise,it_ops,mid,paid_search,3,372,38584.66,False,False
+acc_000339,"Wood, Ramos and Sampson",enterprise,revops,large,paid_search,1,226,51196.91,False,False
+acc_000340,Garcia-Jennings,pro,mixed,small,organic,5,35,10707.96,True,False
+acc_000341,"Winters, Newman and Brown",starter,hr,mid,referral,2,111,2659.5,False,False
+acc_000342,Lopez-Martinez,pro,mixed,mid,referral,3,90,17496.8,False,False
+acc_000343,Davis-Lewis,enterprise,hr,small,partner,3,274,43786.7,False,False
+acc_000344,"Harper, Smith and Buchanan",pro,customer_success,small,outbound,4,271,19632.31,True,False
+acc_000345,Zhang PLC,pro,it_ops,mid,outbound,1,335,21716.43,False,False
+acc_000346,Jones PLC,starter,revops,mid,paid_search,2,318,1603.95,False,False
+acc_000347,Willis and Sons,pro,mixed,small,outbound,2,114,11906.12,False,False
+acc_000348,Schroeder-Kramer,pro,finance,small,outbound,2,76,22180.01,False,False
+acc_000349,"Smith, Garrison and Thomas",starter,finance,small,referral,2,318,1407.85,False,False
+acc_000350,Fernandez and Sons,starter,it_ops,mid,referral,1,448,1210.86,False,False
+acc_000351,Guerrero Inc,starter,finance,small,organic,2,307,4778.85,False,False
+acc_000352,Smith and Sons,enterprise,finance,large,paid_search,3,239,46198.32,False,False
+acc_000353,"Morris, Thompson and Williams",starter,customer_success,mid,partner,1,221,4774.28,True,False
+acc_000354,"Fisher, Wilson and Brown",starter,it_ops,large,referral,2,379,4670.92,False,False
+acc_000355,Strickland-Palmer,pro,finance,large,paid_search,3,538,15670.65,True,False
+acc_000356,Hayes and Sons,pro,customer_success,small,paid_search,2,41,23612.83,True,False
+acc_000357,"Williams, Logan and Camacho",starter,customer_success,small,referral,2,147,2091.04,False,False
+acc_000358,"Turner, Schneider and Johnson",starter,hr,large,organic,2,87,1315.98,False,False
+acc_000359,Boone-Simmons,pro,customer_success,large,partner,1,153,9709.47,False,False
+acc_000360,Henry Group,starter,finance,mid,organic,2,54,2081.04,False,True
+acc_000361,Lam LLC,starter,revops,mid,organic,2,427,1403.2,False,False
+acc_000362,"Hernandez, Martinez and Weber",pro,hr,mid,organic,1,193,16394.55,False,False
+acc_000363,"Kelley, Nguyen and Vang",pro,it_ops,small,organic,2,534,17883.82,False,False
+acc_000364,"Phillips, Wagner and Jordan",starter,hr,small,partner,2,480,3846.76,False,False
+acc_000365,"Wilson, Pena and Rich",starter,customer_success,mid,paid_search,2,206,4589.71,False,False
+acc_000366,"Le, Lewis and Hayes",pro,it_ops,small,referral,5,106,11397.99,False,False
+acc_000367,Gutierrez Group,starter,revops,small,paid_search,2,469,3747.28,False,False
+acc_000368,Perry-Davis,pro,mixed,mid,partner,5,315,15539.85,False,False
+acc_000369,Edwards-Scott,starter,hr,small,paid_search,2,260,4249.68,True,False
+acc_000370,Mcdaniel Group,starter,customer_success,small,paid_search,2,374,3377.89,True,False
+acc_000371,Davis Inc,starter,finance,mid,outbound,2,373,3211.86,False,False
+acc_000372,Reynolds Ltd,starter,it_ops,small,partner,1,37,1962.51,False,False
+acc_000373,"Watson, Anderson and Brown",starter,customer_success,mid,organic,2,498,2073.34,False,True
+acc_000374,"Hoffman, Santiago and Jenkins",pro,hr,large,outbound,2,427,11095.07,False,False
+acc_000375,"Pugh, Henderson and Moon",starter,customer_success,small,referral,1,481,2990.2,True,False
+acc_000376,Schmitt PLC,starter,mixed,mid,organic,2,498,1931.26,False,False
+acc_000377,Bell-Lane,starter,finance,large,organic,1,38,2138.79,False,False
+acc_000378,Moore Group,enterprise,revops,small,paid_search,4,198,50701.68,False,False
+acc_000379,Boone LLC,pro,hr,mid,partner,3,202,10631.88,False,True
+acc_000380,"Richardson, Farmer and Andrews",pro,mixed,mid,referral,4,116,19189.9,False,False
+acc_000381,Bruce-Villegas,starter,finance,mid,paid_search,2,485,3151.69,True,False
+acc_000382,"Austin, Day and Johnson",pro,finance,small,organic,2,513,20723.93,False,False
+acc_000383,"Gallegos, Adams and White",starter,finance,small,outbound,1,64,3745.81,False,False
+acc_000384,"Farmer, Dorsey and Bell",starter,revops,small,outbound,2,371,4562.05,False,True
+acc_000385,Kane PLC,enterprise,customer_success,small,outbound,1,240,31066.59,False,False
+acc_000386,"Morales, Thomas and Schultz",pro,hr,large,paid_search,4,446,18561.46,False,True
+acc_000387,Davis PLC,starter,mixed,small,partner,1,298,1736.03,True,False
+acc_000388,Bennett Group,starter,revops,mid,paid_search,2,233,1484.47,False,True
+acc_000389,Moore-Collins,enterprise,revops,small,outbound,0,183,91563.75,False,False
+acc_000390,Frank-Bradley,pro,customer_success,large,organic,1,77,13295.01,False,True
+acc_000391,Ware and Sons,starter,revops,mid,organic,2,72,2999.49,False,False
+acc_000392,Webster Inc,starter,it_ops,mid,organic,2,78,4421.25,False,False
+acc_000393,"Miller, Ramos and Coleman",enterprise,hr,large,outbound,4,320,72795.03,False,False
+acc_000394,"Ramos, Nelson and Fischer",starter,finance,large,partner,2,318,3569.19,False,False
+acc_000395,Reed Inc,starter,it_ops,small,paid_search,1,103,3908.12,False,False
+acc_000396,Gregory-Watkins,pro,revops,small,paid_search,0,153,16200.53,False,False
+acc_000397,"Estrada, Williams and Foster",pro,customer_success,mid,referral,5,408,8519.11,False,False
+acc_000398,"Brown, Harris and Dougherty",enterprise,customer_success,mid,partner,2,57,38791.72,False,False
+acc_000399,Duran LLC,starter,finance,mid,outbound,2,334,2628.13,True,False
+acc_000400,Wilson-Jimenez,pro,finance,small,partner,0,281,10106.49,True,False
+acc_000401,Thompson-James,pro,hr,small,outbound,1,224,7542.49,False,True
+acc_000402,"Hall, Hansen and Barnett",pro,it_ops,mid,paid_search,1,108,12840.0,True,False
+acc_000403,Jones-Hensley,pro,finance,small,referral,0,76,6093.51,False,False
+acc_000404,Graham Group,starter,hr,small,paid_search,2,125,2751.53,False,False
+acc_000405,Atkins PLC,pro,revops,small,paid_search,2,313,7675.16,True,False
+acc_000406,Berry-Mckinney,pro,hr,small,referral,3,228,20025.04,False,False
+acc_000407,Roberts-Sullivan,pro,revops,large,paid_search,1,296,9052.49,False,False
+acc_000408,Jackson-Meza,starter,finance,small,referral,1,62,1801.95,False,False
+acc_000409,Collier-Gillespie,starter,hr,mid,referral,2,513,2087.72,False,False
+acc_000410,Kim Inc,pro,revops,small,paid_search,6,185,6121.81,False,True
+acc_000411,Graham Group,starter,it_ops,small,organic,2,255,2405.05,False,False
+acc_000412,"Miller, Harrell and Reese",pro,it_ops,large,paid_search,1,194,16857.8,False,False
+acc_000413,Cook and Sons,pro,revops,small,referral,2,193,11246.07,False,False
+acc_000414,Dixon Inc,pro,revops,mid,paid_search,4,222,11045.4,False,True
+acc_000415,"Hicks, Bullock and Bailey",pro,hr,large,paid_search,2,540,15821.32,False,False
+acc_000416,"Mullen, Brewer and Hernandez",pro,revops,large,referral,2,392,9773.67,False,False
+acc_000417,Thomas and Sons,pro,it_ops,small,organic,2,437,13364.55,True,False
+acc_000418,Morrison Ltd,starter,customer_success,small,outbound,2,396,2723.26,False,False
+acc_000419,Thompson Ltd,starter,revops,mid,outbound,2,303,3023.81,True,False
+acc_000420,Marshall-Elliott,enterprise,customer_success,mid,organic,3,214,93147.09,False,False
+acc_000421,"Cole, Glass and Cunningham",pro,revops,large,paid_search,1,157,17836.83,False,False
+acc_000422,"Downs, Morris and Maddox",starter,customer_success,small,partner,2,376,3528.28,False,False
+acc_000423,Hernandez-Jones,enterprise,hr,mid,paid_search,1,80,53286.45,True,False
+acc_000424,Welch-Hogan,pro,revops,mid,outbound,3,258,12734.15,False,False
+acc_000425,"Brown, Romero and Collins",starter,customer_success,mid,paid_search,0,540,1288.43,True,False
+acc_000426,Johnson-Wood,starter,revops,large,paid_search,1,511,3828.54,False,False
+acc_000427,Jones-Lin,starter,hr,mid,outbound,0,208,2914.19,True,False
+acc_000428,Gilbert PLC,starter,customer_success,small,referral,2,444,3758.8,True,False
+acc_000429,Ford-Spencer,starter,hr,small,organic,1,506,4742.04,False,False
+acc_000430,"Huang, Cole and Pacheco",starter,finance,small,outbound,1,520,2863.39,False,False
+acc_000431,"Lopez, Jacobs and Mason",pro,customer_success,small,outbound,0,232,6525.46,False,False
+acc_000432,Hayes LLC,pro,finance,mid,referral,3,390,9866.33,False,False
+acc_000433,"Miller, Lucas and Williams",starter,customer_success,mid,outbound,0,439,4339.13,False,False
+acc_000434,"Kim, Gonzales and Mills",starter,hr,mid,paid_search,1,471,2962.14,False,False
+acc_000435,Cox LLC,enterprise,hr,small,referral,1,88,61313.22,False,False
+acc_000436,Ortiz-Morgan,pro,customer_success,mid,organic,1,182,22536.29,False,False
+acc_000437,"Williams, Mccoy and Cook",pro,customer_success,small,paid_search,6,89,9294.8,True,False
+acc_000438,Davis-Gregory,pro,revops,small,paid_search,2,226,13614.7,False,False
+acc_000439,King-York,starter,revops,large,partner,2,118,3197.69,True,False
+acc_000440,"Marks, Cook and Aguilar",starter,finance,small,referral,2,57,4315.88,True,False
+acc_000441,Rangel LLC,enterprise,revops,small,referral,5,317,75489.42,False,False
+acc_000442,"Hale, Myers and Larson",starter,customer_success,small,organic,2,280,1802.11,False,False
+acc_000443,Collins Group,pro,it_ops,small,paid_search,2,145,15676.96,False,False
+acc_000444,"Conner, Li and Santiago",starter,revops,mid,organic,1,311,3038.9,False,False
+acc_000445,"Osborn, Gaines and Davis",pro,hr,mid,partner,3,307,20807.0,False,False
+acc_000446,"Henderson, Cox and Cox",starter,customer_success,mid,partner,2,82,3849.56,False,True
+acc_000447,Bean LLC,pro,hr,large,paid_search,4,164,12274.39,True,False
+acc_000448,Lee-Cooke,pro,revops,large,organic,5,151,9777.81,False,True
+acc_000449,Jones Inc,pro,customer_success,large,outbound,4,249,8987.67,False,False
+acc_000450,"Wise, Conley and Stephenson",starter,hr,small,paid_search,2,209,3116.21,True,False
+acc_000451,Stanley PLC,pro,finance,large,referral,2,323,10812.18,False,False
+acc_000452,Harper and Sons,pro,mixed,mid,paid_search,3,522,19501.69,False,False
+acc_000453,White Ltd,starter,finance,small,outbound,2,389,4317.88,False,True
+acc_000454,"Lamb, Martin and Kim",starter,customer_success,mid,organic,2,376,2613.72,False,False
+acc_000455,Diaz-Ball,starter,customer_success,mid,referral,0,68,3481.06,False,False
+acc_000456,Bishop-Goodwin,enterprise,finance,mid,paid_search,0,509,108958.56,False,False
+acc_000457,Young-Allen,starter,revops,mid,organic,1,463,3837.81,False,False
+acc_000458,Mckee-Lee,pro,revops,mid,referral,4,62,20322.2,False,True
+acc_000459,"Valentine, Joyce and Murray",starter,mixed,mid,referral,2,195,4182.04,False,False
+acc_000460,Strickland-Shaw,starter,revops,mid,referral,1,205,4418.96,False,False
+acc_000461,Burch-Montoya,pro,finance,mid,organic,5,38,8236.27,False,False
+acc_000462,"Taylor, Wright and Davidson",pro,revops,small,partner,2,133,23922.49,False,False
+acc_000463,Spencer-Garcia,enterprise,mixed,small,organic,5,478,54661.75,False,False
+acc_000464,"Rosales, Mitchell and Hines",pro,hr,small,partner,2,114,6932.17,True,False
+acc_000465,Cole-Palmer,pro,customer_success,mid,referral,5,76,18666.56,False,False
+acc_000466,Davis-Lozano,starter,revops,small,paid_search,1,378,2802.24,False,False
+acc_000467,Wilkerson-Arias,starter,hr,small,organic,2,385,1675.83,True,False
+acc_000468,Brown-Shaw,starter,revops,mid,paid_search,2,190,2523.22,False,False
+acc_000469,Hughes Inc,starter,revops,mid,organic,2,358,4774.58,False,False
+acc_000470,Walker-Flores,starter,revops,small,outbound,2,255,2464.28,False,False
+acc_000471,Combs Ltd,starter,customer_success,large,outbound,2,256,4295.87,False,False
+acc_000472,Moody-Taylor,starter,finance,mid,outbound,1,226,2465.53,True,False
+acc_000473,Lowery-Kennedy,starter,it_ops,small,outbound,2,157,3192.23,False,False
+acc_000474,Blake Group,pro,customer_success,mid,outbound,2,464,21247.26,False,False
+acc_000475,Gilbert-Bullock,pro,hr,mid,paid_search,0,230,11319.76,False,False
+acc_000476,Scott and Sons,starter,mixed,large,referral,2,87,2067.89,False,False
+acc_000477,"Bentley, Lynch and Henderson",pro,finance,large,paid_search,1,214,22810.64,False,False
+acc_000478,Young-Martinez,starter,it_ops,mid,referral,0,379,1821.97,False,False
+acc_000479,Barnes PLC,starter,mixed,small,outbound,2,37,2143.87,False,False
+acc_000480,Brown-Copeland,starter,finance,mid,outbound,2,351,3765.46,False,False
+acc_000481,Carlson-Smith,pro,revops,small,outbound,4,305,17088.85,False,True
+acc_000482,"Andrews, Higgins and Carter",starter,hr,mid,paid_search,1,443,1759.36,False,False
+acc_000483,Mendez and Sons,starter,revops,mid,outbound,1,359,1438.01,False,False
+acc_000484,"Butler, Beck and Miller",pro,customer_success,large,paid_search,1,74,22643.3,False,False
+acc_000485,Jones-Fox,starter,customer_success,small,outbound,2,366,3866.37,False,False
+acc_000486,"Hartman, Romero and Smith",starter,customer_success,mid,paid_search,2,517,2448.14,True,False
+acc_000487,Williams-Hughes,pro,it_ops,small,referral,2,413,20060.23,False,False
+acc_000488,King-Smith,starter,mixed,mid,paid_search,2,443,2745.57,False,False
+acc_000489,Cooper Ltd,pro,hr,large,outbound,1,284,14193.56,False,False
+acc_000490,"Fuller, Ingram and Moss",starter,revops,mid,referral,0,160,3983.98,False,False
+acc_000491,Anderson-Bell,enterprise,customer_success,small,organic,3,31,33963.41,False,False
+acc_000492,Li-Thompson,pro,hr,mid,referral,2,106,9221.3,False,False
+acc_000493,"Marshall, Dominguez and Welch",enterprise,finance,mid,organic,2,365,67743.24,False,False
+acc_000494,Brown Group,starter,revops,mid,paid_search,2,69,3257.53,True,False
+acc_000495,Carter Inc,starter,customer_success,small,paid_search,1,294,4733.09,False,False
+acc_000496,Blackwell LLC,enterprise,finance,mid,referral,2,462,57962.8,False,False
+acc_000497,Robertson-Hays,starter,revops,small,referral,2,431,2294.07,False,False
+acc_000498,"Kennedy, Johnson and Lucas",pro,revops,mid,referral,1,425,19965.95,False,False
+acc_000499,Kelly-Norman,pro,revops,mid,paid_search,5,507,13380.65,False,True
+acc_000500,"Rivera, Martinez and Richardson",starter,hr,large,organic,2,516,2406.06,False,False
+acc_000501,Paul-Kline,pro,hr,mid,referral,2,135,15536.66,False,False
+acc_000502,Morgan-Lopez,starter,revops,small,partner,1,394,2207.37,True,False
+acc_000503,"Jimenez, Glass and Stone",starter,hr,large,referral,2,488,2540.97,False,False
+acc_000504,Acosta Inc,enterprise,finance,small,paid_search,6,449,65491.62,True,False
+acc_000505,Morrison-Short,pro,finance,mid,paid_search,3,179,10697.84,False,False
+acc_000506,"Carter, Garcia and Murphy",starter,it_ops,mid,organic,2,192,2829.93,False,False
+acc_000507,Parker-Morrison,starter,mixed,small,organic,2,85,1759.48,False,False
+acc_000508,Jackson-Wallace,starter,revops,small,outbound,2,523,3973.21,True,False
+acc_000509,Williams-Berg,starter,revops,large,paid_search,2,443,3669.8,False,False
+acc_000510,Mendez-Graham,pro,customer_success,small,organic,1,197,8669.83,False,True
+acc_000511,"Whitney, Gould and Jones",pro,mixed,small,paid_search,3,183,10683.0,False,False
+acc_000512,"Sullivan, Palmer and Brady",enterprise,finance,small,referral,5,413,79510.88,False,False
+acc_000513,Cisneros and Sons,starter,finance,mid,paid_search,2,61,4189.34,False,False
+acc_000514,"Gregory, Kim and Martinez",enterprise,finance,mid,referral,3,352,114381.74,False,False
+acc_000515,Osborne LLC,starter,revops,large,paid_search,2,540,1432.1,False,False
+acc_000516,Reyes-Bradley,enterprise,revops,small,partner,1,454,102799.85,False,False
+acc_000517,"Hernandez, Cole and Watson",starter,mixed,small,partner,2,251,4158.07,False,False
+acc_000518,Hines-Berry,starter,finance,mid,paid_search,2,139,4469.9,False,False
+acc_000519,"Richardson, Edwards and Ramirez",starter,revops,small,outbound,2,345,2084.83,False,False
+acc_000520,Johnson and Sons,starter,revops,mid,paid_search,2,173,2578.85,False,True
+acc_000521,Holmes-Mcintyre,starter,customer_success,mid,paid_search,0,538,4087.81,False,False
+acc_000522,Green LLC,pro,mixed,mid,referral,0,308,20065.83,False,False
+acc_000523,"Griffin, Davies and Mitchell",starter,revops,small,paid_search,2,43,2347.96,False,False
+acc_000524,Gonzalez-Taylor,starter,mixed,mid,paid_search,2,537,2898.06,False,False
+acc_000525,Hayes Ltd,starter,revops,small,paid_search,2,156,3564.71,False,False
+acc_000526,Osborn-Cochran,starter,it_ops,large,paid_search,0,540,4612.09,False,False
+acc_000527,Contreras-Mckinney,pro,mixed,small,partner,1,537,21213.98,False,False
+acc_000528,"Daniels, Vance and York",starter,revops,mid,outbound,1,497,3329.62,False,False
+acc_000529,"Mckinney, Graves and Thompson",pro,hr,mid,paid_search,2,515,9388.21,False,True
+acc_000530,Hicks-Martinez,enterprise,mixed,mid,referral,5,281,33416.74,False,False
+acc_000531,Conner and Sons,starter,customer_success,small,referral,2,199,4504.43,False,False
+acc_000532,Johnson-Spencer,starter,finance,mid,partner,2,462,4325.58,False,False
+acc_000533,Mcdonald-Bird,starter,finance,mid,paid_search,1,86,4247.33,False,False
+acc_000534,Salazar Inc,pro,mixed,small,partner,6,232,16548.3,False,False
+acc_000535,Parker Ltd,starter,hr,large,organic,2,253,4050.63,False,False
+acc_000536,"Mendoza, Jenkins and Ortiz",enterprise,customer_success,small,partner,5,385,110064.02,False,False
+acc_000537,"Jones, Compton and Day",pro,hr,mid,organic,4,223,11522.82,False,False
+acc_000538,Owens-Holmes,pro,finance,mid,partner,4,515,16311.03,False,False
+acc_000539,Humphrey PLC,pro,it_ops,mid,paid_search,0,192,22578.69,False,False
+acc_000540,"Matthews, Saunders and Anderson",enterprise,hr,mid,partner,2,102,59805.16,False,False
+acc_000541,"Bartlett, Brown and Martinez",starter,hr,small,outbound,2,523,1519.41,True,False
+acc_000542,Torres and Sons,pro,customer_success,large,referral,2,165,9774.32,False,False
+acc_000543,Donovan-Perez,pro,hr,mid,organic,1,54,12946.87,False,False
+acc_000544,"Jacobson, Singleton and King",pro,mixed,large,referral,3,223,12322.16,True,False
+acc_000545,"Huber, Hill and Weber",starter,it_ops,mid,outbound,0,418,3673.78,False,False
+acc_000546,"Ferguson, Shaw and Jackson",starter,finance,large,referral,1,193,2140.06,False,False
+acc_000547,"Moore, Hopkins and Le",starter,hr,large,paid_search,2,68,3169.37,False,True
+acc_000548,"Morgan, Bradshaw and Williams",enterprise,finance,mid,outbound,3,277,93405.42,False,False
+acc_000549,Miller Ltd,starter,customer_success,mid,referral,2,57,1564.53,True,False
+acc_000550,"Baker, Clark and Armstrong",starter,finance,mid,organic,2,403,3144.45,False,False
+acc_000551,"Fowler, Jimenez and Burton",pro,hr,small,referral,0,311,21117.38,False,False
+acc_000552,May-Turner,starter,hr,small,referral,1,368,3450.33,False,False
+acc_000553,Ballard Ltd,starter,finance,small,outbound,2,530,1494.97,True,False
+acc_000554,Evans-Jones,pro,hr,small,referral,1,368,10770.08,False,False
+acc_000555,Moore Group,pro,revops,small,referral,4,125,14023.95,False,False
+acc_000556,Marshall-Peterson,starter,revops,small,paid_search,2,61,1744.07,False,False
+acc_000557,Edwards Ltd,pro,finance,mid,organic,1,241,23472.7,False,False
+acc_000558,Gross-Valencia,pro,revops,large,organic,2,244,23381.3,False,False
+acc_000559,Anderson-Wood,pro,mixed,mid,paid_search,6,183,7421.19,True,False
+acc_000560,"Rodriguez, Allen and Martinez",enterprise,customer_success,mid,partner,1,439,81433.69,False,False
+acc_000561,Wright-Davis,enterprise,finance,large,referral,2,515,118593.12,False,False
+acc_000562,Dougherty-Lin,enterprise,it_ops,small,referral,5,535,91481.29,False,False
+acc_000563,Wright-Grimes,starter,it_ops,small,outbound,2,193,4478.9,True,False
+acc_000564,Li PLC,enterprise,finance,small,referral,4,196,107096.18,False,False
+acc_000565,"Edwards, Hines and Jimenez",pro,mixed,small,organic,1,330,15406.12,False,False
+acc_000566,"Owens, Koch and Jimenez",starter,revops,small,outbound,2,418,4673.39,False,False
+acc_000567,Landry PLC,starter,finance,mid,organic,2,474,3128.28,True,False
+acc_000568,Levy-Lewis,starter,revops,small,referral,0,341,2902.97,False,False
+acc_000569,Williams-Campbell,starter,revops,mid,outbound,2,235,1339.62,True,False
+acc_000570,"Khan, Pena and Ruiz",enterprise,hr,small,organic,1,501,54172.59,False,False
+acc_000571,"Smith, Rodriguez and Anderson",starter,hr,mid,referral,2,461,2969.83,False,False
+acc_000572,Luna-Gallagher,pro,finance,large,paid_search,1,528,19387.03,True,False
+acc_000573,Williams-Williams,pro,hr,mid,outbound,2,75,9382.84,False,True
+acc_000574,"Lee, Tran and Jones",starter,it_ops,mid,organic,0,474,2546.08,False,False
+acc_000575,"Cole, Pierce and Bryan",starter,it_ops,small,organic,2,236,1688.34,False,False
+acc_000576,"Becker, Wilson and Hester",pro,it_ops,small,paid_search,2,456,9613.08,False,False
+acc_000577,Brooks-Hatfield,starter,finance,small,referral,2,131,2186.32,False,False
+acc_000578,"Mcmillan, Fischer and Gonzalez",pro,revops,mid,paid_search,5,45,10354.89,False,True
+acc_000579,"Morales, Williams and Williams",starter,revops,large,referral,2,312,2459.14,False,False
+acc_000580,"Cook, Wells and Bryant",starter,mixed,mid,outbound,1,175,1298.82,False,False
+acc_000581,"Barry, Taylor and Velazquez",starter,it_ops,mid,paid_search,2,143,3530.57,False,False
+acc_000582,Martin-Ewing,pro,hr,small,paid_search,2,429,23408.49,True,False
+acc_000583,"Kirby, Wheeler and Romero",pro,revops,small,paid_search,4,440,6152.35,False,True
+acc_000584,"Patel, Erickson and Evans",starter,it_ops,small,partner,2,359,2191.36,False,False
+acc_000585,Richardson Ltd,enterprise,it_ops,mid,paid_search,5,184,90947.65,False,False
+acc_000586,Whitney PLC,pro,revops,small,outbound,3,369,23396.74,True,False
+acc_000587,Robles-Swanson,pro,revops,mid,referral,4,380,7945.88,False,False
+acc_000588,"Soto, Carlson and Baker",starter,mixed,mid,organic,1,163,3562.03,False,False
+acc_000589,"Patton, Parsons and Lane",enterprise,customer_success,small,outbound,3,153,110971.83,False,False
+acc_000590,"Williams, Castillo and Warren",pro,it_ops,mid,outbound,1,378,8518.73,False,False
+acc_000591,"Harvey, Randall and Hernandez",starter,revops,small,partner,2,237,2597.79,False,True
+acc_000592,"Allen, Armstrong and Graves",starter,customer_success,mid,paid_search,2,401,3768.13,False,False
+acc_000593,Smith LLC,pro,customer_success,mid,partner,7,213,15131.67,False,False
+acc_000594,Hernandez-Vaughn,pro,it_ops,large,paid_search,0,79,14474.06,False,False
+acc_000595,Shaw-Carr,pro,customer_success,mid,partner,2,514,18234.82,False,True
+acc_000596,Salas-Fitzgerald,starter,finance,small,organic,2,187,2713.7,True,False
+acc_000597,Thornton PLC,enterprise,hr,mid,referral,1,90,72348.29,False,False
+acc_000598,Hoffman Ltd,pro,revops,large,paid_search,2,485,9501.79,False,False
+acc_000599,Fox-Edwards,starter,customer_success,mid,referral,2,475,4275.26,False,False
+acc_000600,Stevens PLC,starter,hr,small,outbound,2,494,4751.94,False,False
+acc_000601,Payne-Lowe,starter,it_ops,small,paid_search,2,200,3471.72,True,False
+acc_000602,"Becker, Lara and Baker",starter,customer_success,small,paid_search,2,419,3984.75,False,False
+acc_000603,Lee-Wright,pro,finance,mid,organic,3,96,17060.64,False,False
+acc_000604,"Evans, David and Hendrix",pro,revops,large,referral,1,49,15608.09,False,False
+acc_000605,Bush-Vaughn,pro,mixed,large,organic,0,301,9430.38,False,False
+acc_000606,Stewart-Bailey,pro,customer_success,small,outbound,2,206,11617.66,False,False
+acc_000607,"Hill, Martinez and Rhodes",starter,revops,small,paid_search,2,53,2273.53,False,False
+acc_000608,Huang-Foster,starter,customer_success,mid,referral,2,484,3672.41,False,False
+acc_000609,Blevins-Ballard,starter,mixed,mid,organic,2,114,4613.1,True,False
+acc_000610,Williams-Moses,enterprise,revops,small,organic,3,97,49007.12,False,False
+acc_000611,Reed Group,starter,revops,small,organic,1,435,1334.51,False,False
+acc_000612,"Scott, Mendoza and Harris",pro,hr,mid,paid_search,2,539,6863.29,True,False
+acc_000613,"Nelson, Hoffman and Nelson",starter,it_ops,small,paid_search,2,257,2568.91,False,False
+acc_000614,Gilbert PLC,pro,revops,small,outbound,5,352,6167.48,False,True
+acc_000615,Sanchez Ltd,starter,finance,mid,outbound,2,388,1693.79,False,False
+acc_000616,"Perez, Hall and Garcia",pro,finance,mid,paid_search,2,88,20125.68,True,False
+acc_000617,Love-Garcia,starter,customer_success,mid,organic,1,528,1926.02,True,False
+acc_000618,Smith PLC,pro,hr,small,referral,5,136,18387.67,False,False
+acc_000619,Russell Group,starter,hr,small,paid_search,2,86,4206.84,False,False
+acc_000620,Santos-Avila,pro,finance,small,outbound,2,400,19024.37,False,False
+acc_000621,Morris-Brewer,enterprise,customer_success,mid,partner,5,165,71784.96,False,False
+acc_000622,Pearson and Sons,starter,finance,small,referral,1,440,3636.36,False,False
+acc_000623,"Rodgers, Jefferson and Johnson",starter,finance,large,partner,2,34,4267.2,False,False
+acc_000624,Butler and Sons,pro,finance,small,referral,6,348,10829.57,False,False
+acc_000625,Osborn Group,pro,hr,small,paid_search,3,234,23321.58,False,False
+acc_000626,Lopez-Curry,starter,revops,large,organic,2,362,4390.05,True,False
+acc_000627,Mcdowell-Smith,starter,finance,mid,partner,1,462,1773.82,False,True
+acc_000628,"Morrison, Hebert and Rogers",starter,revops,mid,outbound,2,122,3400.76,False,False
+acc_000629,Hays-Daniels,pro,customer_success,large,organic,5,402,23522.0,False,False
+acc_000630,Small-Anderson,starter,mixed,small,referral,2,53,1428.01,False,False
+acc_000631,"Mcdonald, Lee and Rodriguez",pro,finance,large,outbound,3,410,16379.68,False,False
+acc_000632,Simon Ltd,pro,mixed,mid,referral,1,297,18388.35,False,False
+acc_000633,Higgins-Smith,pro,revops,mid,referral,3,369,18173.32,False,False
+acc_000634,Gibbs-Bradley,starter,it_ops,mid,partner,0,57,1241.92,False,False
+acc_000635,Thompson Ltd,enterprise,revops,mid,referral,4,114,36737.87,False,False
+acc_000636,Wilcox-Robertson,starter,hr,large,paid_search,2,144,3181.78,False,False
+acc_000637,Morales Inc,starter,it_ops,small,referral,1,323,2813.15,False,False
+acc_000638,Holden Group,pro,revops,small,referral,4,364,6319.84,False,False
+acc_000639,Boyle-Smith,starter,finance,mid,organic,2,435,3375.13,False,False
+acc_000640,Young-Molina,pro,hr,mid,paid_search,1,373,14211.74,False,False
+acc_000641,Turner-Sharp,starter,it_ops,mid,organic,2,199,3216.54,False,False
+acc_000642,Green LLC,pro,revops,mid,organic,1,88,7753.87,False,False
+acc_000643,"Young, Contreras and Marshall",pro,finance,small,outbound,6,439,11255.7,False,False
+acc_000644,Sullivan PLC,pro,customer_success,small,paid_search,2,101,20793.1,False,False
+acc_000645,"Carrillo, Vaughn and Fowler",pro,revops,small,paid_search,4,91,22743.89,True,False
+acc_000646,Richardson-Walker,starter,revops,mid,organic,2,85,3925.74,True,False
+acc_000647,Mendoza Group,starter,customer_success,mid,paid_search,2,486,2821.82,False,False
+acc_000648,"Zhang, Brooks and Miles",pro,mixed,small,referral,1,301,19251.85,False,False
+acc_000649,Todd-Pham,pro,revops,mid,partner,2,429,22580.92,True,False
+acc_000650,Gill Ltd,starter,revops,mid,paid_search,2,228,3567.08,False,False
+acc_000651,"Marks, Miller and Griffin",pro,hr,large,referral,4,341,22486.38,False,False
+acc_000652,"Cox, Stark and Rodriguez",pro,hr,large,partner,3,261,20486.34,False,True
+acc_000653,"Leach, Harris and Herrera",starter,customer_success,large,outbound,2,461,3725.38,False,False
+acc_000654,Murphy PLC,pro,customer_success,large,outbound,1,132,9774.83,False,False
+acc_000655,Wilson-Harris,pro,customer_success,large,paid_search,3,393,17701.55,False,False
+acc_000656,"Burns, Nolan and Griffin",enterprise,revops,mid,referral,0,89,98469.75,False,False
+acc_000657,Chavez PLC,pro,revops,large,organic,2,375,19461.64,True,False
+acc_000658,Bryant-Brown,pro,hr,large,organic,2,297,7916.47,False,False
+acc_000659,Chambers-Parker,starter,finance,small,paid_search,2,432,1779.37,False,False
+acc_000660,Foster Inc,starter,hr,large,outbound,2,181,1934.4,False,False
+acc_000661,"Robinson, Jones and Henderson",pro,hr,mid,outbound,2,375,19310.86,False,False
+acc_000662,"Brown, Mcknight and Michael",pro,customer_success,mid,paid_search,0,431,20343.01,False,False
+acc_000663,Andersen Group,pro,customer_success,small,referral,5,243,23220.64,True,False
+acc_000664,Mitchell and Sons,enterprise,hr,mid,paid_search,4,158,48277.85,False,False
+acc_000665,Cannon Ltd,pro,it_ops,small,paid_search,8,354,18683.32,True,False
+acc_000666,"Stuart, Brooks and Vance",pro,it_ops,mid,outbound,1,427,19048.46,False,False
+acc_000667,Kane-Knox,starter,revops,large,paid_search,2,522,1825.66,False,True
+acc_000668,Miller-Brandt,pro,hr,small,outbound,3,96,8896.72,False,False
+acc_000669,"Anderson, Dalton and Wilson",pro,finance,mid,partner,4,50,8766.66,False,False
+acc_000670,"Long, Anderson and Irwin",starter,finance,large,outbound,2,368,2284.16,False,False
+acc_000671,Avila LLC,pro,revops,small,organic,0,299,9959.32,False,False
+acc_000672,Nunez-Stephens,starter,finance,mid,referral,2,304,2652.3,False,False
+acc_000673,"Gray, Hall and Murray",starter,mixed,mid,referral,2,180,1986.4,False,False
+acc_000674,Hill Ltd,pro,revops,large,organic,2,532,17687.4,False,False
+acc_000675,Johnson Ltd,starter,hr,small,outbound,1,500,3436.07,False,False
+acc_000676,Mendez-Mayer,enterprise,customer_success,small,partner,3,513,40203.66,False,False
+acc_000677,Allen Inc,starter,customer_success,small,outbound,2,424,2549.85,False,False
+acc_000678,Wheeler Group,pro,revops,small,partner,4,128,11765.63,False,True
+acc_000679,"Powers, Brennan and Sanchez",starter,finance,large,organic,2,303,1226.39,False,False
+acc_000680,Morales and Sons,starter,customer_success,mid,organic,2,247,4208.39,False,False
+acc_000681,"Robinson, Shields and Brown",starter,it_ops,large,organic,0,252,3527.62,False,False
+acc_000682,"Holder, Young and Hendricks",enterprise,customer_success,small,referral,3,199,33409.77,False,False
+acc_000683,"Flores, Harper and Chambers",starter,finance,small,paid_search,2,450,2019.52,False,False
+acc_000684,Young-Walter,starter,revops,mid,referral,1,38,2602.21,False,True
+acc_000685,"Boyd, Gutierrez and Hill",starter,finance,mid,paid_search,2,411,3308.19,True,False
+acc_000686,"Fry, Hobbs and Buck",pro,finance,large,paid_search,2,432,18345.82,False,False
+acc_000687,"Shelton, Peters and Williams",pro,hr,large,referral,2,450,17893.02,False,False
+acc_000688,David-Powers,starter,revops,small,referral,0,438,4258.08,True,False
+acc_000689,"Flores, Butler and Hernandez",starter,customer_success,small,partner,2,524,4062.06,True,False
+acc_000690,White-Medina,pro,hr,large,outbound,3,314,8544.73,False,False
+acc_000691,Atkinson LLC,starter,revops,small,outbound,2,73,2296.89,False,True
+acc_000692,"Thomas, Ford and Brown",pro,mixed,small,referral,2,360,21326.26,False,False
+acc_000693,Faulkner-Grant,starter,finance,mid,paid_search,1,88,1852.89,False,False
+acc_000694,Price LLC,pro,it_ops,large,partner,3,539,15879.32,False,False
+acc_000695,Rivera Inc,pro,finance,mid,paid_search,3,131,19060.61,False,True
+acc_000696,Boone-Davis,starter,hr,small,outbound,1,81,2226.49,False,False
+acc_000697,"Calderon, Williams and Bennett",starter,finance,mid,referral,2,367,2300.43,False,False
+acc_000698,"Morrison, Russo and Lopez",pro,revops,small,referral,7,249,9035.51,False,False
+acc_000699,"Ramsey, Hansen and Mendoza",starter,it_ops,mid,outbound,0,171,4224.4,False,False
+acc_000700,Turner-Stout,starter,customer_success,large,referral,2,213,3989.16,True,False
+acc_000701,Giles Ltd,starter,finance,mid,paid_search,2,173,4291.37,True,False
+acc_000702,Burgess Group,starter,revops,small,partner,2,69,3818.73,True,False
+acc_000703,Dominguez Ltd,enterprise,it_ops,mid,organic,2,326,66462.1,False,False
+acc_000704,Sanders and Sons,pro,mixed,mid,outbound,3,306,14497.87,False,False
+acc_000705,"Morris, Campbell and Owens",pro,hr,small,organic,4,405,21428.95,False,False
+acc_000706,"Howard, Green and Hunt",starter,revops,small,referral,2,35,3585.64,False,False
+acc_000707,Owens-Lang,pro,it_ops,mid,paid_search,1,293,8526.67,False,False
+acc_000708,"Harrison, Franco and Rocha",starter,revops,mid,organic,2,104,3849.31,False,False
+acc_000709,Edwards-Williams,starter,hr,small,referral,2,62,2151.69,False,False
+acc_000710,Figueroa Inc,starter,customer_success,mid,organic,2,228,2890.83,False,True
+acc_000711,Tran-Silva,starter,finance,large,referral,2,390,4686.39,False,False
+acc_000712,"Butler, Hernandez and Rivera",pro,hr,mid,outbound,3,321,9129.3,False,False
+acc_000713,Hudson-Sanchez,pro,hr,mid,organic,1,294,10528.56,True,False
+acc_000714,"Pena, Cohen and Scott",enterprise,hr,small,organic,3,206,73817.54,False,False
+acc_000715,Levy-May,starter,customer_success,mid,paid_search,2,114,2027.97,False,False
+acc_000716,Murray-Oconnor,pro,hr,small,paid_search,2,338,18911.45,False,False
+acc_000717,Jackson-Cortez,starter,hr,mid,organic,2,276,3630.83,True,False
+acc_000718,White-Preston,starter,revops,mid,referral,2,154,1355.32,False,False
+acc_000719,"Bernard, Warren and Combs",pro,finance,mid,paid_search,5,323,8643.57,True,False
+acc_000720,Landry Ltd,starter,mixed,mid,referral,0,526,3228.98,False,False
+acc_000721,Duran Group,starter,customer_success,mid,referral,1,73,1979.74,False,False
+acc_000722,Kirby and Sons,pro,revops,mid,paid_search,1,240,16815.1,False,False
+acc_000723,Mann Inc,pro,it_ops,small,outbound,1,165,9018.99,False,False
+acc_000724,Wagner LLC,pro,mixed,mid,paid_search,0,223,12938.31,False,False
+acc_000725,Williamson Ltd,starter,hr,large,outbound,2,244,4175.45,False,False
+acc_000726,"Durham, Hopkins and Smith",pro,finance,large,outbound,2,479,20109.63,False,False
+acc_000727,"Arnold, Smith and Moreno",pro,finance,mid,paid_search,2,338,15707.15,True,False
+acc_000728,Nichols-Mitchell,starter,mixed,mid,referral,2,245,2533.36,True,False
+acc_000729,"Li, Craig and Drake",starter,revops,small,organic,2,434,3967.22,True,False
+acc_000730,Rodriguez Inc,starter,it_ops,large,organic,0,324,1551.78,False,False
+acc_000731,"Hernandez, Lee and Fox",starter,revops,small,organic,2,175,3353.85,False,False
+acc_000732,Adams-Sanders,pro,hr,small,organic,3,33,16403.77,False,False
+acc_000733,Chung-Stevens,starter,finance,mid,outbound,1,191,2671.84,False,True
+acc_000734,Branch and Sons,starter,revops,mid,paid_search,1,304,2724.82,False,False
+acc_000735,Sutton-Abbott,starter,hr,mid,organic,2,241,3187.58,False,False
+acc_000736,"Frey, Santos and Johnson",pro,finance,mid,referral,4,536,11519.76,False,False
+acc_000737,Gray-Tran,starter,customer_success,mid,organic,1,367,1628.71,False,False
+acc_000738,Walsh Ltd,starter,it_ops,large,paid_search,0,290,2642.02,True,False
+acc_000739,Miller Group,starter,revops,mid,organic,0,112,2600.77,False,True
+acc_000740,"Mueller, Knight and Hodge",pro,it_ops,mid,referral,1,337,13836.79,False,False
+acc_000741,Jacobson Inc,starter,hr,small,paid_search,0,226,4550.47,False,False
+acc_000742,Lewis Ltd,starter,customer_success,small,partner,2,59,4604.58,True,False
+acc_000743,"Alvarez, Williams and Jones",pro,customer_success,small,paid_search,3,366,22753.65,False,True
+acc_000744,Lam-Elliott,pro,finance,mid,outbound,3,387,10170.08,False,False
+acc_000745,White LLC,starter,finance,small,paid_search,2,110,1512.63,False,False
+acc_000746,Ali PLC,starter,revops,mid,referral,2,132,3063.87,False,False
+acc_000747,Goodwin Ltd,pro,finance,small,referral,5,454,16064.05,True,False
+acc_000748,Hickman-Evans,pro,hr,mid,paid_search,4,523,9501.45,False,False
+acc_000749,"Allen, Davenport and Price",enterprise,revops,small,referral,3,84,80276.76,True,False
+acc_000750,"Rivera, Campos and Taylor",pro,hr,small,outbound,1,161,21770.03,False,False
+acc_000751,"Ramsey, Mason and Mccann",pro,revops,mid,partner,0,318,14705.34,False,False
+acc_000752,Davis and Sons,starter,hr,mid,outbound,2,489,3312.58,False,False
+acc_000753,Peterson PLC,starter,finance,small,outbound,1,539,1993.38,False,False
+acc_000754,"Sanders, Ayala and Johnson",pro,it_ops,small,referral,7,304,6175.02,False,False
+acc_000755,Bowers-Hayes,pro,hr,small,outbound,3,450,12155.87,True,False
+acc_000756,Kelly Group,pro,finance,small,paid_search,5,323,10843.36,False,True
+acc_000757,Lopez-Willis,enterprise,customer_success,large,referral,3,132,51137.52,False,False
+acc_000758,Miller-Montgomery,starter,hr,small,organic,0,458,3426.95,False,False
+acc_000759,Marquez Inc,starter,finance,large,outbound,2,369,2973.59,True,False
+acc_000760,Moore-Dawson,starter,it_ops,large,organic,2,220,3434.4,False,False
+acc_000761,"Moore, Price and Ward",starter,mixed,large,organic,2,281,1858.34,False,False
+acc_000762,Smith LLC,pro,revops,small,organic,1,95,6974.67,False,False
+acc_000763,Ward-Nelson,pro,revops,mid,outbound,4,231,21487.2,False,True
+acc_000764,Miller Group,pro,revops,small,outbound,1,191,18405.79,False,False
+acc_000765,Hawkins-Hunt,starter,hr,mid,referral,2,343,4302.63,False,False
+acc_000766,Johnson LLC,starter,hr,small,partner,1,205,2517.33,False,False
+acc_000767,"Davis, George and Nguyen",starter,hr,mid,referral,1,467,2642.13,False,False
+acc_000768,Smith-Gutierrez,starter,revops,large,outbound,0,446,1559.53,False,False
+acc_000769,Hardy PLC,starter,hr,small,referral,2,104,4080.13,False,False
+acc_000770,Armstrong and Sons,pro,revops,small,referral,3,98,23920.11,False,False
+acc_000771,"James, Taylor and Turner",pro,revops,mid,organic,3,183,10517.53,False,False
+acc_000772,Thomas-Jackson,pro,finance,small,paid_search,4,140,20648.73,True,False
+acc_000773,Fisher-Washington,starter,customer_success,small,referral,2,214,2497.1,False,False
+acc_000774,Ward and Sons,pro,it_ops,small,referral,3,209,21612.63,False,False
+acc_000775,"Weber, Wheeler and Gonzalez",enterprise,finance,mid,outbound,5,119,118143.58,False,False
+acc_000776,Taylor Inc,starter,hr,mid,organic,1,258,4402.68,False,False
+acc_000777,Cook-Oliver,starter,hr,mid,paid_search,2,115,3506.09,False,True
+acc_000778,Alexander-Jordan,enterprise,revops,mid,referral,4,494,36420.97,False,False
+acc_000779,"Mccann, Taylor and Flores",starter,hr,small,referral,0,166,3379.39,False,False
+acc_000780,"Harris, Edwards and Oconnell",starter,mixed,mid,partner,1,412,3312.91,False,False
+acc_000781,Carter-Neal,enterprise,revops,small,paid_search,1,402,51116.45,True,False
+acc_000782,Faulkner-Casey,starter,customer_success,mid,paid_search,2,233,1570.83,True,False
+acc_000783,Bennett-Velasquez,starter,it_ops,mid,paid_search,0,233,3086.34,False,True
+acc_000784,Diaz-Frederick,enterprise,finance,mid,paid_search,4,506,109692.42,False,False
+acc_000785,Vargas PLC,starter,hr,small,outbound,2,97,3096.27,False,True
+acc_000786,Maldonado PLC,starter,finance,small,partner,2,472,2914.16,False,False
+acc_000787,Benton Group,enterprise,revops,small,referral,2,526,115363.75,False,False
+acc_000788,"Clark, Salinas and Guerra",pro,revops,mid,organic,4,479,16151.72,False,True
+acc_000789,Fuentes Group,pro,customer_success,small,referral,1,306,10088.31,False,False
+acc_000790,"Porter, Schultz and Allen",starter,hr,small,paid_search,2,35,1200.33,True,False
+acc_000791,"Moore, Henderson and Bennett",pro,it_ops,small,referral,2,34,18379.86,False,False
+acc_000792,Ewing-Mendoza,starter,it_ops,small,organic,2,438,2254.52,False,False
+acc_000793,Ferguson-Mclean,starter,finance,small,referral,2,317,2773.58,False,False
+acc_000794,"Barnes, Johnson and Schmitt",starter,customer_success,mid,organic,2,142,2146.73,False,False
+acc_000795,"Woodard, Herrera and Little",starter,hr,mid,partner,1,443,3698.13,False,True
+acc_000796,Rodriguez and Sons,starter,customer_success,mid,paid_search,2,126,4272.54,False,False
+acc_000797,"Ortega, Jackson and Salazar",starter,hr,mid,outbound,2,169,3721.7,False,False
+acc_000798,"Terrell, Byrd and Ross",starter,hr,small,partner,2,41,1869.38,True,False
+acc_000799,Sheppard-Jordan,starter,hr,mid,organic,2,149,1524.71,False,False
+acc_000800,Garcia and Sons,starter,hr,small,organic,2,285,4792.67,False,False
+acc_000801,"Burgess, Grant and Watts",starter,it_ops,small,organic,2,517,1725.92,True,False
+acc_000802,Griffin Group,starter,revops,mid,paid_search,2,488,4229.54,False,False
+acc_000803,Barton-Chapman,pro,it_ops,small,organic,5,157,12926.36,False,False
+acc_000804,"Hernandez, Cuevas and Webb",enterprise,hr,large,paid_search,7,406,99389.64,False,False
+acc_000805,Perry-Nixon,pro,mixed,mid,outbound,1,189,22851.87,False,False
+acc_000806,Guerra Ltd,starter,customer_success,mid,outbound,2,92,2111.93,False,False
+acc_000807,Bailey LLC,pro,finance,large,organic,1,141,23518.93,False,False
+acc_000808,Mueller-Boyd,starter,revops,small,organic,2,329,1630.74,False,True
+acc_000809,Alvarez-Kim,pro,finance,small,organic,0,273,18391.32,False,False
+acc_000810,"Chavez, Jones and Williams",starter,it_ops,small,referral,2,381,3427.12,True,False
+acc_000811,"Wilson, Sweeney and Wong",enterprise,mixed,mid,paid_search,1,360,43852.66,False,False
+acc_000812,"Marsh, Spears and Yang",pro,finance,mid,referral,3,315,20194.11,False,True
+acc_000813,"Thompson, Moore and Castro",pro,it_ops,small,paid_search,4,382,12799.84,False,False
+acc_000814,Hall-Sullivan,pro,hr,small,organic,1,316,11304.86,False,False
+acc_000815,Lopez Ltd,pro,finance,small,referral,3,404,14431.1,True,False
+acc_000816,Foster-Mclaughlin,pro,revops,large,paid_search,2,301,8790.46,True,False
+acc_000817,Cole Group,starter,hr,small,paid_search,1,356,3021.45,False,False
+acc_000818,Smith-Lewis,pro,mixed,mid,referral,2,347,10298.16,False,False
+acc_000819,Goodwin-Stokes,pro,customer_success,mid,referral,4,298,18298.04,False,False
+acc_000820,Ray PLC,pro,finance,small,referral,1,194,7988.35,False,False
+acc_000821,Diaz and Sons,pro,finance,large,paid_search,6,477,6562.93,False,False
+acc_000822,Wilson-Lambert,starter,finance,small,outbound,2,228,3568.52,False,False
+acc_000823,Rose-Fowler,pro,customer_success,small,referral,2,340,18921.21,False,False
+acc_000824,"Price, Long and Wilson",starter,mixed,mid,partner,1,456,1487.84,False,False
+acc_000825,Bruce-Williamson,pro,finance,mid,partner,6,242,20796.48,False,False
+acc_000826,"Mccarthy, Evans and Mendez",pro,finance,mid,outbound,3,405,7266.99,False,False
+acc_000827,Powers LLC,starter,mixed,large,paid_search,2,401,2031.66,True,False
+acc_000828,Allen Inc,starter,finance,mid,outbound,2,515,1844.03,False,False
+acc_000829,Brooks and Sons,pro,revops,small,outbound,2,213,18140.87,False,False
+acc_000830,"Price, Carlson and Andrews",pro,revops,small,organic,2,311,13228.03,False,False
+acc_000831,Lopez-Reid,starter,finance,large,referral,2,210,4448.95,False,False
+acc_000832,"Ellison, Arias and Thompson",pro,mixed,large,referral,1,354,13750.59,False,False
+acc_000833,Burns and Sons,pro,customer_success,mid,paid_search,1,422,15904.3,False,False
+acc_000834,Edwards Group,pro,hr,mid,partner,2,30,19073.64,False,False
+acc_000835,"Brown, Howard and Smith",enterprise,revops,mid,partner,4,184,30591.19,False,False
+acc_000836,Lee Group,enterprise,hr,small,organic,1,512,92074.73,False,False
+acc_000837,"Wagner, Simpson and Cohen",starter,revops,mid,partner,2,109,1539.43,False,False
+acc_000838,Mckinney-Wallace,starter,finance,small,partner,2,157,2038.78,False,False
+acc_000839,Miller Inc,pro,finance,small,partner,1,405,7389.63,False,False
+acc_000840,Carter LLC,starter,revops,mid,partner,2,389,3274.44,False,False
+acc_000841,Medina and Sons,enterprise,revops,small,organic,6,325,64339.15,False,False
+acc_000842,Cunningham-Barton,pro,mixed,small,organic,4,252,13497.39,True,False
+acc_000843,Dunn-Wilson,pro,it_ops,small,outbound,4,338,22715.76,False,False
+acc_000844,Adams PLC,pro,customer_success,small,outbound,3,193,15718.74,False,False
+acc_000845,Weaver-Sherman,starter,revops,small,paid_search,2,404,4790.52,True,False
+acc_000846,"Alexander, Robinson and Coleman",enterprise,it_ops,mid,paid_search,2,251,56080.47,True,False
+acc_000847,"Greer, Potter and Evans",starter,finance,small,outbound,2,55,3173.35,False,False
+acc_000848,Cole LLC,starter,revops,small,outbound,1,420,1685.53,False,False
+acc_000849,Gonzales Inc,pro,revops,mid,paid_search,5,345,23947.42,False,True
+acc_000850,Clark Ltd,pro,hr,small,referral,5,380,22634.49,False,False
+acc_000851,"Norris, Callahan and Bishop",starter,customer_success,small,referral,0,194,2440.29,True,False
+acc_000852,Martin-Taylor,pro,it_ops,small,referral,2,450,23822.87,False,False
+acc_000853,Li Inc,starter,finance,small,organic,2,132,3667.29,True,False
+acc_000854,"Bell, Campbell and Ryan",starter,customer_success,small,organic,1,154,4616.19,True,False
+acc_000855,Werner-Carter,enterprise,it_ops,mid,paid_search,1,385,102385.27,False,False
+acc_000856,"Adams, Hodge and Duke",starter,revops,small,organic,2,138,1933.68,False,False
+acc_000857,"Ochoa, Taylor and Brady",pro,hr,mid,organic,2,102,18511.28,False,False
+acc_000858,Sellers-Riddle,pro,hr,large,outbound,5,160,9065.75,False,False
+acc_000859,"Martinez, Cline and Wright",starter,it_ops,mid,paid_search,1,365,4602.64,False,False
+acc_000860,"Morris, Wright and Bridges",starter,customer_success,mid,partner,0,214,4311.42,False,False
+acc_000861,Burns-Ray,starter,it_ops,mid,paid_search,2,224,3030.75,False,True
+acc_000862,Burton-Brooks,pro,mixed,mid,outbound,7,75,9355.51,False,False
+acc_000863,Schultz Inc,pro,revops,large,paid_search,5,156,22600.86,False,True
+acc_000864,Robertson-Ramirez,starter,revops,mid,paid_search,2,380,2466.89,False,False
+acc_000865,Gibson-Freeman,pro,hr,large,outbound,4,445,7116.17,False,False
+acc_000866,"Smith, Schroeder and Oconnor",starter,revops,large,partner,0,513,3197.78,True,False
+acc_000867,"Stanton, Reid and Terry",starter,finance,large,outbound,2,74,3827.6,True,False
+acc_000868,Flynn Group,pro,customer_success,large,outbound,1,243,10326.49,False,False
+acc_000869,Donaldson and Sons,starter,mixed,large,referral,2,307,1674.38,False,False
+acc_000870,Adams-Clayton,pro,revops,mid,paid_search,3,100,11561.97,False,False
+acc_000871,Kelley-Anderson,pro,revops,small,partner,3,529,19860.9,True,False
+acc_000872,Kramer-Shannon,pro,revops,small,paid_search,2,302,23074.83,False,False
+acc_000873,Williams Ltd,starter,hr,large,organic,2,421,2347.27,False,False
+acc_000874,Smith-Noble,enterprise,mixed,small,organic,2,450,110471.71,False,False
+acc_000875,Alexander Inc,enterprise,hr,mid,paid_search,3,124,32357.84,False,False
+acc_000876,Harris-Barker,enterprise,customer_success,mid,outbound,1,335,50896.43,False,False
+acc_000877,Khan LLC,pro,hr,mid,referral,3,287,21230.49,False,False
+acc_000878,Baxter LLC,starter,customer_success,small,referral,1,272,1695.05,False,False
+acc_000879,Pena LLC,starter,finance,mid,paid_search,2,168,4620.71,False,False
+acc_000880,Watson Ltd,starter,customer_success,small,paid_search,2,120,4537.57,False,False
+acc_000881,Williams Ltd,enterprise,it_ops,mid,referral,5,264,109882.82,False,False
+acc_000882,Barber-Fischer,starter,it_ops,mid,organic,2,398,2326.43,False,False
+acc_000883,Rios-Padilla,pro,customer_success,mid,outbound,1,478,18674.03,False,False
+acc_000884,Lewis Inc,starter,finance,mid,organic,2,479,4785.01,False,False
+acc_000885,Wheeler PLC,pro,revops,mid,outbound,2,294,19772.88,False,False
+acc_000886,"Wallace, Smith and Cooper",enterprise,finance,small,partner,5,426,104485.89,False,False
+acc_000887,Mcneil Group,starter,revops,mid,paid_search,2,294,4453.23,False,False
+acc_000888,"Anderson, Jones and Reyes",starter,customer_success,small,outbound,2,122,4003.43,False,False
+acc_000889,"Shaffer, Garcia and Richardson",enterprise,customer_success,small,referral,1,260,32242.09,False,False
+acc_000890,Taylor-Ayala,starter,mixed,large,partner,1,76,2100.3,False,False
+acc_000891,May Ltd,pro,mixed,mid,organic,1,93,7641.44,True,False
+acc_000892,Jones PLC,pro,customer_success,small,organic,1,402,20239.2,False,True
+acc_000893,Bishop and Sons,pro,mixed,small,referral,3,423,9075.93,False,False
+acc_000894,Bell-Lewis,starter,it_ops,large,paid_search,1,104,1843.92,False,True
+acc_000895,"Hernandez, Jenkins and Parks",pro,revops,small,organic,2,258,11198.05,False,False
+acc_000896,Miller Inc,starter,mixed,large,paid_search,2,421,2111.2,False,False
+acc_000897,Goodwin PLC,starter,it_ops,mid,paid_search,1,481,2976.48,False,False
+acc_000898,"Cruz, Richmond and Edwards",starter,customer_success,mid,referral,2,337,3360.37,False,False
+acc_000899,Wright Ltd,starter,revops,mid,outbound,2,452,1947.5,False,False
+acc_000900,Wright PLC,starter,finance,small,paid_search,2,46,3601.19,False,False
+acc_000901,"Griffith, Mitchell and Pugh",pro,hr,large,paid_search,4,243,23887.23,False,False
+acc_000902,Abbott Ltd,starter,hr,mid,outbound,0,323,4034.31,False,False
+acc_000903,Harris-Lawson,starter,revops,mid,partner,2,77,3966.64,False,False
+acc_000904,Adkins LLC,starter,mixed,mid,organic,1,461,3181.7,False,False
+acc_000905,"Brown, Hurst and Blevins",starter,finance,mid,paid_search,2,299,2689.53,False,False
+acc_000906,Cruz-Allen,starter,hr,small,outbound,2,531,3464.32,True,False
+acc_000907,"Wheeler, Rice and Levine",enterprise,revops,mid,partner,0,534,93612.51,False,False
+acc_000908,Peck-Anderson,starter,it_ops,small,outbound,2,349,2473.87,False,False
+acc_000909,"Fisher, Payne and Thompson",starter,revops,mid,outbound,2,282,4108.73,False,False
+acc_000910,Best-Townsend,enterprise,hr,small,paid_search,1,90,32158.81,True,False
+acc_000911,Matthews Inc,pro,finance,large,organic,1,242,13452.74,False,True
+acc_000912,Lewis-Livingston,starter,revops,mid,paid_search,1,133,3684.06,False,False
+acc_000913,Hunter-Fuller,starter,finance,small,outbound,1,422,1222.07,False,True
+acc_000914,"Wang, Henderson and Morales",pro,hr,mid,outbound,3,44,20976.77,False,False
+acc_000915,"Herrera, Jensen and Ramirez",starter,it_ops,large,referral,2,272,4070.12,False,False
+acc_000916,Miller-Mccall,pro,revops,mid,partner,4,304,22126.71,False,False
+acc_000917,Herrera Group,starter,it_ops,large,paid_search,2,296,2277.64,False,False
+acc_000918,"Walters, Davenport and Becker",pro,hr,mid,paid_search,2,380,11970.95,True,False
+acc_000919,Collins Group,enterprise,it_ops,small,paid_search,3,460,32805.58,False,False
+acc_000920,"Ashley, Allen and Sanchez",enterprise,customer_success,large,outbound,4,229,46864.1,False,False
+acc_000921,Wilson-Salazar,starter,it_ops,small,organic,2,393,1313.86,False,False
+acc_000922,Parker Ltd,starter,revops,small,referral,2,516,2289.46,True,False
+acc_000923,"Yang, Wilson and Zimmerman",pro,finance,small,paid_search,2,133,22440.37,False,True
+acc_000924,"Smith, Crawford and Reed",starter,finance,mid,outbound,2,127,2424.42,True,False
+acc_000925,"Logan, Le and Jackson",starter,it_ops,small,referral,2,423,4338.48,False,False
+acc_000926,Brady LLC,pro,mixed,mid,paid_search,3,400,6657.95,False,False
+acc_000927,"Tanner, Wise and Johnson",starter,it_ops,small,referral,2,52,3673.39,False,False
+acc_000928,Nelson-Brown,pro,finance,mid,paid_search,2,296,19791.24,False,False
+acc_000929,"Proctor, Burton and Crawford",pro,finance,mid,outbound,3,137,11775.85,False,False
+acc_000930,"Ward, Porter and Bradley",starter,hr,small,referral,2,90,2181.56,False,False
+acc_000931,Moore-Ayala,starter,finance,large,outbound,1,82,1943.68,False,False
+acc_000932,"Craig, Wilson and Yang",starter,hr,small,organic,0,175,3266.7,False,False
+acc_000933,Williams Inc,starter,hr,large,outbound,2,55,1668.27,False,False
+acc_000934,Williams LLC,starter,customer_success,small,paid_search,2,248,2610.9,True,False
+acc_000935,Mora-White,pro,mixed,mid,outbound,2,258,17093.68,False,False
+acc_000936,Tran Ltd,starter,it_ops,mid,outbound,1,303,1482.76,False,True
+acc_000937,"Rios, Walker and Wright",enterprise,it_ops,mid,paid_search,1,440,112772.01,True,False
+acc_000938,"Flores, Mckenzie and Duncan",starter,revops,mid,organic,1,268,2893.97,False,False
+acc_000939,Shaw Inc,enterprise,finance,large,paid_search,1,216,65286.92,False,False
+acc_000940,Walker PLC,pro,customer_success,mid,partner,3,262,14775.12,False,False
+acc_000941,Finley Inc,starter,finance,mid,organic,1,174,3964.59,False,False
+acc_000942,Cline-Ayala,pro,finance,small,organic,4,437,7925.66,False,False
+acc_000943,Murphy-Tran,pro,finance,small,referral,3,332,13441.95,False,False
+acc_000944,Wood LLC,pro,revops,large,referral,2,204,9748.29,False,False
+acc_000945,"Mueller, Stevenson and Sanchez",pro,revops,large,outbound,0,205,15801.48,False,False
+acc_000946,Vargas-Snyder,starter,customer_success,small,partner,2,323,4212.29,True,False
+acc_000947,Oconnor PLC,starter,revops,small,paid_search,2,257,1834.23,False,False
+acc_000948,Hernandez Group,enterprise,finance,small,organic,2,424,103787.92,False,False
+acc_000949,Hall LLC,starter,customer_success,small,paid_search,2,101,4394.14,True,False
+acc_000950,"Franco, Wiley and Tapia",enterprise,customer_success,small,paid_search,1,106,70767.7,False,False
+acc_000951,Blake Group,starter,customer_success,small,paid_search,1,479,2339.75,False,False
+acc_000952,"Acosta, Garcia and Moreno",pro,mixed,small,partner,1,252,18920.24,True,False
+acc_000953,Barnes Inc,enterprise,mixed,mid,outbound,2,291,66377.77,False,False
+acc_000954,Dawson Inc,starter,hr,small,outbound,2,57,1203.04,False,True
+acc_000955,Morse PLC,pro,mixed,small,referral,4,45,10234.34,False,False
+acc_000956,Haynes-Watson,pro,revops,small,referral,5,225,13833.42,False,True
+acc_000957,"Miller, Davis and Anderson",starter,finance,small,outbound,2,461,4528.14,False,False
+acc_000958,Jones-Bradley,pro,finance,large,outbound,5,98,6208.85,False,True
+acc_000959,Bates-Anderson,pro,finance,large,outbound,5,529,23823.92,False,False
+acc_000960,Green-Edwards,starter,customer_success,small,referral,1,433,3703.41,True,False
+acc_000961,Haynes-Moss,enterprise,customer_success,mid,referral,3,449,70504.12,False,False
+acc_000962,Chavez-Hall,starter,finance,mid,outbound,2,463,3831.29,True,False
+acc_000963,Taylor PLC,pro,hr,large,outbound,2,47,23608.2,False,False
+acc_000964,Moore and Sons,pro,customer_success,small,referral,0,383,7441.14,False,False
+acc_000965,Owens-Russell,pro,revops,large,organic,3,173,14368.85,False,False
+acc_000966,"Howard, Townsend and Hayes",starter,mixed,small,referral,1,409,3589.45,False,False
+acc_000967,Baker-Wilson,pro,customer_success,mid,outbound,1,343,6949.94,False,False
+acc_000968,Aguirre LLC,starter,it_ops,mid,outbound,2,270,3266.28,False,False
+acc_000969,"Terry, Williams and Huff",starter,hr,large,referral,2,115,1327.17,False,True
+acc_000970,Hernandez-Dawson,enterprise,customer_success,mid,outbound,1,61,86637.0,False,False
+acc_000971,Foster-Williams,pro,revops,mid,referral,3,407,17237.71,False,False
+acc_000972,Green-Ewing,starter,finance,mid,organic,2,172,2107.38,False,True
+acc_000973,Crane Group,pro,hr,small,organic,4,339,9143.05,True,False
+acc_000974,"Adkins, Wright and Murray",pro,finance,small,organic,0,163,20085.5,False,False
+acc_000975,Martinez Inc,starter,finance,mid,paid_search,0,533,1503.85,False,False
+acc_000976,Anderson Group,starter,mixed,small,referral,2,538,2686.61,False,False
+acc_000977,Parks-Pace,starter,customer_success,mid,paid_search,2,325,3843.7,False,False
+acc_000978,Aguilar LLC,starter,customer_success,mid,paid_search,1,115,2870.45,False,True
+acc_000979,Johnson Inc,starter,revops,large,partner,2,149,2567.28,True,False
+acc_000980,Orr Group,pro,revops,small,organic,3,36,11198.26,True,False
+acc_000981,Davis LLC,pro,revops,small,outbound,0,519,6738.32,False,False
+acc_000982,Williams Group,enterprise,customer_success,large,referral,2,500,88685.93,False,False
+acc_000983,Jackson PLC,starter,hr,mid,paid_search,2,329,2608.15,True,False
+acc_000984,Underwood-Foster,pro,customer_success,mid,outbound,2,129,15359.14,False,False
+acc_000985,Reyes Group,pro,mixed,small,paid_search,1,34,20970.41,False,False
+acc_000986,Gomez and Sons,starter,finance,small,referral,2,142,3810.9,True,False
+acc_000987,Ramirez-Stephenson,starter,finance,mid,paid_search,2,334,3563.78,True,False
+acc_000988,Mendez PLC,pro,mixed,mid,organic,3,91,7554.95,False,False
+acc_000989,Holland Group,pro,hr,mid,outbound,6,441,23408.98,False,False
+acc_000990,Andrade-Mendoza,enterprise,customer_success,small,referral,4,509,36814.28,False,False
+acc_000991,Ramirez and Sons,starter,mixed,mid,outbound,2,371,3971.57,True,False
+acc_000992,Gonzalez-Wilkerson,starter,finance,small,organic,1,225,2598.93,False,False
+acc_000993,"Wright, Mcknight and Stephens",enterprise,hr,mid,paid_search,3,65,74254.96,False,False
+acc_000994,Mayo Ltd,enterprise,customer_success,small,referral,2,103,78656.89,False,False
+acc_000995,Castillo-Harrington,starter,customer_success,small,referral,2,162,1571.83,False,False
+acc_000996,Durham-Shaw,starter,revops,small,referral,2,489,2991.72,False,False
+acc_000997,Nelson-Johnson,pro,finance,small,referral,7,107,18600.99,False,False
+acc_000998,"Robinson, Huang and Osborne",enterprise,revops,mid,partner,0,281,73032.55,False,False
+acc_000999,Stokes Group,starter,customer_success,mid,paid_search,2,145,1211.91,True,False
+acc_001000,"Howard, Silva and Hall",enterprise,it_ops,mid,outbound,2,508,119244.12,False,False
+acc_001001,Garcia Ltd,starter,hr,small,partner,2,361,1526.4,False,False
+acc_001002,Adams Ltd,pro,mixed,small,referral,0,422,11219.26,False,False
+acc_001003,Gallagher and Sons,starter,revops,large,outbound,2,183,3705.18,False,False
+acc_001004,"Bradford, Salinas and Kelly",enterprise,customer_success,small,paid_search,4,353,69418.54,False,False
+acc_001005,Thompson PLC,starter,finance,small,partner,2,152,2961.24,False,False
+acc_001006,Drake-Wolfe,starter,revops,small,outbound,2,457,4122.4,False,False
+acc_001007,"Johnson, Haynes and Meza",enterprise,finance,small,referral,1,399,33853.31,True,False
+acc_001008,"Thomas, Vaughan and Copeland",starter,it_ops,mid,referral,1,377,4332.72,False,False
+acc_001009,Weaver-Thompson,pro,customer_success,small,paid_search,1,406,8548.63,False,True
+acc_001010,Davis and Sons,pro,revops,large,paid_search,1,389,17678.16,False,False
+acc_001011,"Robinson, Fox and Smith",starter,customer_success,large,organic,2,79,2842.26,False,False
+acc_001012,"Harris, Anderson and Love",starter,revops,mid,paid_search,2,284,3341.92,False,True
+acc_001013,Brown-Hernandez,pro,finance,small,referral,2,457,23679.47,True,False
+acc_001014,"Stark, Schroeder and Mathis",pro,hr,large,outbound,1,100,11788.62,False,False
+acc_001015,Yu-Brooks,enterprise,hr,small,paid_search,3,62,40867.09,False,False
+acc_001016,"Foster, Garcia and Turner",starter,revops,mid,outbound,1,254,2077.12,False,False
+acc_001017,Daugherty Ltd,pro,finance,mid,outbound,3,222,19997.91,True,False
+acc_001018,Conner-Yu,starter,revops,small,paid_search,2,75,3744.27,False,True
+acc_001019,"Stewart, Mann and Hoffman",pro,hr,mid,organic,5,273,18462.45,False,False
+acc_001020,"Buchanan, Walker and Chapman",starter,customer_success,mid,referral,2,510,1828.38,False,False
+acc_001021,Gray Ltd,pro,revops,mid,outbound,1,75,17289.45,False,False
+acc_001022,"Phillips, Thompson and Smith",pro,hr,small,paid_search,3,90,23758.86,True,False
+acc_001023,"Fry, Myers and Gamble",enterprise,customer_success,large,partner,0,289,49734.85,False,False
+acc_001024,"Johnson, Guzman and Mccall",pro,customer_success,small,paid_search,2,437,8685.91,True,False
+acc_001025,"Walker, Cunningham and Zuniga",pro,mixed,mid,paid_search,1,502,6776.08,False,True
+acc_001026,Rivera Inc,pro,hr,small,referral,2,442,22021.43,False,False
+acc_001027,Reed LLC,starter,finance,small,outbound,2,110,4027.77,False,False
+acc_001028,Fields Inc,starter,finance,large,organic,2,333,3287.14,False,True
+acc_001029,"Santiago, Daniel and Rogers",starter,customer_success,large,paid_search,1,86,2374.08,False,False
+acc_001030,Baker and Sons,starter,customer_success,large,referral,0,142,1464.71,False,False
+acc_001031,"Jones, Scott and Rodriguez",pro,finance,small,paid_search,4,342,14189.84,False,True
+acc_001032,Williams Group,starter,finance,mid,outbound,1,529,2170.9,False,False
+acc_001033,"Barnes, Jackson and Gutierrez",starter,finance,mid,referral,2,86,4265.94,False,False
+acc_001034,Bell-Bennett,starter,finance,small,partner,2,339,1764.44,False,False
+acc_001035,Kramer-Lane,pro,mixed,large,outbound,1,313,21390.07,False,True
+acc_001036,"Perez, Hayes and Lloyd",starter,it_ops,mid,partner,0,332,2904.56,False,False
+acc_001037,Phillips LLC,starter,finance,small,organic,2,156,2378.27,False,False
+acc_001038,Lynn-Jones,pro,mixed,mid,paid_search,0,323,22168.53,False,False
+acc_001039,Barron and Sons,starter,finance,large,organic,2,288,1321.03,False,False
+acc_001040,"Jones, Mcmahon and Spence",pro,revops,mid,organic,1,261,14915.13,False,False
+acc_001041,Wheeler-Austin,starter,it_ops,mid,referral,1,141,1677.76,False,False
+acc_001042,Bush-Reynolds,starter,customer_success,small,referral,2,186,1782.49,False,False
+acc_001043,"Martin, Preston and Moore",starter,revops,mid,partner,0,267,3978.61,False,False
+acc_001044,Rivera and Sons,pro,revops,mid,referral,1,267,18670.24,False,False
+acc_001045,Terry-Bowen,starter,customer_success,small,outbound,2,301,1317.77,False,True
+acc_001046,"Fernandez, Guerrero and Evans",starter,hr,large,outbound,0,436,1945.73,False,False
+acc_001047,Williams PLC,pro,customer_success,small,partner,2,293,23015.8,False,False
+acc_001048,"Larsen, Hernandez and Ward",pro,mixed,small,referral,2,346,6735.74,False,False
+acc_001049,Miller-Colon,starter,customer_success,mid,outbound,0,426,1936.97,False,False
+acc_001050,"Greene, Gonzalez and Johnson",enterprise,hr,small,referral,5,510,97704.94,False,False
+acc_001051,Little Inc,pro,customer_success,mid,organic,4,194,12348.81,False,False
+acc_001052,Anthony-Parker,starter,customer_success,small,paid_search,2,206,2828.68,False,False
+acc_001053,Ruiz-Jacobson,pro,it_ops,mid,outbound,2,452,15591.4,False,False
+acc_001054,Davis-Stephens,starter,customer_success,mid,partner,2,444,4721.1,False,False
+acc_001055,Watson Group,enterprise,finance,large,paid_search,1,230,110815.13,False,False
+acc_001056,Lopez-Williams,starter,mixed,small,paid_search,0,386,1732.63,False,False
+acc_001057,Marshall-Perez,starter,hr,large,paid_search,2,243,4690.47,True,False
+acc_001058,Elliott-Hernandez,pro,finance,small,referral,2,360,6386.68,False,False
+acc_001059,"Contreras, Miller and Cooper",starter,finance,mid,organic,0,296,3520.82,True,False
+acc_001060,"Gutierrez, Avila and Perez",starter,hr,mid,referral,2,333,3597.08,False,False
+acc_001061,Randall PLC,pro,revops,mid,outbound,2,489,20208.27,False,False
+acc_001062,Sheppard-Mcdaniel,starter,hr,mid,partner,2,424,4243.85,False,False
+acc_001063,Armstrong-Young,starter,hr,large,outbound,2,112,3762.52,False,False
+acc_001064,Miller-Orr,starter,mixed,large,outbound,2,371,4060.05,False,False
+acc_001065,"Johnson, Duncan and Black",starter,finance,large,outbound,2,255,2137.47,False,False
+acc_001066,"Byrd, Oliver and Martinez",starter,revops,small,referral,1,206,1732.6,False,False
+acc_001067,Thompson-Joyce,starter,mixed,mid,paid_search,1,42,2656.42,False,False
+acc_001068,Stokes and Sons,starter,finance,mid,referral,0,32,4692.54,True,False
+acc_001069,Henderson Ltd,pro,revops,mid,referral,1,488,11216.89,False,False
+acc_001070,Harris-Carson,enterprise,mixed,mid,paid_search,3,319,95568.94,False,False
+acc_001071,Flowers LLC,enterprise,hr,small,referral,1,50,42548.1,True,False
+acc_001072,Bartlett-Sloan,pro,hr,small,organic,1,258,12433.08,False,False
+acc_001073,Miller PLC,starter,customer_success,small,outbound,2,430,4568.39,True,False
+acc_001074,Arnold-Gates,starter,finance,mid,referral,2,373,4647.45,False,False
+acc_001075,"Ellis, Marks and Buchanan",enterprise,revops,mid,outbound,1,291,114906.19,False,False
+acc_001076,"Matthews, Harrington and Rodriguez",enterprise,hr,small,organic,5,219,64750.14,False,False
+acc_001077,Hernandez PLC,starter,hr,small,referral,1,317,1515.36,True,False
+acc_001078,"Chang, Ayers and Buckley",pro,revops,large,organic,1,177,8948.23,False,False
+acc_001079,"Chan, Floyd and Dillon",pro,mixed,mid,referral,1,457,16569.24,False,False
+acc_001080,Humphrey-Baker,starter,hr,mid,organic,0,535,2407.5,False,False
+acc_001081,"Washington, Lynch and Johnson",enterprise,revops,small,paid_search,4,357,112296.94,False,False
+acc_001082,Powell-Montgomery,starter,revops,mid,organic,1,100,1917.33,False,False
+acc_001083,"Steele, Williams and Preston",pro,hr,mid,organic,3,184,21022.53,False,False
+acc_001084,Vaughn-Williams,starter,revops,mid,paid_search,2,31,1754.49,False,False
+acc_001085,Mccall-Prince,starter,customer_success,mid,paid_search,2,370,4413.67,False,False
+acc_001086,Morgan LLC,starter,revops,mid,paid_search,0,91,3952.99,False,True
+acc_001087,Ramirez-Vasquez,starter,mixed,mid,referral,1,276,3236.07,False,False
+acc_001088,"Cohen, Compton and Perez",pro,customer_success,mid,outbound,3,91,12717.64,False,True
+acc_001089,Mccann-Ramos,pro,finance,small,outbound,0,104,11754.26,False,False
+acc_001090,Adams-Butler,pro,finance,small,paid_search,2,244,17452.45,False,False
+acc_001091,"Davis, Alexander and Mcintyre",enterprise,finance,small,outbound,1,69,76247.98,False,False
+acc_001092,Figueroa-Malone,pro,finance,small,organic,5,308,11806.92,False,True
+acc_001093,Nicholson-Robertson,starter,it_ops,mid,paid_search,2,387,3678.05,False,True
+acc_001094,Jones Ltd,starter,revops,mid,paid_search,2,295,2213.1,False,False
+acc_001095,"Powell, Deleon and Warren",pro,revops,large,paid_search,0,141,8781.99,False,False
+acc_001096,"Johnson, Lee and Whitaker",starter,finance,large,outbound,2,455,4628.98,False,False
+acc_001097,Wright Group,pro,customer_success,mid,organic,2,243,14288.84,False,True
+acc_001098,Hull Ltd,starter,it_ops,large,referral,2,189,3687.78,False,False
+acc_001099,Hill Group,starter,revops,large,outbound,2,526,2431.36,False,True
+acc_001100,"Sanders, Leblanc and Maldonado",pro,finance,mid,paid_search,5,468,18496.4,False,False
+acc_001101,Watson PLC,pro,hr,small,partner,4,247,18434.73,True,False
+acc_001102,Thompson-Harrell,pro,finance,mid,organic,1,51,9534.32,False,False
+acc_001103,"Arnold, Cooper and Monroe",starter,customer_success,mid,referral,2,495,2110.84,False,False
+acc_001104,Curry-Barker,starter,customer_success,mid,organic,1,501,3366.45,False,False
+acc_001105,Johnson-Williams,pro,hr,mid,paid_search,5,104,21225.51,False,False
+acc_001106,"Chan, Lewis and Walker",enterprise,mixed,small,paid_search,1,286,100272.19,False,False
+acc_001107,Byrd LLC,pro,revops,small,organic,2,420,6251.72,False,False
+acc_001108,"Ortiz, Smith and Deleon",starter,finance,small,partner,2,305,1215.58,False,False
+acc_001109,"Smith, Buck and Holland",pro,mixed,large,organic,4,273,12596.33,False,False
+acc_001110,"Owen, Walker and Franklin",pro,revops,large,paid_search,4,211,23663.42,False,True
+acc_001111,Marquez-Fletcher,starter,revops,small,organic,2,190,1645.02,False,False
+acc_001112,Coleman-Bennett,starter,finance,mid,organic,2,315,3799.69,False,False
+acc_001113,Stevens-Robinson,starter,revops,small,referral,2,406,2323.22,False,False
+acc_001114,Byrd-Holloway,enterprise,revops,mid,referral,3,467,68516.55,False,False
+acc_001115,Silva-Smith,pro,mixed,mid,partner,3,218,9227.35,False,False
+acc_001116,"Levy, Franco and Hoffman",enterprise,revops,small,referral,1,367,90886.68,False,False
+acc_001117,"Lynch, Evans and Rodriguez",starter,revops,mid,partner,2,409,4531.05,False,False
+acc_001118,Rogers LLC,enterprise,finance,large,referral,3,334,105962.66,False,False
+acc_001119,"Nguyen, Hill and Douglas",starter,hr,small,referral,2,421,3768.58,False,False
+acc_001120,"Evans, Hernandez and Cannon",pro,hr,mid,outbound,3,234,12409.75,False,False
+acc_001121,Trujillo PLC,pro,mixed,large,outbound,5,105,19823.99,False,False
+acc_001122,Guerrero-Becker,starter,hr,mid,outbound,0,98,1307.0,False,False
+acc_001123,"Johnson, Jimenez and Phillips",pro,it_ops,mid,paid_search,2,121,12887.39,False,False
+acc_001124,Sullivan-Doyle,pro,finance,mid,paid_search,4,69,17899.45,False,False
+acc_001125,"Erickson, Armstrong and Lee",pro,revops,mid,referral,3,284,14824.51,False,False
+acc_001126,"Reeves, Parks and Little",starter,hr,large,outbound,2,517,3950.27,False,False
+acc_001127,Knox-Powers,enterprise,mixed,small,referral,3,466,63870.29,False,False
+acc_001128,"Evans, Jackson and Sandoval",starter,finance,mid,organic,0,185,4384.92,True,False
+acc_001129,"White, Davis and Anderson",starter,revops,small,referral,2,421,1593.78,False,False
+acc_001130,Hardy-Hansen,pro,customer_success,mid,outbound,3,273,16120.6,False,False
+acc_001131,Arroyo LLC,starter,finance,small,outbound,2,223,3420.98,False,False
+acc_001132,"Davis, Kelly and Garner",starter,mixed,small,paid_search,2,53,1661.51,True,False
+acc_001133,Fisher-Eaton,starter,it_ops,mid,organic,2,350,2428.52,False,False
+acc_001134,Green-Carter,starter,hr,small,referral,1,368,2079.22,False,False
+acc_001135,Ruiz Ltd,starter,hr,small,outbound,2,474,2297.68,False,False
+acc_001136,"Carpenter, Oliver and Kennedy",starter,finance,small,referral,0,472,2720.9,True,False
+acc_001137,Mason Ltd,pro,revops,small,referral,2,41,23743.77,True,False
+acc_001138,Moreno-Gutierrez,starter,revops,mid,organic,2,81,3687.11,False,False
+acc_001139,Taylor and Sons,starter,revops,mid,outbound,2,115,3413.38,False,False
+acc_001140,Ortiz-Hudson,starter,revops,mid,organic,1,433,1471.16,False,False
+acc_001141,Thomas-Huffman,pro,hr,small,referral,6,323,13236.49,False,True
+acc_001142,Maxwell Group,starter,customer_success,small,organic,0,78,3330.71,False,False
+acc_001143,Welch-Thompson,starter,revops,mid,referral,1,207,4064.35,False,False
+acc_001144,"Brown, Hayes and Clark",pro,hr,mid,referral,1,306,11640.35,False,True
+acc_001145,Johnston and Sons,starter,hr,mid,outbound,2,310,1850.16,False,False
+acc_001146,Glover-Chan,starter,customer_success,large,outbound,1,139,3578.9,False,False
+acc_001147,Mendez Ltd,pro,mixed,small,outbound,2,444,17059.6,False,False
+acc_001148,Powell-Sanford,pro,revops,mid,outbound,2,297,9611.66,False,False
+acc_001149,Smith-Ferguson,starter,hr,mid,organic,2,462,2767.4,False,False
+acc_001150,"Watson, Smith and Morris",starter,it_ops,small,paid_search,2,241,2160.97,False,False
+acc_001151,"Lee, Rhodes and Sims",starter,finance,mid,paid_search,2,152,1608.81,False,False
+acc_001152,Perez LLC,starter,hr,mid,referral,0,316,4768.66,False,False
+acc_001153,Anderson-Reyes,starter,mixed,small,paid_search,1,44,2130.23,False,False
+acc_001154,"Torres, Brown and Williams",pro,customer_success,small,organic,1,523,19004.53,False,False
+acc_001155,Bryant-Meyer,pro,finance,large,referral,2,182,21609.09,False,False
+acc_001156,"Morgan, Barron and Cowan",enterprise,revops,small,outbound,4,76,65720.55,False,False
+acc_001157,Ferrell-Henry,pro,it_ops,small,outbound,2,286,22792.84,True,False
+acc_001158,Martin Group,pro,it_ops,large,partner,7,158,14936.12,False,False
+acc_001159,Perez Ltd,starter,revops,mid,referral,1,456,3303.57,False,False
+acc_001160,Clark Inc,starter,customer_success,small,referral,2,103,1584.53,False,False
+acc_001161,"Wagner, Martinez and Dawson",starter,hr,small,organic,1,58,2965.29,False,False
+acc_001162,Brooks Ltd,starter,mixed,small,referral,2,379,2086.85,True,False
+acc_001163,Wise-Dean,starter,it_ops,small,referral,2,218,4156.92,False,False
+acc_001164,"Vang, Stanley and Valdez",starter,mixed,mid,organic,2,369,4076.19,False,False
+acc_001165,Williams Inc,starter,mixed,mid,paid_search,2,226,2313.37,False,True
+acc_001166,Wallace-Martinez,enterprise,hr,mid,paid_search,0,473,51274.37,False,False
+acc_001167,Wells-Hernandez,starter,finance,large,partner,1,499,2119.92,False,True
+acc_001168,"Jennings, Smith and Fisher",starter,it_ops,small,paid_search,2,485,1776.82,False,False
+acc_001169,Bates LLC,starter,hr,mid,outbound,1,434,1321.97,False,False
+acc_001170,"Obrien, Taylor and Rivas",pro,it_ops,large,referral,2,241,22676.95,False,False
+acc_001171,Hunt PLC,starter,revops,large,paid_search,2,112,3714.54,False,True
+acc_001172,Campbell Inc,pro,hr,mid,organic,4,407,11881.83,False,True
+acc_001173,Gonzalez-Gonzalez,pro,it_ops,mid,paid_search,3,257,20238.35,False,True
+acc_001174,Decker-Dudley,starter,revops,mid,referral,2,72,1598.98,False,False
+acc_001175,Warner-Phillips,starter,customer_success,mid,outbound,1,96,4249.06,False,False
+acc_001176,Kelley and Sons,pro,it_ops,small,referral,3,406,8403.18,True,False
+acc_001177,"Fitzpatrick, Rivera and Smith",starter,revops,small,referral,2,73,2692.19,False,False
+acc_001178,"Davis, Rodriguez and Andrews",starter,it_ops,large,partner,2,144,1274.64,False,False
+acc_001179,Hernandez-Davis,starter,revops,mid,paid_search,2,75,4706.86,False,False
+acc_001180,"Jones, Cummings and Conway",starter,customer_success,small,referral,2,249,3361.41,True,False
+acc_001181,"Hall, Hinton and Phillips",starter,mixed,small,outbound,2,37,3786.9,False,False
+acc_001182,Williams-Li,starter,mixed,mid,outbound,0,90,2008.14,False,False
+acc_001183,Phelps LLC,starter,mixed,mid,paid_search,1,412,2979.01,True,False
+acc_001184,"Edwards, Rodgers and Davis",starter,it_ops,mid,partner,2,174,3816.15,False,False
+acc_001185,Smith and Sons,starter,finance,mid,paid_search,1,529,2142.48,False,False
+acc_001186,"Holland, Murphy and Kline",pro,mixed,small,outbound,0,264,7543.3,True,False
+acc_001187,"Adams, Quinn and Watson",starter,it_ops,large,referral,2,138,3768.01,False,True
+acc_001188,White-Morales,pro,customer_success,small,paid_search,6,60,6938.03,False,False
+acc_001189,Nelson-Cruz,enterprise,revops,small,outbound,1,373,117048.89,False,False
+acc_001190,Marsh-Banks,pro,customer_success,small,paid_search,1,347,12856.88,False,False
+acc_001191,Wilson Ltd,enterprise,customer_success,small,partner,2,51,82243.82,True,False
+acc_001192,"Brown, Dunlap and Moore",starter,revops,large,organic,2,97,1522.73,False,False
+acc_001193,Pruitt-Webb,pro,revops,small,referral,2,531,8301.69,False,False
+acc_001194,"Gregory, White and James",pro,it_ops,mid,partner,2,174,22250.27,False,False
+acc_001195,Carr-Huffman,starter,it_ops,large,outbound,1,253,4413.62,False,True
+acc_001196,"Mcpherson, Anderson and Knapp",starter,mixed,mid,paid_search,2,466,4522.27,False,False
+acc_001197,Clay Group,pro,revops,small,paid_search,3,123,6645.52,False,False
+acc_001198,Brown Ltd,starter,customer_success,small,partner,1,504,2981.68,False,False
+acc_001199,Smith-Oneill,starter,mixed,mid,referral,2,87,4245.02,True,False
+acc_001200,"Saunders, Ray and Cunningham",pro,finance,small,organic,3,122,21029.17,False,True
+acc_001201,"Marks, Stone and Watts",pro,it_ops,mid,outbound,2,138,16503.85,False,False
+acc_001202,"Davis, Stanley and Wright",enterprise,revops,mid,referral,4,69,52154.17,False,False
+acc_001203,Alvarado-Davidson,starter,finance,small,referral,2,532,3650.3,False,True
+acc_001204,Combs PLC,starter,revops,large,organic,2,108,1303.95,False,False
+acc_001205,"Brown, Schneider and Moore",starter,customer_success,mid,outbound,1,167,3339.14,False,False
+acc_001206,Christian-Booth,starter,mixed,mid,partner,2,196,4610.71,False,True
+acc_001207,Walton LLC,enterprise,mixed,mid,paid_search,2,471,34381.4,False,False
+acc_001208,Rivera LLC,pro,hr,small,paid_search,3,517,16841.25,False,False
+acc_001209,Hunter PLC,starter,hr,small,organic,2,234,1521.08,False,True
+acc_001210,"Gray, Montoya and Miller",pro,finance,mid,referral,5,415,23179.78,False,True
+acc_001211,Solis-West,starter,hr,mid,organic,2,501,2316.36,False,False
+acc_001212,West-Wilson,pro,finance,mid,organic,3,292,9597.68,True,False
+acc_001213,Mcgee-Smith,starter,revops,small,outbound,1,76,3923.37,False,False
+acc_001214,Gutierrez-Hawkins,pro,customer_success,small,referral,2,50,15240.15,False,False
+acc_001215,Petersen PLC,enterprise,customer_success,mid,organic,0,506,74579.0,False,False
+acc_001216,"Walsh, Wu and Hart",pro,revops,small,referral,3,494,20427.8,False,False
+acc_001217,"Powers, Clements and Cox",starter,mixed,mid,referral,2,157,3083.13,False,False
+acc_001218,Velasquez Group,starter,finance,small,paid_search,2,85,3038.35,True,False
+acc_001219,Castro-Harvey,starter,revops,mid,organic,1,211,2117.5,False,False
+acc_001220,Moran-Cox,starter,revops,small,outbound,2,121,4030.24,False,True
+acc_001221,Wilson-Malone,pro,finance,small,organic,2,190,16569.75,False,False
+acc_001222,Smith LLC,starter,customer_success,mid,paid_search,2,524,4505.2,False,False
+acc_001223,"Brandt, Carter and Boyd",pro,hr,small,partner,1,162,21689.08,True,False
+acc_001224,"Rodriguez, Prince and Vasquez",starter,revops,small,paid_search,0,117,3560.88,True,False
+acc_001225,"Newton, Ortiz and King",starter,revops,mid,organic,2,401,2952.2,False,False
+acc_001226,Lopez Group,pro,mixed,small,outbound,3,383,18151.84,True,False
+acc_001227,Bryant and Sons,pro,finance,small,paid_search,5,447,6285.93,False,False
+acc_001228,"Morgan, Sherman and Williams",enterprise,it_ops,small,outbound,4,362,51760.22,False,False
+acc_001229,"Monroe, Chapman and Barton",pro,it_ops,mid,paid_search,2,424,14341.66,False,False
+acc_001230,Ellis-Lawrence,starter,finance,small,paid_search,2,389,2802.96,False,False
+acc_001231,"Taylor, Porter and Moreno",starter,finance,small,paid_search,1,180,3249.95,False,False
+acc_001232,Tran Group,pro,finance,small,outbound,3,395,13772.18,False,True
+acc_001233,"Webb, Romero and Morse",starter,revops,mid,organic,2,178,1333.26,True,False
+acc_001234,Holt and Sons,starter,revops,mid,partner,2,493,4140.08,False,False
+acc_001235,"Ochoa, Garcia and Sandoval",starter,customer_success,mid,referral,2,191,3191.72,False,False
+acc_001236,"Andrade, Gordon and Cruz",starter,customer_success,large,paid_search,2,348,4580.27,False,False
+acc_001237,"Moon, Farmer and Hill",starter,customer_success,small,referral,2,128,2889.27,False,False
+acc_001238,Waller-Chavez,starter,revops,mid,outbound,1,501,3367.56,False,False
+acc_001239,Taylor PLC,pro,customer_success,small,referral,6,394,13026.68,False,False
+acc_001240,"Tanner, Hunt and Cameron",starter,mixed,mid,referral,2,271,4079.12,False,False
+acc_001241,"Valencia, Joseph and Walls",pro,customer_success,small,organic,1,371,14692.02,False,False
+acc_001242,"Robinson, Clark and Klein",starter,finance,mid,organic,2,512,4777.56,False,True
+acc_001243,"Reed, Chambers and Zavala",starter,hr,small,paid_search,2,481,2138.91,False,False
+acc_001244,"Hester, Thompson and Daniels",pro,finance,large,outbound,1,443,7145.98,False,True
+acc_001245,"Morris, Wilson and Bell",starter,customer_success,small,paid_search,2,162,4777.19,False,False
+acc_001246,Aguilar-Bender,pro,it_ops,mid,outbound,1,488,8721.21,False,False
+acc_001247,"Butler, Adkins and Skinner",pro,revops,mid,organic,2,504,23032.82,False,False
+acc_001248,Rich-Henderson,pro,mixed,mid,partner,2,430,16990.31,False,False
+acc_001249,Mills Inc,pro,mixed,mid,paid_search,3,83,9006.83,True,False
+acc_001250,Thomas-Santiago,starter,hr,small,organic,2,392,2789.46,False,False
+acc_001251,Adams and Sons,pro,customer_success,small,outbound,5,201,20744.89,False,False
+acc_001252,Vega-Thomas,starter,hr,large,organic,2,33,2083.14,False,False
+acc_001253,Vaughn LLC,pro,hr,mid,paid_search,1,220,18873.6,False,False
+acc_001254,Molina Inc,starter,customer_success,small,organic,2,301,2718.2,False,False
+acc_001255,Cervantes-Garcia,starter,it_ops,small,referral,2,264,4626.63,True,False
+acc_001256,"Stevenson, Hancock and Newton",pro,customer_success,large,referral,3,424,6179.08,False,False
+acc_001257,"Price, Dixon and Robles",pro,mixed,small,referral,4,532,19902.71,False,False
+acc_001258,"Roberts, Beck and House",starter,revops,small,partner,0,107,4449.04,True,False
+acc_001259,Butler-French,starter,customer_success,mid,outbound,2,296,4701.58,False,False
+acc_001260,"Edwards, Arnold and Smith",starter,mixed,mid,organic,2,399,3873.71,False,False
+acc_001261,Harris-Melton,enterprise,finance,small,outbound,0,501,43217.56,False,False
+acc_001262,Greer-Pruitt,starter,customer_success,large,outbound,2,346,3547.33,False,False
+acc_001263,"Mckinney, Richardson and Chapman",pro,mixed,mid,referral,1,131,21857.54,False,False
+acc_001264,"Morrison, Parsons and Brandt",starter,revops,small,organic,0,480,1653.62,False,False
+acc_001265,Cole-Lucero,enterprise,hr,small,outbound,4,296,60663.8,False,False
+acc_001266,Lopez and Sons,pro,finance,large,outbound,4,162,10344.12,False,False
+acc_001267,"Palmer, Bennett and Patterson",pro,customer_success,large,paid_search,0,60,21148.5,True,False
+acc_001268,"Baker, Martin and Singleton",starter,revops,small,organic,2,511,1649.1,False,False
+acc_001269,Rivera Ltd,starter,customer_success,mid,partner,2,442,3884.73,False,False
+acc_001270,Williams LLC,pro,customer_success,large,outbound,1,462,16719.88,True,False
+acc_001271,"Williams, Randolph and Gilbert",starter,hr,mid,organic,0,374,1703.9,False,False
+acc_001272,"Turner, Tyler and Pierce",starter,customer_success,small,outbound,2,128,4162.23,False,False
+acc_001273,Bowers LLC,starter,finance,mid,organic,1,71,1532.1,True,False
+acc_001274,"Robinson, White and Jones",starter,finance,small,paid_search,2,376,3094.52,False,False
+acc_001275,"Moore, Daniels and Powell",pro,revops,small,paid_search,4,285,17456.3,True,False
+acc_001276,Walker-Lewis,enterprise,customer_success,large,organic,2,243,104143.06,False,False
+acc_001277,Rivera-Carter,starter,finance,mid,paid_search,1,390,3047.47,False,False
+acc_001278,"Moreno, Barajas and Colon",pro,customer_success,mid,paid_search,2,110,22993.25,False,False
+acc_001279,"Smith, Caldwell and Griffin",starter,mixed,mid,referral,1,91,2530.51,False,False
+acc_001280,"Austin, Oliver and Haley",starter,revops,small,referral,2,221,2291.74,False,False
+acc_001281,"Blackwell, James and Hogan",starter,it_ops,small,outbound,1,54,4572.55,False,False
+acc_001282,Cruz PLC,starter,hr,small,organic,2,31,1640.38,False,False
+acc_001283,"Campbell, Pruitt and Short",starter,it_ops,small,outbound,2,319,2828.55,True,False
+acc_001284,Robertson-Hicks,starter,hr,large,organic,0,97,3943.02,False,False
+acc_001285,Williams-Villanueva,pro,revops,small,referral,5,473,19101.55,False,True
+acc_001286,Flores Inc,starter,customer_success,mid,referral,2,490,2623.43,False,False
+acc_001287,Jackson PLC,pro,mixed,large,organic,1,360,7593.54,False,False
+acc_001288,"Smith, Jones and Santiago",starter,finance,mid,organic,2,188,3219.76,False,True
+acc_001289,Hancock Group,starter,revops,small,outbound,2,325,3927.41,False,False
+acc_001290,Harris Ltd,enterprise,revops,mid,outbound,2,39,40825.49,False,False
+acc_001291,"Rowe, Lucas and Case",enterprise,finance,small,organic,3,155,104672.15,False,False
+acc_001292,"Parks, Johnson and Love",pro,revops,small,outbound,3,194,13232.36,False,False
+acc_001293,Miller Inc,starter,it_ops,small,referral,1,242,1286.6,False,False
+acc_001294,Bauer PLC,pro,revops,small,partner,5,307,9026.81,False,True
+acc_001295,Andrews and Sons,starter,hr,small,referral,2,238,3642.99,False,False
+acc_001296,Russell-Hayes,starter,mixed,small,organic,0,182,2603.78,True,False
+acc_001297,Hamilton-Smith,starter,revops,small,referral,2,453,4438.21,False,False
+acc_001298,"Wilson, Smith and Cortez",starter,hr,mid,paid_search,2,290,3908.6,True,False
+acc_001299,Avila PLC,starter,finance,small,referral,0,238,1435.65,False,False
+acc_001300,Haynes Inc,starter,customer_success,large,paid_search,2,313,4668.51,False,False
+acc_001301,Reilly-Rodriguez,pro,hr,mid,organic,4,185,16228.42,False,True
+acc_001302,"Turner, Miller and Hubbard",starter,it_ops,mid,organic,2,102,2543.9,False,True
+acc_001303,James-Short,enterprise,it_ops,mid,referral,2,496,79963.7,False,False
+acc_001304,Wells PLC,starter,it_ops,large,outbound,2,364,4699.49,False,True
+acc_001305,Taylor Group,starter,mixed,mid,outbound,2,459,3647.99,False,False
+acc_001306,"Phillips, Walters and Evans",enterprise,it_ops,small,organic,3,174,34093.63,False,False
+acc_001307,"Wong, Bernard and Smith",pro,revops,small,referral,3,92,20948.97,False,False
+acc_001308,"Thomas, Williams and Armstrong",pro,mixed,large,paid_search,3,288,23233.51,False,False
+acc_001309,Medina-Arroyo,starter,customer_success,small,paid_search,2,415,3747.91,False,False
+acc_001310,Clark-Figueroa,starter,customer_success,small,paid_search,2,521,3358.25,False,False
+acc_001311,"Cooper, Gutierrez and Brewer",starter,customer_success,mid,paid_search,2,273,1215.41,False,False
+acc_001312,"Thomas, White and Jensen",starter,finance,mid,outbound,2,280,3944.87,False,False
+acc_001313,Lee-White,pro,it_ops,mid,paid_search,2,45,22066.3,False,False
+acc_001314,"Phelps, York and Randolph",pro,revops,small,partner,2,222,20894.4,False,False
+acc_001315,"Murray, Dunn and Roberts",starter,finance,mid,outbound,2,34,1649.15,False,True
+acc_001316,King and Sons,starter,finance,small,organic,2,418,2212.08,False,False
+acc_001317,"Carpenter, Lynn and Howard",enterprise,hr,small,outbound,4,185,102757.3,False,False
+acc_001318,"Rios, Garcia and Harvey",starter,mixed,large,paid_search,1,282,4456.23,False,False
+acc_001319,Stewart Group,pro,hr,small,organic,2,232,7997.04,False,False
+acc_001320,Jensen-Torres,starter,revops,small,paid_search,1,408,3236.55,True,False
+acc_001321,"Hernandez, Knight and Aguirre",pro,revops,small,paid_search,2,63,8293.76,False,False
+acc_001322,Jackson-Edwards,enterprise,it_ops,large,organic,3,170,47266.64,False,False
+acc_001323,Joseph Ltd,pro,mixed,mid,outbound,1,159,18252.25,False,False
+acc_001324,Hill-Ward,enterprise,finance,small,outbound,2,362,34667.65,False,False
+acc_001325,"Quinn, Humphrey and Ford",enterprise,revops,large,paid_search,3,378,76646.57,False,False
+acc_001326,Hampton-Tucker,starter,revops,small,organic,2,54,2200.56,False,False
+acc_001327,Thompson PLC,starter,revops,small,paid_search,2,71,4368.35,False,False
+acc_001328,Wilkinson and Sons,pro,mixed,small,outbound,2,520,7339.93,True,False
+acc_001329,"Gonzalez, Gross and Sims",starter,finance,small,outbound,2,79,1300.34,False,False
+acc_001330,"Jones, Smith and Hunter",starter,finance,mid,partner,2,460,2101.47,True,False
+acc_001331,Hess PLC,starter,hr,small,paid_search,2,200,3070.83,False,False
+acc_001332,Hammond-Lewis,starter,finance,mid,referral,1,78,3451.26,False,False
+acc_001333,Arnold PLC,pro,finance,small,paid_search,0,190,22021.51,False,False
+acc_001334,"Kennedy, Rowe and Diaz",pro,it_ops,small,organic,4,58,11426.48,True,False
+acc_001335,Vance PLC,pro,finance,mid,outbound,0,180,21298.73,False,False
+acc_001336,"Vincent, Anderson and Mason",starter,customer_success,small,organic,2,433,3575.01,False,False
+acc_001337,Sanders PLC,starter,revops,mid,organic,1,347,1564.6,False,False
+acc_001338,Bates PLC,pro,customer_success,small,outbound,1,330,9464.66,False,False
+acc_001339,"Martin, Palmer and Griffin",starter,revops,small,organic,2,129,4455.73,False,False
+acc_001340,Knight PLC,starter,revops,small,referral,2,347,2800.65,True,False
+acc_001341,"Brennan, Thomas and Dennis",starter,it_ops,small,referral,2,253,3047.25,False,True
+acc_001342,Williams-Juarez,pro,hr,mid,outbound,2,104,8653.36,False,False
+acc_001343,Brown LLC,starter,hr,small,paid_search,2,330,3567.64,False,False
+acc_001344,Williams and Sons,starter,hr,mid,outbound,2,57,2719.42,False,False
+acc_001345,"Velez, Ward and Harrison",starter,hr,large,organic,2,204,1881.68,False,False
+acc_001346,Keith-Williams,starter,customer_success,mid,outbound,0,466,3282.28,False,False
+acc_001347,"Nguyen, Padilla and Boyd",enterprise,customer_success,small,paid_search,3,262,108849.49,False,False
+acc_001348,Davenport-Baker,enterprise,revops,large,outbound,1,384,50724.66,False,False
+acc_001349,"Hudson, Bennett and Gray",pro,hr,mid,partner,5,199,20530.88,False,False
+acc_001350,"Valdez, Houston and Black",starter,revops,mid,paid_search,1,35,1465.43,False,False
+acc_001351,Kaufman-Walker,starter,finance,small,paid_search,2,329,4485.75,False,False
+acc_001352,Gomez-Parrish,starter,mixed,small,referral,1,142,4387.38,False,False
+acc_001353,Sparks-Eaton,pro,hr,mid,paid_search,3,41,9169.39,False,False
+acc_001354,Shaw and Sons,starter,finance,large,paid_search,1,365,4034.69,False,False
+acc_001355,Martin-Jones,starter,mixed,small,paid_search,2,444,2540.46,False,False
+acc_001356,"Campbell, Hernandez and Moore",starter,revops,mid,outbound,1,252,4362.2,False,False
+acc_001357,"Love, Wilson and Hall",starter,finance,large,organic,2,128,3117.2,False,False
+acc_001358,Cortez-Olson,pro,hr,small,outbound,1,501,6831.51,False,False
+acc_001359,Mendoza-Garza,pro,finance,mid,organic,3,197,10449.09,False,False
+acc_001360,"Whitaker, Johnson and Williams",pro,hr,small,outbound,3,329,21945.02,False,False
+acc_001361,"Vargas, Taylor and Hunt",starter,finance,mid,outbound,2,63,1802.76,False,False
+acc_001362,"Thomas, Jackson and Nielsen",starter,mixed,mid,referral,0,295,2871.36,False,True
+acc_001363,"Mullen, Greene and Elliott",starter,hr,mid,organic,2,283,2905.53,False,False
+acc_001364,Johns Ltd,pro,customer_success,mid,outbound,3,136,9951.47,False,False
+acc_001365,"Nicholson, Valentine and Robinson",starter,it_ops,small,referral,2,485,2557.5,False,False
+acc_001366,"Haney, Dillon and Jackson",starter,it_ops,small,paid_search,2,414,1502.5,False,False
+acc_001367,Burke-Norton,starter,hr,mid,referral,1,348,2410.95,False,False
+acc_001368,Hanson PLC,starter,revops,small,referral,2,169,2576.54,False,False
+acc_001369,Jackson-Jennings,starter,hr,mid,referral,2,72,2260.26,False,False
+acc_001370,Carlson-Jones,pro,revops,small,paid_search,1,146,7771.36,False,False
+acc_001371,Cruz-Rodriguez,starter,finance,small,paid_search,1,198,2100.09,True,False
+acc_001372,Mills PLC,pro,it_ops,large,paid_search,4,339,23963.92,False,False
+acc_001373,"Barnes, Hernandez and Davis",enterprise,it_ops,mid,partner,1,34,99306.85,False,False
+acc_001374,Valenzuela-Greene,starter,hr,large,partner,1,450,3287.83,False,False
+acc_001375,"Gordon, Wilson and Olson",pro,revops,mid,organic,2,106,21578.39,False,False
+acc_001376,Winters PLC,starter,customer_success,small,paid_search,2,330,4029.51,False,False
+acc_001377,Prince Ltd,pro,customer_success,mid,organic,2,190,21224.43,False,False
+acc_001378,"Reynolds, Fisher and Golden",starter,mixed,small,referral,2,466,3210.41,False,False
+acc_001379,"Moreno, Perez and Lang",starter,revops,small,partner,1,34,2999.28,False,False
+acc_001380,Bell-Ballard,pro,hr,small,referral,4,415,13260.64,False,False
+acc_001381,"Johnston, Coleman and Scott",pro,revops,small,paid_search,4,432,6579.76,True,False
+acc_001382,Kent Inc,starter,mixed,large,outbound,0,439,3370.81,False,True
+acc_001383,George-Stephens,pro,it_ops,large,paid_search,2,230,7146.77,False,False
+acc_001384,Lopez-Fletcher,starter,revops,small,partner,2,357,4421.08,False,True
+acc_001385,Lane Inc,starter,finance,mid,paid_search,2,382,3372.11,False,False
+acc_001386,"Smith, Pena and Watts",starter,finance,large,referral,1,135,2038.94,False,False
+acc_001387,Ortiz-Rodriguez,pro,finance,small,outbound,4,117,11881.9,False,False
+acc_001388,Pearson-King,enterprise,revops,large,paid_search,1,244,73042.6,False,False
+acc_001389,"Henderson, Diaz and Hill",starter,mixed,large,paid_search,1,135,2315.13,False,False
+acc_001390,"Sanders, Harris and Arnold",pro,customer_success,small,outbound,1,188,16574.86,False,False
+acc_001391,"Olson, Wood and Peters",pro,customer_success,small,paid_search,4,103,14023.17,False,True
+acc_001392,Hinton-Lane,pro,customer_success,small,referral,2,321,21826.31,False,False
+acc_001393,"Sanders, Taylor and Shields",starter,revops,mid,referral,2,481,4508.03,False,False
+acc_001394,Adkins Group,starter,it_ops,mid,referral,2,451,4115.95,False,False
+acc_001395,"Avery, Garcia and Romero",starter,hr,large,organic,2,264,2584.79,False,False
+acc_001396,Owen-Mendez,pro,customer_success,small,outbound,5,52,10314.51,False,False
+acc_001397,"Mann, Martin and Oconnell",pro,hr,mid,referral,5,499,7201.39,False,False
+acc_001398,Brock and Sons,pro,mixed,large,referral,1,420,15950.83,True,False
+acc_001399,Frost-Graham,enterprise,finance,small,organic,2,196,66908.65,True,False
+acc_001400,Baker LLC,starter,hr,small,paid_search,2,357,3700.15,False,False
+acc_001401,Lynch Ltd,pro,revops,mid,organic,3,233,6679.94,False,False
+acc_001402,Arias-Morales,starter,customer_success,small,outbound,0,267,2945.13,False,False
+acc_001403,"Meyer, Dawson and Harper",starter,revops,small,partner,2,101,2894.84,False,False
+acc_001404,Bowman Group,starter,finance,large,outbound,2,120,2258.92,False,True
+acc_001405,Harris Ltd,pro,revops,small,organic,1,376,10918.54,False,False
+acc_001406,"Mitchell, Johnson and Greene",starter,finance,mid,partner,1,302,1978.2,False,False
+acc_001407,"Hale, Gilbert and Craig",pro,it_ops,mid,outbound,3,396,17880.73,False,False
+acc_001408,Allen-Smith,starter,customer_success,small,outbound,0,54,3980.67,True,False
+acc_001409,Miller LLC,pro,mixed,small,paid_search,2,76,6288.69,False,False
+acc_001410,Gomez-Foster,starter,finance,mid,outbound,2,62,1994.04,False,True
+acc_001411,"Gonzalez, Smith and Padilla",enterprise,it_ops,large,paid_search,5,115,33961.13,False,False
+acc_001412,Dunn Ltd,pro,it_ops,small,outbound,0,349,9728.15,False,False
+acc_001413,"Herman, Bailey and Richmond",pro,mixed,small,paid_search,5,212,11820.62,False,False
+acc_001414,Perez-Mccarty,starter,customer_success,small,paid_search,1,142,1437.66,False,False
+acc_001415,Spears-Andrews,pro,customer_success,small,paid_search,3,141,13399.74,False,True
+acc_001416,Thompson-Hunter,pro,revops,large,organic,4,435,23829.56,False,True
+acc_001417,"Jones, Phillips and Arroyo",pro,finance,large,outbound,4,532,17355.73,False,False
+acc_001418,"Frye, Walter and Li",starter,mixed,mid,paid_search,2,119,3487.27,False,False
+acc_001419,"Wright, Ramos and Bennett",enterprise,hr,large,referral,3,201,31588.39,False,False
+acc_001420,Carrillo-Todd,enterprise,revops,mid,organic,0,287,82872.17,False,False
+acc_001421,Maldonado-Mosley,enterprise,hr,mid,partner,4,188,51275.67,False,False
+acc_001422,Olson LLC,starter,hr,small,paid_search,1,285,2267.81,False,False
+acc_001423,Reyes and Sons,starter,hr,small,partner,1,336,4758.78,True,False
+acc_001424,"Haynes, Mcbride and Gutierrez",starter,it_ops,small,referral,1,432,3937.78,False,False
+acc_001425,Black-Smith,pro,mixed,mid,referral,1,42,10122.18,False,False
+acc_001426,Wright-Davis,pro,hr,small,paid_search,5,499,17970.11,False,False
+acc_001427,"Goodman, Peterson and Spencer",starter,customer_success,mid,outbound,2,225,3077.3,True,False
+acc_001428,Woods LLC,starter,customer_success,small,referral,1,518,1892.88,True,False
+acc_001429,Shannon LLC,pro,finance,small,paid_search,6,333,15879.25,False,False
+acc_001430,Valentine Ltd,pro,hr,mid,referral,2,269,11606.33,False,False
+acc_001431,Porter and Sons,pro,hr,small,paid_search,3,176,16375.59,False,False
+acc_001432,Moss LLC,enterprise,hr,large,referral,1,516,117529.97,False,False
+acc_001433,Perez and Sons,starter,finance,small,outbound,2,406,2760.35,False,False
+acc_001434,"Kelly, Maxwell and Wilson",starter,mixed,mid,organic,1,248,4274.55,False,False
+acc_001435,Lowe Ltd,pro,mixed,mid,paid_search,0,402,9162.59,False,False
+acc_001436,Austin-Duran,starter,hr,small,outbound,2,276,1458.98,False,True
+acc_001437,"Rubio, Charles and Watson",starter,revops,small,paid_search,2,36,4301.96,False,False
+acc_001438,Vasquez-Galloway,pro,hr,small,referral,2,232,23468.87,False,False
+acc_001439,"Melton, Henry and Joyce",starter,revops,mid,outbound,2,239,4386.0,False,False
+acc_001440,"Ramirez, Walker and Ray",enterprise,finance,large,paid_search,2,420,69266.82,False,False
+acc_001441,Fox Group,starter,mixed,mid,outbound,1,280,3485.93,False,False
+acc_001442,Ayers-Johnson,starter,finance,small,referral,2,156,2072.47,False,False
+acc_001443,Long-Parks,starter,it_ops,mid,outbound,2,387,3596.43,False,False
+acc_001444,Bryant Inc,starter,customer_success,large,paid_search,2,156,3367.74,False,False
+acc_001445,"Holmes, Stewart and Smith",enterprise,it_ops,small,organic,0,359,94044.85,False,False
+acc_001446,"Clark, Carpenter and Nguyen",starter,customer_success,large,paid_search,1,495,1879.76,False,False
+acc_001447,"Hensley, Lopez and Baker",starter,it_ops,small,referral,2,525,3119.52,False,False
+acc_001448,Ruiz-Austin,enterprise,revops,mid,organic,2,503,95488.69,False,False
+acc_001449,White-Coleman,starter,customer_success,mid,referral,2,103,2168.48,False,False
+acc_001450,Haynes-Watson,starter,customer_success,mid,paid_search,1,116,4139.0,False,False
+acc_001451,Ramirez-White,starter,finance,mid,outbound,2,365,2238.02,False,True
+acc_001452,Krause Ltd,starter,finance,small,paid_search,2,279,1855.14,False,False
+acc_001453,Olsen Ltd,enterprise,revops,mid,paid_search,3,60,97492.42,False,False
+acc_001454,Brock-Peters,pro,finance,large,organic,2,255,17283.07,False,False
+acc_001455,Gonzalez-Marsh,pro,it_ops,small,referral,7,223,8244.27,False,False
+acc_001456,"Hernandez, Shaffer and Thompson",starter,finance,small,referral,1,419,1562.91,False,False
+acc_001457,Taylor-Barry,starter,it_ops,small,outbound,0,535,1350.69,True,False
+acc_001458,"Holmes, Le and Floyd",starter,it_ops,small,outbound,2,522,3940.91,True,False
+acc_001459,King-Garrison,enterprise,revops,small,referral,2,219,91367.4,False,False
+acc_001460,Ross Ltd,starter,hr,small,referral,2,234,2562.37,False,False
+acc_001461,Brown LLC,starter,hr,small,paid_search,0,263,4333.95,False,False
+acc_001462,Combs-Davis,starter,it_ops,large,paid_search,2,92,4328.42,False,False
+acc_001463,"Cook, Ward and Castro",starter,customer_success,mid,referral,2,346,3670.27,False,False
+acc_001464,Cooper-Jenkins,pro,revops,mid,paid_search,1,356,23235.85,True,False
+acc_001465,Dillon-Mccarty,pro,finance,small,paid_search,2,443,19244.63,False,False
+acc_001466,Ray Ltd,pro,hr,mid,organic,3,436,7464.65,False,True
+acc_001467,"Ryan, Krause and Mitchell",starter,mixed,large,partner,2,468,3718.2,False,True
+acc_001468,Nunez-Freeman,starter,revops,mid,organic,2,475,3072.2,False,False
+acc_001469,"Griffin, Miller and Austin",pro,it_ops,mid,paid_search,1,437,7567.62,False,False
+acc_001470,Welch-Thomas,pro,mixed,large,referral,4,488,14033.16,False,False
+acc_001471,Davidson LLC,starter,customer_success,small,paid_search,2,415,4599.16,False,False
+acc_001472,Welch-Duncan,pro,finance,large,paid_search,3,505,22721.41,False,False
+acc_001473,Miller LLC,enterprise,it_ops,small,paid_search,3,273,115635.35,False,False
+acc_001474,Edwards Ltd,pro,customer_success,large,outbound,2,281,7627.95,False,False
+acc_001475,Page-Jacobs,pro,it_ops,large,organic,2,337,7164.01,False,False
+acc_001476,Nelson-Wallace,starter,mixed,mid,organic,0,364,3511.57,True,False
+acc_001477,Adkins-Meyer,pro,it_ops,mid,paid_search,1,89,11237.58,False,False
+acc_001478,Gutierrez-White,starter,hr,mid,paid_search,2,512,1617.98,False,False
+acc_001479,Martinez and Sons,starter,it_ops,large,outbound,2,30,2318.88,False,False
+acc_001480,"King, Manning and Brady",pro,finance,small,referral,2,424,12570.43,False,False
+acc_001481,Jackson Inc,pro,it_ops,mid,outbound,0,143,7918.55,False,False
+acc_001482,Brown Group,starter,it_ops,small,organic,2,181,4213.98,False,True
+acc_001483,"Brown, Wise and Warren",starter,revops,mid,paid_search,2,370,4256.86,False,False
+acc_001484,Garcia PLC,pro,finance,small,outbound,2,382,8222.35,False,False
+acc_001485,Miller Group,enterprise,customer_success,mid,organic,1,283,56234.56,False,False
+acc_001486,Perez-Rojas,enterprise,finance,mid,paid_search,3,396,48955.18,False,False
+acc_001487,Sims-Anderson,pro,it_ops,mid,paid_search,1,473,19968.7,False,False
+acc_001488,Johnson Ltd,pro,customer_success,small,organic,3,497,21273.33,False,False
+acc_001489,Dalton-Nguyen,enterprise,revops,small,outbound,3,537,61347.64,False,False
+acc_001490,Mcdonald-Pitts,starter,finance,mid,referral,2,502,1902.33,False,False
+acc_001491,Dunn-Taylor,pro,revops,small,organic,2,327,21585.4,False,False
+acc_001492,"Ryan, Garza and Bryant",starter,mixed,small,outbound,2,325,1695.22,True,False
+acc_001493,"Fields, Elliott and Mills",pro,hr,small,paid_search,1,413,9521.79,False,False
+acc_001494,"Ferguson, Stout and Olson",pro,hr,large,paid_search,3,432,23792.72,False,False
+acc_001495,Ballard Group,starter,mixed,small,organic,1,504,1402.79,True,False
+acc_001496,Diaz-Green,starter,revops,large,paid_search,2,293,3540.35,False,False
+acc_001497,Smith-Mills,pro,mixed,mid,referral,1,47,8138.45,False,False
+acc_001498,Cooper Group,starter,hr,mid,paid_search,2,411,2551.34,False,False
+acc_001499,"Smith, Weeks and Arroyo",pro,it_ops,mid,organic,3,472,20727.51,False,False
+acc_001500,Evans-Cannon,starter,customer_success,small,paid_search,2,89,1497.49,False,False
+acc_001501,Harper-Robles,starter,customer_success,mid,paid_search,0,323,4754.46,False,False
+acc_001502,"Brooks, Jenkins and Castro",starter,customer_success,small,outbound,1,226,2943.09,False,False
+acc_001503,Wright-Espinoza,pro,revops,mid,paid_search,2,62,18847.83,False,False
+acc_001504,"Price, Gray and Baker",pro,revops,small,organic,4,231,16009.08,False,True
+acc_001505,Garrett-Black,pro,it_ops,mid,outbound,2,329,15701.67,True,False
+acc_001506,"Aguirre, Cohen and Mitchell",pro,customer_success,mid,paid_search,3,367,22156.84,False,False
+acc_001507,"Patel, Adams and Lopez",starter,revops,small,outbound,2,439,2331.47,False,False
+acc_001508,White LLC,starter,revops,mid,paid_search,2,161,4265.22,False,False
+acc_001509,Walsh PLC,starter,mixed,mid,referral,0,308,1817.77,False,False
+acc_001510,Nelson-Dean,enterprise,customer_success,small,paid_search,3,514,76749.88,True,False
+acc_001511,Flores and Sons,pro,customer_success,small,outbound,1,385,11632.85,False,False
+acc_001512,Booker Inc,enterprise,mixed,mid,outbound,5,382,38910.82,False,False
+acc_001513,Compton LLC,pro,hr,small,referral,2,456,9873.83,False,False
+acc_001514,Martinez-Gonzales,starter,revops,mid,paid_search,2,403,3440.33,False,False
+acc_001515,Hall and Sons,starter,hr,small,partner,0,234,2841.84,True,False
+acc_001516,Snyder LLC,enterprise,customer_success,large,paid_search,3,134,36350.22,False,False
+acc_001517,Collins-Lloyd,pro,mixed,mid,paid_search,2,220,16145.56,False,False
+acc_001518,Ford-Moody,pro,revops,small,organic,3,191,23864.08,False,True
+acc_001519,Miller-Christensen,starter,finance,mid,paid_search,2,93,3113.29,False,False
+acc_001520,Brown Group,pro,revops,small,paid_search,4,495,12003.31,False,True
+acc_001521,Daniels and Sons,starter,it_ops,small,paid_search,2,223,4726.15,False,False
+acc_001522,Huang LLC,starter,mixed,mid,paid_search,1,299,3821.98,True,False
+acc_001523,Clayton-Martinez,starter,it_ops,mid,outbound,2,388,3259.77,False,False
+acc_001524,"Wright, Wise and Ramos",starter,hr,small,paid_search,2,192,4607.44,False,True
+acc_001525,"Vang, Gonzalez and Moss",starter,hr,mid,partner,1,302,3186.02,False,True
+acc_001526,Boyd and Sons,enterprise,revops,mid,paid_search,0,381,76220.89,False,False
+acc_001527,Price-Ali,starter,finance,small,organic,2,57,4506.39,False,False
+acc_001528,Moore-Chandler,pro,hr,mid,outbound,4,244,18722.16,False,True
+acc_001529,"Pineda, Meyer and King",starter,mixed,mid,outbound,2,171,4629.42,True,False
+acc_001530,"Evans, Ward and Williams",pro,customer_success,large,paid_search,4,355,21442.59,False,True
+acc_001531,"Robinson, Rodriguez and Chen",enterprise,revops,small,paid_search,3,70,36902.39,False,False
+acc_001532,Smith-Bauer,starter,finance,mid,paid_search,2,176,3194.98,False,False
+acc_001533,"Wilson, Mccormick and Smith",starter,it_ops,large,referral,2,290,4556.79,False,False
+acc_001534,Perkins Ltd,starter,revops,mid,outbound,1,302,3712.38,True,False
+acc_001535,Barker-Moore,starter,customer_success,large,organic,2,395,2729.92,True,False
+acc_001536,Wright Group,pro,hr,large,outbound,4,501,20820.54,True,False
+acc_001537,Parks LLC,enterprise,revops,mid,outbound,4,523,45167.91,False,False
+acc_001538,"Brown, Kelly and Moore",enterprise,it_ops,large,paid_search,2,217,105546.8,False,False
+acc_001539,"Moody, Martinez and Hall",pro,mixed,small,referral,1,221,23455.11,False,False
+acc_001540,"Kramer, Sherman and Trujillo",starter,customer_success,large,organic,2,469,1624.32,True,False
+acc_001541,Quinn-Smith,starter,hr,small,organic,2,321,2617.04,True,False
+acc_001542,Howard-Taylor,enterprise,mixed,large,outbound,3,487,33188.62,False,False
+acc_001543,Washington Group,starter,customer_success,mid,referral,2,345,2857.27,False,False
+acc_001544,"Phillips, Terry and Lopez",starter,finance,small,organic,2,235,2476.32,False,False
+acc_001545,Stephens LLC,starter,revops,small,outbound,2,108,2678.59,False,False
+acc_001546,"Mcdonald, Dillon and George",enterprise,finance,mid,paid_search,1,270,65582.29,False,False
+acc_001547,"Martin, Schmidt and Cole",starter,revops,small,organic,2,85,4761.73,False,False
+acc_001548,Weaver-Gibson,pro,revops,small,organic,4,32,12466.26,False,True
+acc_001549,"Hunter, Gross and Andrade",pro,finance,small,paid_search,5,232,13579.0,False,False
+acc_001550,"Vincent, Parsons and Allen",starter,finance,mid,partner,2,521,3594.87,False,False
+acc_001551,"Brown, Coffey and Fuentes",starter,revops,mid,organic,2,395,1658.76,False,False
+acc_001552,Warren Group,pro,it_ops,small,organic,1,409,21175.13,False,False
+acc_001553,"Moore, Campbell and Ortiz",starter,finance,small,paid_search,2,109,2438.83,False,False
+acc_001554,Rodriguez-Mills,starter,customer_success,small,organic,2,249,4715.18,False,False
+acc_001555,Williams and Sons,pro,revops,small,referral,1,419,13721.13,False,False
+acc_001556,Russo and Sons,pro,customer_success,small,referral,2,88,21555.0,False,False
+acc_001557,Washington Inc,enterprise,hr,mid,paid_search,1,391,100444.52,False,False
+acc_001558,Duncan Group,starter,customer_success,mid,paid_search,2,467,3328.31,False,False
+acc_001559,"Burns, Hanson and Garza",pro,hr,small,paid_search,3,537,9459.19,False,False
+acc_001560,Diaz PLC,starter,finance,small,organic,2,224,2666.27,False,False
+acc_001561,"Jones, Conrad and Clark",starter,customer_success,small,referral,2,275,1420.86,False,False
+acc_001562,Hebert-Collier,starter,finance,small,referral,2,512,2463.69,False,False
+acc_001563,Owen-Brown,starter,hr,small,paid_search,0,56,3577.55,True,False
+acc_001564,"Paul, Zamora and Short",starter,hr,small,outbound,2,250,1865.42,True,False
+acc_001565,"Brown, Jensen and Rice",enterprise,hr,small,paid_search,4,36,91466.54,False,False
+acc_001566,"Jones, Torres and Blackburn",pro,finance,small,organic,4,410,20018.55,False,False
+acc_001567,"Davis, Hardy and Schmidt",pro,hr,mid,paid_search,3,226,7570.16,False,False
+acc_001568,Lee Ltd,starter,customer_success,mid,paid_search,0,525,4483.84,False,False
+acc_001569,Hudson and Sons,pro,finance,mid,partner,1,68,22952.72,False,False
+acc_001570,"Curry, Perry and Garcia",pro,hr,mid,organic,2,303,18973.85,False,False
+acc_001571,"Ray, Craig and Park",starter,finance,mid,paid_search,2,479,3933.68,True,False
+acc_001572,Andrade-Jackson,pro,revops,small,referral,3,352,18911.87,False,False
+acc_001573,Pierce PLC,enterprise,finance,small,partner,2,287,101179.67,False,False
+acc_001574,Sandoval-Ferguson,starter,hr,large,referral,0,519,3238.23,False,False
+acc_001575,"Ramos, Gomez and Edwards",pro,customer_success,mid,referral,2,380,15584.46,False,False
+acc_001576,Kirk-Gutierrez,pro,finance,small,outbound,5,317,20028.7,False,False
+acc_001577,"Jordan, Swanson and Franklin",starter,hr,small,paid_search,0,141,3331.61,False,False
+acc_001578,"Gardner, Brooks and Pierce",starter,mixed,mid,outbound,2,398,3090.26,True,False
+acc_001579,"King, Nixon and West",starter,hr,mid,outbound,2,117,2006.15,False,False
+acc_001580,Smith-Johnson,pro,hr,mid,partner,3,172,22690.46,False,False
+acc_001581,Larson-Holmes,starter,it_ops,mid,paid_search,2,451,1955.9,False,False
+acc_001582,Smith-Joyce,starter,customer_success,mid,partner,2,196,1499.69,False,False
+acc_001583,Foley Inc,pro,revops,mid,referral,1,343,11308.12,False,False
+acc_001584,"Short, Ellison and Dixon",enterprise,customer_success,small,referral,4,404,116870.47,False,False
+acc_001585,"Howe, Moore and Johnson",starter,mixed,mid,partner,2,428,4580.46,False,False
+acc_001586,Moore-Baker,pro,customer_success,mid,partner,4,161,21660.46,False,False
+acc_001587,"Wright, Scott and Evans",pro,revops,mid,paid_search,2,167,9670.54,False,False
+acc_001588,"Ross, Hardin and Navarro",pro,it_ops,small,referral,2,403,19073.15,False,False
+acc_001589,"Nguyen, Olson and Freeman",starter,mixed,small,paid_search,2,124,4136.15,True,False
+acc_001590,"Warner, Weiss and Davis",starter,revops,large,paid_search,2,174,1275.77,True,False
+acc_001591,"Evans, Cross and Johnston",starter,finance,small,outbound,1,65,1716.68,False,False
+acc_001592,Deleon LLC,starter,revops,mid,referral,2,400,3096.4,False,False
+acc_001593,Hobbs-Hamilton,pro,it_ops,mid,referral,2,40,7980.64,False,False
+acc_001594,Kane and Sons,starter,it_ops,large,paid_search,2,424,1500.94,False,False
+acc_001595,"Delgado, Guzman and Smith",starter,customer_success,small,partner,2,520,4049.98,False,False
+acc_001596,"Reyes, Torres and Williams",pro,it_ops,large,paid_search,2,101,14647.66,False,False
+acc_001597,"Cunningham, Murphy and Wolfe",pro,revops,small,referral,3,109,10388.56,True,False
+acc_001598,Williams Ltd,pro,hr,mid,paid_search,3,52,7850.68,False,True
+acc_001599,Maddox-Mullins,starter,revops,large,paid_search,2,497,2007.53,False,False
+acc_001600,"Wagner, Walker and Roberts",starter,revops,small,referral,1,501,4364.36,True,False
+acc_001601,Hernandez-Rogers,starter,mixed,mid,paid_search,2,116,4766.76,False,False
+acc_001602,Duncan-Williams,starter,mixed,small,paid_search,2,200,1626.06,False,True
+acc_001603,Baker-Ross,enterprise,mixed,large,outbound,0,121,68576.56,False,False
+acc_001604,Ayala-Anderson,starter,finance,small,partner,2,381,2285.63,False,False
+acc_001605,Castillo and Sons,pro,hr,small,partner,2,368,12644.02,False,False
+acc_001606,Foster-Duncan,starter,mixed,mid,organic,1,471,4559.14,False,False
+acc_001607,"Gilbert, Fitzgerald and Sanchez",starter,customer_success,small,referral,1,399,4068.66,False,True
+acc_001608,Adams Group,enterprise,it_ops,small,referral,1,402,55062.85,False,False
+acc_001609,Cohen-Johnston,starter,mixed,small,referral,2,193,2979.14,True,False
+acc_001610,Powers Group,starter,mixed,mid,outbound,0,100,4087.71,False,False
+acc_001611,Bailey-Flores,pro,hr,small,referral,1,303,14866.83,False,False
+acc_001612,"Rios, Carrillo and Jackson",pro,hr,small,organic,1,299,16401.78,False,False
+acc_001613,Jensen-Branch,pro,customer_success,mid,paid_search,2,31,9659.03,False,False
+acc_001614,Hanson-Alexander,pro,hr,mid,paid_search,2,86,7072.39,False,False
+acc_001615,Gonzalez LLC,starter,it_ops,large,organic,1,180,2857.4,False,False
+acc_001616,Todd Inc,pro,revops,large,referral,1,137,20900.79,False,False
+acc_001617,Singh and Sons,starter,finance,large,organic,1,223,3839.09,False,False
+acc_001618,"Mcintosh, Melton and Wilkins",pro,revops,small,paid_search,7,327,7327.87,True,False
+acc_001619,Cooper Inc,pro,it_ops,small,referral,3,70,10410.82,False,False
+acc_001620,Cole-Johnson,starter,it_ops,small,organic,2,270,3876.81,True,False
+acc_001621,Singh and Sons,pro,customer_success,small,referral,1,202,13991.53,False,False
+acc_001622,Payne LLC,pro,finance,small,paid_search,5,358,6578.14,False,True
+acc_001623,"Webb, Blair and Thomas",pro,revops,small,organic,3,378,23068.36,False,True
+acc_001624,"Barnett, Bennett and Escobar",starter,customer_success,small,outbound,2,186,3753.67,False,False
+acc_001625,"Williams, Jackson and Campbell",starter,finance,large,outbound,2,530,4623.86,False,False
+acc_001626,"Williamson, Brown and Pena",pro,revops,small,referral,6,451,19427.92,True,False
+acc_001627,Jones Ltd,pro,it_ops,mid,referral,1,190,17748.6,False,False
+acc_001628,Alvarado-Durham,starter,revops,small,referral,2,247,1901.03,False,False
+acc_001629,Lin-Smith,starter,finance,mid,organic,1,44,2062.31,False,False
+acc_001630,"Hughes, Whitney and Romero",starter,finance,small,paid_search,2,495,2312.83,False,False
+acc_001631,"Garcia, Stewart and Delacruz",pro,customer_success,small,paid_search,1,530,16262.21,True,False
+acc_001632,"Miller, Gonzalez and Rasmussen",starter,mixed,mid,paid_search,2,77,4596.63,False,False
+acc_001633,"House, Smith and Wright",starter,hr,small,referral,2,129,2332.1,False,False
+acc_001634,"Torres, Burns and Garner",starter,hr,small,outbound,1,199,2666.23,False,False
+acc_001635,Reed LLC,pro,finance,mid,paid_search,2,330,20329.25,False,False
+acc_001636,Garrett-Young,starter,it_ops,small,paid_search,2,379,2867.18,True,False
+acc_001637,"Hill, Brown and Scott",enterprise,finance,mid,partner,4,443,91331.38,False,False
+acc_001638,Zamora-Briggs,starter,customer_success,large,outbound,2,538,3823.39,False,False
+acc_001639,Raymond LLC,pro,mixed,small,organic,0,203,11235.15,True,False
+acc_001640,Hernandez Group,pro,mixed,small,organic,3,379,12977.42,False,False
+acc_001641,"Taylor, Blair and Meyer",starter,customer_success,small,paid_search,2,351,4779.86,False,False
+acc_001642,"Salazar, Garrett and Perez",starter,finance,mid,referral,1,474,4688.21,False,False
+acc_001643,Berry Group,pro,finance,small,referral,3,508,11320.95,False,True
+acc_001644,Browning-Murphy,starter,revops,small,paid_search,1,393,3978.99,False,True
+acc_001645,"Anderson, Delgado and Carpenter",starter,revops,small,organic,2,362,4526.98,False,False
+acc_001646,"Mcbride, Huffman and Parker",enterprise,mixed,mid,referral,2,176,66084.53,False,False
+acc_001647,"Roach, Browning and Jordan",pro,mixed,small,referral,2,462,17243.37,False,False
+acc_001648,Douglas PLC,starter,finance,small,referral,2,479,4351.93,True,False
+acc_001649,Stewart PLC,pro,customer_success,mid,organic,1,155,18595.42,False,False
+acc_001650,"Fry, Wilson and Stewart",pro,finance,small,referral,2,321,13187.05,False,False
+acc_001651,Acosta LLC,starter,revops,mid,paid_search,2,268,2886.56,False,False
+acc_001652,Ali-Turner,pro,it_ops,small,paid_search,1,85,22514.29,True,False
+acc_001653,"Peck, Shannon and Mahoney",enterprise,it_ops,small,referral,2,192,60818.12,False,False
+acc_001654,Hernandez-Lopez,pro,hr,mid,paid_search,5,262,6689.08,False,True
+acc_001655,Lopez PLC,starter,revops,mid,referral,2,46,4756.12,False,False
+acc_001656,"Adams, Bradley and Hall",pro,finance,mid,organic,4,531,14521.37,False,False
+acc_001657,Hall Inc,starter,it_ops,large,outbound,2,168,2107.46,False,True
+acc_001658,Miller-Chan,starter,finance,small,paid_search,2,477,3763.94,False,False
+acc_001659,Shaw PLC,pro,revops,mid,paid_search,1,455,6967.36,False,False
+acc_001660,Joseph-Brooks,enterprise,revops,large,referral,1,131,61434.86,False,False
+acc_001661,Henry-Taylor,starter,revops,mid,paid_search,2,386,2772.42,True,False
+acc_001662,Perez Group,enterprise,revops,mid,outbound,3,487,83741.58,False,False
+acc_001663,Schaefer Group,starter,customer_success,mid,referral,2,535,4164.61,False,False
+acc_001664,Newton and Sons,pro,it_ops,mid,paid_search,4,489,14255.86,False,False
+acc_001665,Jones Group,starter,it_ops,small,partner,2,238,2146.09,False,False
+acc_001666,"Burns, Nguyen and Ellis",pro,mixed,large,organic,5,354,14087.92,False,False
+acc_001667,Patterson Inc,enterprise,finance,small,partner,4,245,92680.15,True,False
+acc_001668,"Moss, James and Edwards",pro,customer_success,small,paid_search,3,127,23491.4,True,False
+acc_001669,"Crosby, Armstrong and Herrera",pro,finance,mid,paid_search,1,489,11525.38,False,False
+acc_001670,"Liu, Buchanan and Meyer",pro,finance,mid,partner,3,241,13386.96,False,False
+acc_001671,Bryant-Rich,starter,revops,mid,organic,2,88,4534.86,False,False
+acc_001672,Stone Group,starter,hr,mid,paid_search,0,253,2573.63,False,False
+acc_001673,"Williams, Hughes and Hubbard",pro,customer_success,small,referral,3,347,22882.23,False,False
+acc_001674,Lee Group,enterprise,finance,small,organic,4,75,88466.21,False,False
+acc_001675,Wilkerson-Ayala,pro,revops,mid,organic,3,504,15805.21,False,False
+acc_001676,Murray-Henderson,pro,revops,mid,outbound,2,466,13571.54,True,False
+acc_001677,"Ellison, Vaughn and Mckee",starter,revops,small,paid_search,1,270,4621.99,True,False
+acc_001678,Gallegos-Hayes,starter,it_ops,mid,partner,2,360,3733.81,False,False
+acc_001679,"Mason, White and Richards",pro,finance,small,paid_search,2,175,10816.96,False,False
+acc_001680,"Payne, Long and Morris",pro,hr,large,partner,3,374,10347.98,False,True
+acc_001681,White PLC,enterprise,revops,small,paid_search,3,221,105669.27,False,False
+acc_001682,"Huang, Khan and Davis",pro,customer_success,small,paid_search,1,322,23870.92,False,False
+acc_001683,Holt-Meadows,starter,mixed,small,outbound,2,454,1385.69,True,False
+acc_001684,Higgins Inc,enterprise,revops,large,referral,4,402,45634.55,False,False
+acc_001685,Wilson Group,enterprise,revops,small,paid_search,2,440,41369.73,False,False
+acc_001686,"Cox, Mills and Cruz",starter,revops,small,organic,0,499,2136.83,False,False
+acc_001687,"Salazar, Moore and Pierce",pro,mixed,small,paid_search,1,253,6207.69,False,False
+acc_001688,Tate LLC,pro,finance,mid,outbound,1,527,7417.91,False,False
+acc_001689,"Savage, Huffman and Martin",starter,customer_success,small,referral,2,353,3999.32,False,False
+acc_001690,White Ltd,starter,customer_success,small,paid_search,2,460,2082.92,True,False
+acc_001691,Barnes LLC,pro,it_ops,mid,outbound,2,170,7493.34,False,False
+acc_001692,"Mack, Griffin and Sims",starter,finance,large,organic,1,86,2852.86,False,False
+acc_001693,Roach and Sons,pro,finance,small,partner,3,77,7392.87,True,False
+acc_001694,Dean LLC,pro,mixed,small,paid_search,1,437,6395.23,True,False
+acc_001695,Ellis Group,starter,mixed,small,outbound,1,222,4402.97,False,False
+acc_001696,"Aguirre, Franklin and Snyder",pro,revops,small,referral,4,492,9216.19,False,True
+acc_001697,Chapman Group,pro,customer_success,small,partner,1,538,12242.11,False,True
+acc_001698,Ortiz-Miller,enterprise,revops,small,outbound,2,160,113392.49,True,False
+acc_001699,"Smith, Khan and Ramirez",starter,finance,small,outbound,2,108,1978.7,True,False
+acc_001700,"Grant, Bryan and Williams",starter,mixed,small,paid_search,0,72,3819.88,False,False
+acc_001701,Brown LLC,enterprise,hr,mid,partner,2,208,93727.52,False,False
+acc_001702,Thomas Inc,pro,revops,mid,referral,5,514,13198.96,False,True
+acc_001703,"Lane, Morrison and Rivera",starter,finance,mid,partner,0,173,4662.74,False,False
+acc_001704,Williams Group,starter,it_ops,mid,paid_search,2,135,4633.54,False,False
+acc_001705,Martin LLC,starter,mixed,small,organic,1,447,2347.5,False,True
+acc_001706,"Guerrero, Graves and Armstrong",starter,revops,small,referral,2,489,3477.71,False,False
+acc_001707,"Thompson, Gibson and Riley",starter,finance,small,outbound,1,330,2675.31,False,False
+acc_001708,Davis LLC,pro,it_ops,large,outbound,4,233,6538.92,False,True
+acc_001709,Richardson-Gray,starter,hr,mid,referral,2,67,1974.66,False,False
+acc_001710,Chang PLC,starter,finance,small,paid_search,2,382,1239.24,True,False
+acc_001711,Carter and Sons,starter,revops,mid,partner,2,317,1438.45,False,False
+acc_001712,Neal LLC,starter,hr,small,outbound,2,396,3388.46,False,False
+acc_001713,Rose-Warren,enterprise,it_ops,small,partner,3,245,91391.87,False,False
+acc_001714,"Clark, Brown and Duncan",starter,it_ops,small,paid_search,2,282,2995.14,True,False
+acc_001715,"Rice, Miller and Ramsey",enterprise,revops,small,paid_search,4,197,83205.4,False,False
+acc_001716,"Peck, Andersen and Mitchell",starter,finance,small,organic,2,324,4756.64,False,False
+acc_001717,"Abbott, Green and Andrews",enterprise,hr,large,referral,2,488,78012.03,False,False
+acc_001718,"Gomez, Anderson and Hart",pro,hr,small,referral,3,454,20445.24,False,False
+acc_001719,"Daniel, Jimenez and Morton",pro,hr,mid,referral,1,314,19943.04,False,False
+acc_001720,"Hall, Roberts and Lee",starter,finance,small,partner,2,282,4255.22,False,False
+acc_001721,Johnson Ltd,enterprise,finance,small,outbound,2,44,50161.29,False,False
+acc_001722,Mclaughlin and Sons,pro,finance,large,organic,3,400,13842.28,False,True
+acc_001723,"Duarte, Gutierrez and Cook",starter,finance,large,referral,2,492,3135.21,False,False
+acc_001724,"Shaffer, Lewis and Davidson",starter,customer_success,small,partner,2,52,1598.89,False,True
+acc_001725,"Campbell, Tyler and Parker",enterprise,finance,small,outbound,1,445,64160.08,False,False
+acc_001726,"Pierce, Wang and Wilson",pro,mixed,mid,paid_search,4,193,21514.11,False,False
+acc_001727,Peterson-Ramsey,pro,mixed,large,referral,2,258,18028.23,False,False
+acc_001728,"Choi, Collier and Lee",pro,hr,mid,referral,5,173,11794.4,False,True
+acc_001729,Nielsen-Mendoza,pro,hr,small,referral,2,72,12354.17,False,True
+acc_001730,Robles-Brewer,pro,hr,mid,organic,1,385,7404.3,False,False
+acc_001731,Moore-Murray,enterprise,finance,small,paid_search,2,449,64655.42,True,False
+acc_001732,"Huang, Ford and Olsen",starter,hr,mid,organic,2,293,4290.45,False,False
+acc_001733,"Brown, Meyer and Cunningham",pro,hr,mid,paid_search,1,288,7901.89,False,False
+acc_001734,"Stewart, Herrera and Clark",starter,mixed,small,referral,2,347,3048.47,False,False
+acc_001735,"Rivera, Hendricks and Flynn",pro,finance,small,paid_search,6,187,23126.9,False,False
+acc_001736,Montes LLC,pro,finance,mid,paid_search,2,86,10330.12,False,False
+acc_001737,Morgan Group,enterprise,finance,small,outbound,5,261,61676.11,False,False
+acc_001738,"Ferguson, Martin and Obrien",starter,revops,small,paid_search,2,233,3007.89,False,False
+acc_001739,Larson LLC,pro,finance,small,paid_search,0,362,12885.41,False,False
+acc_001740,"Hodge, Mckinney and Nelson",enterprise,finance,small,paid_search,4,171,77660.65,False,False
+acc_001741,Crawford and Sons,starter,revops,mid,outbound,1,520,1599.9,True,False
+acc_001742,Hayes-Sampson,starter,mixed,mid,paid_search,0,302,1563.72,True,False
+acc_001743,Warren and Sons,starter,customer_success,mid,referral,2,81,1991.6,True,False
+acc_001744,Brooks Inc,pro,customer_success,mid,paid_search,1,134,12257.4,False,False
+acc_001745,Gentry Group,starter,revops,mid,paid_search,2,287,4468.02,True,False
+acc_001746,"Johnson, Webb and Porter",pro,customer_success,large,outbound,2,117,11672.02,False,False
+acc_001747,Peterson Group,starter,finance,large,paid_search,2,36,3597.71,False,True
+acc_001748,"Russo, Collins and Murphy",starter,finance,large,partner,2,117,3645.13,False,False
+acc_001749,Short PLC,pro,revops,large,outbound,1,280,21717.93,False,False
+acc_001750,"Haney, Harris and Johnson",starter,finance,small,outbound,2,178,4207.29,False,False
+acc_001751,Reeves-Boyd,pro,finance,small,paid_search,1,185,20470.07,False,False
+acc_001752,Collins Inc,starter,revops,small,outbound,2,369,2951.38,False,False
+acc_001753,"Charles, Wiggins and Cook",starter,finance,small,organic,2,486,3064.19,False,True
+acc_001754,Garcia Ltd,pro,it_ops,large,referral,1,168,18344.11,False,False
+acc_001755,"Edwards, Lane and Collins",pro,finance,large,organic,3,367,23893.57,False,False
+acc_001756,Flores and Sons,starter,finance,mid,outbound,2,250,2493.91,False,True
+acc_001757,Hill-Flores,pro,finance,large,outbound,2,524,10930.63,False,False
+acc_001758,Lambert-Nelson,pro,revops,large,partner,1,478,15484.32,False,False
+acc_001759,Hill Inc,starter,customer_success,large,referral,2,243,4602.96,False,False
+acc_001760,"Castro, Garcia and Daniels",starter,finance,mid,organic,2,457,3404.52,True,False
+acc_001761,"Flores, Thomas and Bush",starter,revops,large,organic,2,177,1596.69,False,False
+acc_001762,Andrews-Jackson,starter,mixed,small,outbound,2,297,4680.02,False,False
+acc_001763,Austin-Morgan,pro,customer_success,small,referral,4,439,11305.08,False,True
+acc_001764,Williams-Johnson,starter,hr,mid,paid_search,1,280,2300.96,False,False
+acc_001765,"Williams, Reyes and Miller",starter,customer_success,small,paid_search,2,209,4363.4,True,False
+acc_001766,White-Carlson,pro,revops,large,outbound,3,518,7548.06,False,False
+acc_001767,"Soto, Vaughn and Griffin",starter,mixed,small,outbound,2,71,2246.89,False,False
+acc_001768,Edwards-Roth,starter,mixed,small,outbound,2,227,2721.23,False,False
+acc_001769,"Chang, Lamb and Miller",enterprise,finance,small,referral,1,189,45597.18,False,False
+acc_001770,Bradley-Davis,starter,it_ops,mid,paid_search,2,423,1918.22,False,False
+acc_001771,"Mcdonald, Bryant and Cohen",starter,revops,small,paid_search,2,320,4537.63,False,False
+acc_001772,"Miranda, Ruiz and Meza",starter,finance,mid,organic,2,79,1699.0,False,False
+acc_001773,Callahan PLC,starter,hr,large,organic,0,269,2475.1,True,False
+acc_001774,Durham-Myers,starter,mixed,mid,partner,1,43,4646.97,False,False
+acc_001775,"Stark, Rivera and Valencia",starter,it_ops,mid,referral,1,154,3289.16,False,False
+acc_001776,Chavez-Johnson,starter,customer_success,large,organic,1,57,3919.21,False,True
+acc_001777,Rodriguez-Mendoza,starter,revops,small,organic,1,477,3064.83,False,False
+acc_001778,Campbell LLC,pro,finance,small,partner,2,84,12002.7,False,False
+acc_001779,"Andrews, Romero and Sullivan",starter,hr,mid,referral,2,61,1637.19,False,False
+acc_001780,"Robles, Nguyen and Banks",pro,revops,mid,organic,3,294,8594.73,False,False
+acc_001781,Patel-Morales,pro,revops,small,outbound,1,466,8785.96,True,False
+acc_001782,Allen-Sanchez,pro,customer_success,large,organic,2,349,18379.94,False,False
+acc_001783,Dickson Group,starter,finance,mid,paid_search,2,79,2089.94,True,False
+acc_001784,Peterson Ltd,starter,finance,mid,referral,2,504,1638.52,False,False
+acc_001785,"Reynolds, Baird and Bradley",starter,mixed,mid,organic,2,309,2136.98,False,False
+acc_001786,Stephens-Young,pro,revops,mid,paid_search,1,104,17451.55,True,False
+acc_001787,"Caldwell, Stevenson and Joseph",starter,it_ops,mid,paid_search,2,409,3718.66,False,False
+acc_001788,Wilson-Carlson,starter,revops,small,paid_search,2,331,2974.67,True,False
+acc_001789,Peters-Short,pro,revops,mid,paid_search,2,243,20642.88,False,False
+acc_001790,Parker Group,starter,hr,small,referral,1,327,2289.94,False,True
+acc_001791,George Ltd,pro,mixed,mid,paid_search,2,494,12385.08,False,False
+acc_001792,"Wise, Gray and Snyder",starter,mixed,mid,paid_search,2,111,2487.89,False,False
+acc_001793,"Brown, Robinson and Taylor",pro,revops,small,organic,4,229,15234.81,False,True
+acc_001794,"Berger, Fields and Smith",starter,finance,mid,outbound,2,265,3774.66,False,False
+acc_001795,Guerrero Group,pro,hr,mid,referral,2,231,7227.78,False,False
+acc_001796,"Carter, Gilbert and West",pro,revops,large,outbound,1,122,16368.7,False,False
+acc_001797,Maldonado LLC,enterprise,it_ops,mid,paid_search,3,195,82996.69,False,False
+acc_001798,Hudson-Gentry,pro,revops,mid,paid_search,6,45,21336.56,False,True
+acc_001799,Sellers-Zuniga,starter,finance,small,partner,2,273,2365.17,False,False
