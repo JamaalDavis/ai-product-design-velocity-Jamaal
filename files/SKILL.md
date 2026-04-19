@@ -9,7 +9,8 @@ description: >
   this", or any time the user drops data files and wants product insights from them. Also use
   when the user wants to apply the EIM (Evidence → Impact → Mechanism) framework to any dataset.
   Do not wait for the user to say "EIM" explicitly — if they have data and want product insights,
-  use this skill.
+  use this skill. For best results, run /eim-context first to establish product and customer
+  context — the analysis reads a context-base file if one exists.
 ---
 
 # EIM Product Analyst
@@ -25,33 +26,71 @@ intervention the product team can act on.
 
 ## Step 0 — Orient before touching data
 
-Before writing any code, do these three things in order:
+**First: check for a context-base file**
 
-**1. Discover what files are present**
+Before anything else, look for a `[company-name]-context-base.md` file in the company
+folder or current directory. This file is produced by `/eim-context` and contains a
+pre-synthesised summary of the product, data sources, outcome variables, and known
+context gaps.
 
 ```bash
-ls -lh *.csv *.json *.parquet *.xlsx *.tsv 2>/dev/null || echo "No data files found"
+ls *-context-base.md 2>/dev/null
 ```
 
-Do not assume file names, column names, or table structure. Discover them.
+**If a context-base file exists:** Read it in full. It is your primary orientation document.
+Skip steps 1–3 below (data discovery, product context, data dictionary) — the context-base
+has already done this work. Proceed directly to Step 1 (data shape inspection), using the
+data sources identified in the context-base.
 
-**2. Look for a product context document**
+**If no context-base file exists:** Recommend the user run `/eim-context [company-name]`
+first to ensure the analysis has the product and customer context it needs to produce
+relevant hypotheses. Then proceed through steps 1–3 below, noting any gaps.
 
-Search for any file that looks like a product description, context statement, or README:
+---
+
+If proceeding without a context-base, do these three things in order:
+
+**1. Discover what data is available**
+
+Check for files in the current directory and any data subfolder. Do not assume file names,
+column names, or table structure. Discover them:
+
+```bash
+ls -lh *.csv *.json *.parquet *.xlsx *.tsv 2>/dev/null
+ls -lh data/*.csv data/*.json data/*.parquet data/*.xlsx data/*.tsv 2>/dev/null
+```
+
+If no files are found, ask the user whether data is available via an analytics tool
+connection (Amplitude, Mixpanel, PostHog, etc.) or another source. Do not assume
+files are the only option.
+
+If nothing is accessible, tell the user and stop.
+
+**2. Look for product context**
+
+Search for any document that describes the product — what it does, who it's for, how it's
+priced. Do not look for specific filenames — look for any document that contains this kind
+of content:
 
 ```bash
 ls *.md *.txt 2>/dev/null
+ls use-cases/*/ docs/*/ 2>/dev/null
 ```
 
-If one exists, read it in full before touching the data. It tells you how to interpret signals
-as product problems rather than data problems. If none exists, proceed — but note to the user
-that hypotheses will be less specific without product context.
+Read any document that looks like product description, context, or positioning.
+If none exists, proceed — but note to the user that hypotheses will be less specific
+without product context, and that `/eim-context` can help establish this.
 
 **3. Look for a data dictionary**
 
-Search for any file named `dictionary`, `schema`, `data_dict`, or similar. If found, read it.
-It tells you what columns mean and what values are valid. Without it, infer from column names
-and value distributions — but be explicit about your assumptions.
+Search for any document that explains what the data columns mean:
+
+```bash
+ls *dict* *schema* *dictionary* *data_dict* 2>/dev/null
+```
+
+If found, read it. If not found, proceed — infer column meanings from names and value
+distributions, and be explicit about which meanings are inferred vs. documented.
 
 ---
 
@@ -63,7 +102,9 @@ For each file discovered, run a quick structural inspection:
 import pandas as pd
 import glob
 
-files = glob.glob("*.csv") + glob.glob("*.tsv") + glob.glob("*.json")
+files = (glob.glob("*.csv") + glob.glob("data/*.csv") +
+         glob.glob("*.tsv") + glob.glob("data/*.tsv") +
+         glob.glob("*.json") + glob.glob("data/*.json"))
 for f in files:
     df = pd.read_csv(f) if f.endswith(('.csv', '.tsv')) else pd.read_json(f)
     print(f"\n── {f} ──────────────────────")
@@ -156,6 +197,54 @@ Look for interactions where:
 
 ---
 
+## Step 4.5 — Retention curves (when date columns are present)
+
+If the dataset contains a date column (e.g. `created_at`, `signup_date`, `first_login`) and an outcome column, generate cohort-based retention curves. This reveals *when* users churn, not just *whether* they do — which often changes which mechanism makes sense.
+
+**Check for date columns first:**
+
+```python
+date_cols = [c for c in df.columns if df[c].dtype in ['datetime64[ns]', 'object']
+             and any(x in c.lower() for x in ['date', 'created', 'signup', 'start', 'joined'])]
+print("Date columns found:", date_cols)
+```
+
+If no date column exists, skip this step and note it in the output.
+
+**If a date column is found, generate three curves:**
+
+**Curve 1: Retention by signup cohort (month)**
+```python
+df['cohort_month'] = pd.to_datetime(df[date_col]).dt.to_period('M')
+cohort_retention = df.groupby('cohort_month')['outcome_col'].agg(['mean', 'count'])
+cohort_retention.columns = ['churn_rate', 'n']
+cohort_retention = cohort_retention[cohort_retention['n'] >= 30]
+```
+*Reveals: whether churn is improving or worsening across cohorts — a product trajectory signal.*
+
+**Curve 2: Retention by number of features used**
+```python
+feature_cols = [c for c in df.columns if df[c].dtype == bool or df[c].nunique() == 2]
+df['feature_count'] = df[feature_cols].sum(axis=1)
+feature_retention = df.groupby('feature_count')['outcome_col'].agg(['mean', 'count'])
+feature_retention.columns = ['churn_rate', 'n']
+```
+*Reveals: whether there's a "magic number" of features that predicts retention — a key activation signal.*
+
+**Curve 3: Retention by individual feature (30-day)**
+```python
+for col in feature_cols:
+    adopted = df[df[col] == True]['outcome_col'].mean()
+    not_adopted = df[df[col] == False]['outcome_col'].mean()
+    n_adopted = df[col].sum()
+    print(f"{col}: adopted={adopted:.1%} (n={n_adopted}), not adopted={not_adopted:.1%}, ratio={adopted/not_adopted:.1f}x")
+```
+*Reveals: which individual features have the strongest churn-reduction effect.*
+
+Include the key retention curve findings in the Evidence section of any hypothesis they inform. Flag the "magic number" of features if one is found — it is usually a high-value intervention trigger.
+
+---
+
 ## Step 5 — Validate against red herrings
 
 High usage ≠ high value. Before including a signal in a hypothesis, validate it:
@@ -212,6 +301,28 @@ to the admin role only, offering a guided 'connect your second tool' wizard with
 for the top 5 integration pairs. Test with a 50/50 holdout."
 
 ---
+> 🛑 **PAUSE — PM validation before writing the final report**
+
+Present a draft summary of the hypotheses (titles + one-line Evidence summaries only — not the full write-up) and ask:
+
+> "Before I write the full EIM report, I want to check the findings against your experience:
+>
+> Here are the hypotheses the data is pointing to:
+> 1. [Title] — [one-line evidence summary]
+> 2. [Title] — [one-line evidence summary]
+> 3. [Title] — [one-line evidence summary]
+>
+> A few questions:
+> - Do these signals align with what you're hearing from customers or in support tickets?
+> - Is there anything you know from qualitative sources — customer calls, support tickets, sales feedback — that would change the priority order?
+> - Any segments we should focus on or exclude?
+> - Anything surprising here — or anything you expected to see that's missing?
+>
+> Say 'proceed' to get the full report, or give me context to adjust before I write it up."
+
+Incorporate any corrections or context into the hypotheses before producing the full output.
+
+---
 
 ## Step 7 — Output format
 
@@ -256,12 +367,17 @@ Explain why each was ruled out. This teaches the reader what not to act on.]
 Aim for **3–5 hypotheses** per analysis. More than 5 dilutes focus. Fewer than 3 suggests
 the analysis wasn't deep enough.
 
+**Save the report** to the company folder root (the directory containing the `data/` folder
+and the data dictionary). Naming convention: `[company-name]-eim-report.md`. Tell the user
+the file path after saving.
+
 ---
 
 ## Step 8 — Sense-check before delivering
 
 Before outputting, ask yourself:
 
+- [ ] If a date column was present, were retention curves generated (by cohort, by feature count, by individual feature)?
 - [ ] Is every Evidence claim traceable to a specific query I ran?
 - [ ] Does every Impact estimate show its working (the multiplication)?
 - [ ] Is every Mechanism specific enough that a PM could write a brief from it?
