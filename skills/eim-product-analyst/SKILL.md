@@ -124,6 +124,34 @@ Do not generate hypotheses yet. Just understand the shape.
 
 ---
 
+## Output discipline — follow these rules for every query
+
+Token limits are a real constraint. Every line of Python output enters the context window
+and stays there. These rules apply to every script you run throughout the analysis:
+
+**Never print raw rows.** `df.head(3)` is acceptable for initial inspection only. Never
+use `df.to_string()`, `print(df)`, or any output that prints more than 5 rows of raw data.
+
+**Only print aggregated results.** Every analytical query should reduce to a summary table —
+groupby + agg, value_counts, crosstab, or a scalar. If the output can't fit in ~20 lines,
+it's not sufficiently aggregated.
+
+**Cap output per script block.** No single code execution should produce more than
+50 lines of printed output. If you need to inspect more dimensions, run separate focused
+scripts — one question per run.
+
+**Round and trim.** Use `.round(3)` on floats. When printing a groupby result with many
+rows, filter to the most relevant (e.g. `result.head(10)` or `result[result['n'] >= 30]`).
+
+**Name your findings, don't echo raw data.** After running a query, state the finding
+in one sentence before moving to the next query. This replaces the need to re-read the
+raw output later.
+
+If a context-base file was present and noted that sampling was applied, use the sampled
+data files for all analysis — do not load the original raw files.
+
+---
+
 ## Step 2 — Identify outcome variables
 
 Find the columns that represent business outcomes. These become the dependent variables

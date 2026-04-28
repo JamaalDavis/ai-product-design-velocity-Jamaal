@@ -1,7 +1,7 @@
 # Mealtime — Figma Design Spec
 *Extracted from Figma file: `NypBOpkRnIWy9Vrh2cpjGm`*
 *Date: 2026-04-20*
-*Screens sampled: Meal Plan (`414:7658`), Welcome Slide 1 (`406:464`), Select Diet (`406:3259`), Upgrade (`432:2982`), Settings (`431:2699`)*
+*Screens sampled: Meal Plan (`414:7658`), Welcome Slide 1 (`406:464`), Select Diet (`406:3259`), Upgrade (`432:2982`), Settings (`431:2699`), Search (`427:2588`), Favorites (`431:2367`)*
 *Tool: /figma-make-spec*
 
 ---
@@ -41,6 +41,7 @@
 | **Inactive nav** | Grey/300 | `#B3B3B3` | Inactive bottom nav icons and labels |
 | **Border unselected** | Grey/200 | `#CCCCCC` | Option button borders (unselected), card borders |
 | **Border divider** | Grey/100 | `#E6E6E6` | Progress bar inactive, settings row dividers, avatar ring |
+| **Error / destructive** | Error/Red | `#E55B48` | Error states, destructive actions |
 
 ---
 
@@ -57,6 +58,7 @@
 | **Body 1 Regular (B1/Regular)** | DM Sans | 18px | Regular (400) | 1.4 | 0 |
 | **Body 1 Bold (B1/Bold)** | DM Sans | 18px | Bold (700) | 1.4 | 0 |
 | **Body 2 Bold (B2/Bold)** | DM Sans | 16px | Bold (700) | 1.4 | 0 |
+| **Body 3 Bold (B3/Bold)** | DM Sans | 14px | Bold (700) | 1.4 | 0 |
 | **Label / nav** | DM Sans | 12px | Medium (500) | 1.4 | 0 |
 
 No italic usage observed in sampled screens. Button text uses B1/Bold (`#1A1A1A`) — not white — on the amber CTA.
@@ -207,8 +209,12 @@ No italic usage observed in sampled screens. Button text uses B1/Bold (`#1A1A1A`
 | Select Diet | `406:3259` | Onboarding preference screen — diet selection | 5-segment pill progress bar, H2 headline, 8 option buttons (2 selected), CTA button |
 | Upgrade (paywall) | `432:2982` | Full-screen paywall with mint-green background | Mint bg, Meal Card with Pro badge, bottom sheet with pricing, CTA, Restore link |
 | Settings | `431:2699` | Account settings with upgrade promo | Bottom nav (active: Settings), H2 page title, avatar + email, upgrade promo card, list rows |
+| Search | `427:2588` | **Ingredient search** for grocery list (not recipe discovery) — search field at top, scrollable ingredient results list with `+` add buttons, soft keyboard overlay visible | Search field: `#FFFFFF` bg, `#CCCCCC` border, 57px height, 16px radius; result items: DM Sans Medium 18px `#1A1A1A`; `+` icon buttons `#F58700`; `#FFFAF5` screen bg |
+| Favorites | `431:2367` | Saved recipes grid — 2-column card layout | Bottom nav (active: Favorites `#F58700`), H2 title "Favourites", 2-column grid, recipe cards 191×169px `#FFFFFF` bg `#CCCCCC` border 20px radius, DM Sans Bold 14px titles, heart icon top-right |
 
-Additional screens in file (not sampled): Sign Up, Login, Reset Password, Meal Details, Ingredients, Instructions, Timer, Shopping List, Favorites, Account Menu, and more.
+⚠️ **No dedicated recipe browse / discover screen exists in this Figma file.** The `Search` screen (`427:2588`) is an ingredient search for the grocery list, not recipe discovery. The closest analogue to recipe browsing is the **Favorites screen** — a 2-column recipe card grid. Prototypes requiring a "recipe browse" or "recipe feed" screen should use the Favorites grid pattern (2-column, 191px wide cards, 169px tall, 20px radius, `#CCCCCC` border, DM Sans Bold 14px titles).
+
+Additional screens in file (not sampled): Sign Up, Login, Reset Password, Meal Details, Ingredients, Instructions, Timer, Shopping List, Account Menu, and more.
 
 ---
 
@@ -254,3 +260,7 @@ The 5 most important things for a prototype builder to know:
 4. **CTA button text is charcoal (`#1A1A1A`), not white.** The amber background (`#F58700`) is paired with dark text — this is deliberate and consistent across all screens.
 
 5. **Onboarding progress indicator is a segmented pill bar (green/grey), not dots.** The welcome slides use orange/grey circular dots. Once past the welcome slides, the preference screens switch to a 5-segment full-width pill bar with green active state (`#33995B`).
+
+6. **There is no recipe browse/discover screen in this Figma file.** The "Search" screen is an ingredient search for the grocery list. For any prototype needing a recipe feed or browse screen, use the Favorites grid pattern: 2-column layout, recipe cards 191×169px, `#FFFFFF` bg, `#CCCCCC` border, 20px radius, DM Sans Bold 14px titles.
+
+7. **Error colour is `#E55B48`.** Used for error states and destructive actions.
