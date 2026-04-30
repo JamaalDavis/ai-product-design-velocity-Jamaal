@@ -377,9 +377,9 @@ You have a validated EIM hypothesis. This module is where you turn it into somet
 
 ### MODULE 2 — Topic 4: The AI-native build loop
 
-**Note on revision:** Reframed from a workflow overview into a mindset shift about iteration and evaluation. Students have already watched the end-to-end workflow in Module 1 and Live Session 2. What they need here is the mental model that building with AI is non-linear, that evaluation is an active skill at each loop, and that "done" in a feedback loop is different from "done" in a traditional handoff process.
+**Note on revision:** Reframed from a workflow overview into a mindset shift about iteration and evaluation. Students have already watched the end-to-end workflow in Module 1 and Live Session 2. What they need here is the mental model that building with AI is non-linear, that evaluation is an active skill at each loop, and that "done" in a feedback loop is different from "done" in a traditional handoff process. Lessons 3 and 4 extend the loop into Figma-native output — Lesson 3 covers extracting the design system with `/figma-make-spec`, Lesson 4 covers pasting the prototype brief build prompt into Figma Make.
 
-**Lessons in this topic:** 2
+**Lessons in this topic:** 4
 
 **Lesson 1: It's a Loop, Not a Line: The Mindset Shift That Changes How You Build**
 *Jac*
@@ -405,6 +405,35 @@ You have a validated EIM hypothesis. This module is where you turn it into somet
   - "The loop doesn't stop when something looks good. It stops when it passes all three checks: browser, DS, and spec."
 - Learning goal: "After this lesson, you can run a full evaluation loop on a built component, use Claude audits Claude to verify spec compliance, and know which document to update when the loop reveals a problem."
 - Duration: 7-8 min
+
+**Lesson 3: Read Your Figma Design System Into Claude**
+*Simon*
+
+- What it is: Walkthrough of the `/figma-make-spec` skill — how to run it, what it extracts, and why it's the step that makes Claude prototype on-brand rather than generic.
+- What it covers:
+  - What `/figma-make-spec` does: reads a Figma design file via Figma MCP, extracts colour tokens, typography, spacing, component patterns, and screen inventory, and saves the result as `[product]-figma-spec.md` in the project folder.
+  - What you need before running it: a Figma file URL you own (not a read-only community file — duplicate first if needed). The URL must be a `/design/` URL.
+  - Run it live on Company A (FinWise Figma file). Narrate the two phases: metadata + screen discovery, then design context extraction per screen.
+  - VS Code file tree check: confirm the spec file saved before proceeding.
+  - Open the spec and walk three to four sections — colour system, typography, component patterns — to make the output feel real and concrete.
+  - Why it matters: without it, Claude guesses at your design system. With it, every skill that builds something — including `/figma-prototype-builder` — discovers and reads this file automatically. Run it once; it persists as project context.
+  - Honest limitation: Figma MCP uses your Figma seat's tool call quota. If rate-limited, duplicate the file to your own workspace (full seat) and re-run.
+- Learning goal: "After this lesson, you can run `/figma-make-spec` on your Figma design file, confirm the spec saved correctly, and understand why this is the step that makes Claude build on-brand rather than generic."
+- Duration: 6-7 min
+
+**Lesson 4: Build Your Prototype in Figma Make**
+*Simon*
+
+- What it is: Walkthrough of the fastest path from prototype brief to visual prototype — copying the build prompt from Section 5 of the brief and pasting it directly into Figma Make.
+- What it covers:
+  - Where the build prompt lives: Section 5 of the prototype brief, in a fenced code block, ready to copy.
+  - What the build prompt contains: screen-by-screen UI instructions, placeholder content, interaction wiring, style direction, and explicit exclusions — all self-contained so Figma Make (or any prototype tool) can run it with no prior context.
+  - Run live: copy the FinWise H1 build prompt, paste into Figma Make, generate.
+  - Review the output: does it match the prototype brief? Walk through what Figma Make got right and where to iterate.
+  - When output doesn't match expectations: fix is in the prompt (the brief), not in manual Figma edits. The brief is the source of truth.
+  - Same prompt, two paths: this prompt works in Figma Make and in `/build-html-prototype`. Same input, different output format — choose based on how you want to test.
+- Learning goal: "After this lesson, you can copy the build prompt from your prototype brief and generate a working Figma Make prototype — and you know the brief is the source of truth when the output needs correcting."
+- Duration: 5-6 min
 
 ---
 
