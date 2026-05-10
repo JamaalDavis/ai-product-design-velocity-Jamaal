@@ -1,5 +1,5 @@
 # EIM Context Base — Mealtime
-*Generated: 2026-04-18*
+*Generated: 2026-05-04*
 *Sources: mealtime-product-context.md, mealtime-intro.md, mealtime-data-dictionary.md, data/mealtime_accounts.csv, data/mealtime_feature_events.csv, data/mealtime_monthly_snapshots.csv, data/mealtime_onboarding.csv, data/mealtime_users.csv*
 
 ---
@@ -44,8 +44,8 @@ Accounts that browse recipes heavily but never create a meal plan have not forme
 - **Taste profile skippers see the wrong recipes.** Without a completed taste profile, the recommendation engine surfaces generic popular recipes. Users who skip see low relevance, don't save or cook anything, and disengage within 2 weeks.
 - **Recipe hoarders are not active users.** A user who saves many recipes but never creates a meal plan has not formed a habit. They churn silently by stopping to open the app rather than cancelling explicitly.
 - **Grocery sync is the stickiest feature but gated from free.** Users who actively use grocery sync almost never churn. Free users who discover this feature and hit the paywall either upgrade (a minority) or disengage.
-- **Billing tickets in month 1 are a strong churn signal.** 1.8x churn rate overall, rising to 2.4x when controlling for account health. Reflects expectation mismatch about free tier limits, not product quality.
-- **Family plans with only one active user lose their value proposition.** The Family plan's stickiness depends on shared use — single-user Family accounts behave like solo Premium accounts.
+- **Billing tickets in month 1 are a strong churn signal.** Reflects expectation mismatch about free tier limits, not product quality. These users churn at 2x+ the rate of product or account support contacts.
+- **Family plans with only one active user lose their value proposition.** The Family plan's stickiness depends on shared use — single-user Family accounts behave like solo Premium accounts and are at elevated churn risk.
 
 ## Available Data Sources
 
@@ -54,15 +54,16 @@ Accounts that browse recipes heavily but never create a meal plan have not forme
 - **Key columns:** `plan_tier`, `user_segment`, `device_platform`, `acquisition_channel`, `recipe_saves`, `account_age_days`, `contract_value_aud`
 - **Outcome variable:** `churned_90d` (bool), `upgraded_90d` (bool) — explicit labels
 - **Row count:** 1,800 rows
-- **Sampling:** No sampling applied
+- **Sampling:** No sampling applied — dataset within size limits
 - **Gaps / caveats:** Snapshot-in-time. Free accounts have `contract_value_aud = 0` — segment by plan tier when calculating ARR at risk.
 
 ### feature_events
 - **What it is:** One row per feature interaction event — highest volume table
 - **Key columns:** `user_id`, `account_id`, `feature_name`, `meal_category`, `event_type` (`used`/`blocked`/`abandoned`), `timestamp`
 - **Outcome variable:** Not directly — join to `accounts` via `account_id` for `churned_90d`
-- **Time range:** 2023–2024 (inferred from timestamps)
-- **Row count:** ~160,000 rows (full dataset)
+- **Time range:** 2024 (inferred from timestamps)
+- **Row count:** 160,303 rows | 13.2 MB
+- **Sampling:** No sampling applied — under both thresholds (< 200K rows, < 100 MB)
 - **Gaps / caveats:** `meal_category` is nullable for non-meal features. No direct outcome column — must join to accounts.
 
 ### monthly_snapshots
@@ -70,8 +71,8 @@ Accounts that browse recipes heavily but never create a meal plan have not forme
 - **Key columns:** `active_days`, `recipes_cooked`, `recipes_saved`, `missed_meal_plans`, `seats_used`, `support_tickets`, `support_ticket_category`
 - **Outcome variable:** Join to `accounts` via `account_id`
 - **Time range:** 12–18 months of history
-- **Row count:** ~20,000 rows
-- **Sampling:** No sampling applied
+- **Row count:** 20,099 rows
+- **Sampling:** No sampling applied — dataset within size limits
 - **Gaps / caveats:** `support_ticket_category` reflects dominant category only when multiple exist. Key derived metric: `engagement_ratio = recipes_cooked / recipes_saved`.
 
 ### onboarding
@@ -79,16 +80,16 @@ Accounts that browse recipes heavily but never create a meal plan have not forme
 - **Key columns:** `step_name`, `completed` (bool), `completed_at` (datetime, null if incomplete)
 - **Outcome variable:** Join to `accounts` via `account_id`
 - **Row count:** 9,000 rows
-- **Sampling:** No sampling applied
+- **Sampling:** No sampling applied — dataset within size limits
 - **Gaps / caveats:** Step sequence: `complete_taste_profile` → `save_first_recipe` → `create_first_meal_plan` → `generate_grocery_list` → `invite_family_member`.
 
 ### users
 - **What it is:** One row per user (multiple per account on Family plans)
 - **Key columns:** `role` (primary/family_member/viewer), `country`, `days_since_last_active`
 - **Outcome variable:** Join to `accounts` via `account_id`
-- **Row count:** ~2,900 rows
-- **Sampling:** No sampling applied
-- **Gaps / caveats:** `days_since_last_active` is a snapshot metric — no historical activity log.
+- **Row count:** 2,908 rows
+- **Sampling:** No sampling applied — dataset within size limits
+- **Gaps / caveats:** `days_since_last_active` is a snapshot metric — no historical activity log at user level.
 
 ## Data Dictionary
 
