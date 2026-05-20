@@ -27,6 +27,8 @@
 
 This is not a usage-frequency problem — these accounts did visit the analysis screen. It is a value visibility problem: the product is not making the insight legible enough in the first interaction for users to understand why they should return.
 
+![Analysis screen abandoners churn at 68.8% vs 28.1% for all other accounts](charts/h1-analysis-abandonment.png)
+
 **Impact**
 
 At the full 380,000-user base, accounts with this pattern represent approximately 46,700 users. Of those, an estimated 17,500 are Pro accounts (at the dataset's 37.5% Pro rate). If the analysis-only-abandoned cohort's churn rate were reduced from 68.8% to the population baseline of 33.1% — a 35.7 percentage-point reduction — approximately 6,250 Pro accounts would be retained annually. At $119.88 ARR per Pro account: **≈$749K ARR at full scale**. Even a 25% reduction in excess churn = ≈$188K ARR. This is also a conversion problem: none of the 79 upgrade events in the dataset came from analysis-only-abandoned accounts — suggesting this group never reaches the product depth required to hit the upgrade trigger.
@@ -45,11 +47,7 @@ Savings goal creation is the single strongest predictor of retention and convers
 
 The onboarding data confirms where this breaks down: `set_first_goal` has a **18.9% completion rate** — the lowest of any onboarding step — with the sharpest drop occurring between `view_first_spending_summary` (51.6% completion) and `set_first_goal` (18.9%). The product shows users their data and then asks them to do something with it, but 63% of accounts who saw their first spending summary did not go on to set a goal.
 
-![Onboarding funnel showing the cliff between view_first_spending_summary and set_first_goal](charts/h2-onboarding-funnel.png)
-
-![Churn rate drops sharply as goals set increases — 36% with no goals down to 4.8% with four goals](charts/h2-churn-by-goals.png)
-
-![Side-by-side comparison: goal-setters churn at 2.6x lower rates and upgrade at 2.7x higher rates](charts/h2-goal-outcomes.png)
+![Goal-setters churn at 2.6x lower rates and upgrade at 2.7x higher rates than non-goal-setters](charts/h2-goal-outcomes.png)
 
 **Impact**
 
@@ -70,6 +68,8 @@ For accounts that completed spending_summary but did not set a goal in the same 
 Linking a second financial account is a stronger churn predictor than plan tier. Of 1,800 accounts, 1,004 (55.8%) never linked a second account. These accounts churn at **45.7%** within 90 days. Accounts that linked two or more accounts churn at **17.2%** — a **2.7x difference** (n=1,004 vs n=796). Critically, this signal holds equally across plan tiers: free non-linkers churn at 45.8% vs 16.5% for free linkers; Pro non-linkers churn at 45.5% vs 18.3% for Pro linkers. Plan tier is not a confound — the linking behaviour itself predicts retention independently. The `link_second_account` onboarding step has a 44.2% completion rate, making it the second-lowest completed onboarding step and the clearest early-session behaviour that separates retained from churned accounts.
 
 The interpretation is straightforward: an account with one linked bank account sees a partial picture of its finances. Adding a credit card or a second bank account makes the product more complete — it becomes harder to leave because leaving means losing visibility into all your accounts, not just one.
+
+![Second account linking cuts churn by ~28 percentage points — equally for Free and Pro accounts](charts/h3-second-account-churn.png)
 
 **Impact**
 
@@ -92,6 +92,8 @@ For accounts that do not link a second account within the first session: send a 
 The most striking finding is the interaction with session frequency. When controlling for whether accounts had above-median sessions: accounts with **high session frequency AND no notification engagement** churn at **79.4%** (n=68). These are accounts the product team would likely classify as healthy based on session counts — they open the app regularly — but they are at the highest churn risk in the dataset. The working hypothesis is that these accounts are using the app passively (checking transactions, not taking actions) and have no re-engagement mechanism when they eventually go quiet.
 
 The monthly snapshot data confirms the directionality: churned accounts had a 9.7% average notification open rate in their earliest months, vs 29.1% for retained accounts. This is not a decay pattern — it is a never-engaged pattern. Churned accounts never built the habit of responding to notifications from the first session.
+
+![High-session users who never open notifications churn at 79.4% — higher than any other group](charts/h4-passive-users.png)
 
 **Impact**
 
