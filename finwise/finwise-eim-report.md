@@ -15,7 +15,7 @@
 | Overall 90-day churn rate | 33.1% (596 accounts) |
 | Free-to-Pro upgrade rate | 7.0% (79 of 1,125 free accounts) |
 | Estimated full user base | 380,000 registered users |
-| ARR leverage | ~$380K per 1pp improvement in Pro conversion |
+| ARR leverage | ≈$380K per 1pp improvement in Pro conversion |
 
 ---
 
@@ -29,7 +29,7 @@ This is not a usage-frequency problem — these accounts did visit the analysis 
 
 **Impact**
 
-At the full 380,000-user base, accounts with this pattern represent approximately 46,700 users. Of those, an estimated 17,500 are Pro accounts (at the dataset's 37.5% Pro rate). If the analysis-only-abandoned cohort's churn rate were reduced from 68.8% to the population baseline of 33.1% — a 35.7 percentage-point reduction — approximately 6,250 Pro accounts would be retained annually. At $119.88 ARR per Pro account: **~$749K ARR at full scale**. Even a 25% reduction in excess churn = ~$188K ARR. This is also a conversion problem: none of the 79 upgrade events in the dataset came from analysis-only-abandoned accounts — suggesting this group never reaches the product depth required to hit the upgrade trigger.
+At the full 380,000-user base, accounts with this pattern represent approximately 46,700 users. Of those, an estimated 17,500 are Pro accounts (at the dataset's 37.5% Pro rate). If the analysis-only-abandoned cohort's churn rate were reduced from 68.8% to the population baseline of 33.1% — a 35.7 percentage-point reduction — approximately 6,250 Pro accounts would be retained annually. At $119.88 ARR per Pro account: **≈$749K ARR at full scale**. Even a 25% reduction in excess churn = ≈$188K ARR. This is also a conversion problem: none of the 79 upgrade events in the dataset came from analysis-only-abandoned accounts — suggesting this group never reaches the product depth required to hit the upgrade trigger.
 
 **Mechanism**
 
@@ -45,9 +45,15 @@ Savings goal creation is the single strongest predictor of retention and convers
 
 The onboarding data confirms where this breaks down: `set_first_goal` has a **18.9% completion rate** — the lowest of any onboarding step — with the sharpest drop occurring between `view_first_spending_summary` (51.6% completion) and `set_first_goal` (18.9%). The product shows users their data and then asks them to do something with it, but 63% of accounts who saw their first spending summary did not go on to set a goal.
 
+![Onboarding funnel showing the cliff between view_first_spending_summary and set_first_goal](charts/h2-onboarding-funnel.png)
+
+![Churn rate drops sharply as goals set increases — 36% with no goals down to 4.8% with four goals](charts/h2-churn-by-goals.png)
+
+![Side-by-side comparison: goal-setters churn at 2.6x lower rates and upgrade at 2.7x higher rates](charts/h2-goal-outcomes.png)
+
 **Impact**
 
-1,460 free and Pro accounts never set a goal. At the 380,000-user scale, that is approximately 308,000 accounts. The upgrade gap between goal-setters (14.5%) and non-goal-setters (5.4%) represents a **9.1 percentage-point conversion opportunity** on the free population. The product context notes that every 1 percentage point improvement in Pro conversion = ~$380K ARR. If goal activation could move even 20% of the 62.5% free non-goal-setter population (roughly 37,700 additional accounts) to set a goal — raising their upgrade rate toward 14.5% — the resulting 3,400+ additional upgrades would represent **~$1.3M incremental ARR** at the $380K per percentage point metric. Even a conservative 2pp improvement in overall conversion = **$760K ARR**. Churn reduction compounds this: 308K accounts at 37.5% vs 14.4% churn means approximately 70,700 accounts churning in excess of the goal-setter baseline annually.
+1,460 free and Pro accounts never set a goal. At the 380,000-user scale, that is approximately 308,000 accounts. The upgrade gap between goal-setters (14.5%) and non-goal-setters (5.4%) represents a **9.1 percentage-point conversion opportunity** on the free population. The product context notes that every 1 percentage point improvement in Pro conversion = ≈$380K ARR. If goal activation could move even 20% of the 62.5% free non-goal-setter population (roughly 37,700 additional accounts) to set a goal — raising their upgrade rate toward 14.5% — the resulting 3,400+ additional upgrades would represent **≈$1.3M incremental ARR** at the $380K per percentage point metric. Even a conservative 2pp improvement in overall conversion = **$760K ARR**. Churn reduction compounds this: 308K accounts at 37.5% vs 14.4% churn means approximately 70,700 accounts churning in excess of the goal-setter baseline annually.
 
 **Mechanism**
 
@@ -67,7 +73,7 @@ The interpretation is straightforward: an account with one linked bank account s
 
 **Impact**
 
-1,004 accounts never linked a second account. At 380,000 users, that is approximately 212,000 accounts. Of those, ~79,500 are Pro accounts (37.5%). Pro non-linkers churn at 45.5% vs 18.3% for Pro linkers — a 27.2 percentage-point excess. That means approximately 21,600 Pro accounts are churning in excess of what they would if they had linked a second account. At $119.88 ARR: **~$2.59M ARR at excess risk from this group alone**. A 20% reduction in excess Pro churn = **~$518K ARR retained**. For free accounts, the linking effect also substantially improves upgrade conversion: the product becomes stickier and more worth paying for when it reflects more of a user's financial life.
+1,004 accounts never linked a second account. At 380,000 users, that is approximately 212,000 accounts. Of those, ≈79,500 are Pro accounts (37.5%). Pro non-linkers churn at 45.5% vs 18.3% for Pro linkers — a 27.2 percentage-point excess. That means approximately 21,600 Pro accounts are churning in excess of what they would if they had linked a second account. At $119.88 ARR: **≈$2.59M ARR at excess risk from this group alone**. A 20% reduction in excess Pro churn = **≈$518K ARR retained**. For free accounts, the linking effect also substantially improves upgrade conversion: the product becomes stickier and more worth paying for when it reflects more of a user's financial life.
 
 **Mechanism**
 
@@ -89,7 +95,7 @@ The monthly snapshot data confirms the directionality: churned accounts had a 9.
 
 **Impact**
 
-At 380,000 users, 10.2% of accounts = approximately 38,800 notification-ignoring accounts. Of those, ~14,550 are Pro accounts. Their excess churn over baseline (59.8% vs 33.1% = 26.7pp) puts approximately 3,885 Pro accounts at excess risk annually. At $119.88 ARR: **~$466K ARR at excess risk**. The high-sessions subgroup (79.4% churn, n=68 in dataset) scales to approximately 9,000 accounts at the full user base — these represent the accounts most likely to surprise the retention team, since session counts would suggest they are healthy.
+At 380,000 users, 10.2% of accounts = approximately 38,800 notification-ignoring accounts. Of those, ≈14,550 are Pro accounts. Their excess churn over baseline (59.8% vs 33.1% = 26.7pp) puts approximately 3,885 Pro accounts at excess risk annually. At $119.88 ARR: **≈$466K ARR at excess risk**. The high-sessions subgroup (79.4% churn, n=68 in dataset) scales to approximately 9,000 accounts at the full user base — these represent the accounts most likely to surprise the retention team, since session counts would suggest they are healthy.
 
 **Mechanism**
 
@@ -122,9 +128,9 @@ Phase 2 (day 8, accounts that never opened any notification): Do not send anothe
 | Priority | Hypothesis | Confidence | Impact (full scale) | Why first |
 |---|---|---|---|---|
 | 1 | H2: Goal Activation | High | $760K–$1.3M ARR | Largest population (308K accounts), strongest dual signal on both churn and upgrade, directly addresses the business conversion target (4.2% → 8.0%) |
-| 2 | H1: Analysis View | High | ~$188–$749K ARR | Cleanest mechanism (specific trigger condition), signal holds when controlling for other variables, zero-cost to identify the cohort (existing event data) |
-| 3 | H3: Second Account Linking | High | ~$518K ARR | Largest ARR at risk from a single cohort, signal holds across plan tiers, mechanism is a single in-session prompt |
-| 4 | H4: Notification Non-Engagement | Medium | ~$466K ARR | Strong signal, but mechanism requires content personalisation infrastructure. The high-sessions subgroup (79.4% churn) is the most urgent sub-case — these are accounts the team currently thinks are healthy |
+| 2 | H1: Analysis View | High | ≈$188–$749K ARR | Cleanest mechanism (specific trigger condition), signal holds when controlling for other variables, zero-cost to identify the cohort (existing event data) |
+| 3 | H3: Second Account Linking | High | ≈$518K ARR | Largest ARR at risk from a single cohort, signal holds across plan tiers, mechanism is a single in-session prompt |
+| 4 | H4: Notification Non-Engagement | Medium | ≈$466K ARR | Strong signal, but mechanism requires content personalisation infrastructure. The high-sessions subgroup (79.4% churn) is the most urgent sub-case — these are accounts the team currently thinks are healthy |
 
 **Run H2 and H1 together.** The goal activation mechanism (H2) ends with a prompt to create a goal, which routes to `analysis_view` after goal creation — meaning H1's first-use guide would fire immediately after. These two interventions compose naturally into a single onboarding improvement that addresses the `view_first_spending_summary` → `set_first_goal` drop-off in one product moment.
 
