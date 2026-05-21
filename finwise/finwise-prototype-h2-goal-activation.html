@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinWise — Goal Activation Prototype</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #b4c9c3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px 20px 80px;
+  font-family: 'Poppins', sans-serif;
+  gap: 14px;
+}
+
+/* ── Facilitator bar ── */
+.facilitator-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 18px 8px 22px;
+  background: rgba(9,48,48,0.38);
+  border-radius: 30px;
+  color: rgba(255,255,255,0.9);
+  font-size: 12px;
+  font-weight: 500;
+}
+.restart-btn {
+  background: rgba(0,208,158,0.28);
+  border: 1px solid rgba(0,208,158,0.6);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 5px 14px;
+  cursor: pointer;
+  min-height: 30px;
+  transition: background 0.12s;
+}
+.restart-btn:hover { background: rgba(0,208,158,0.45); }
+
+/* ── Phone frame ── */
+.phone-frame {
+  width: 430px;
+  max-height: 932px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #F1FFF3;
+  border-radius: 40px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28), 0 0 0 1px rgba(0,0,0,0.07);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.phone-frame::-webkit-scrollbar { display: none; }
+
+/* ── Screen containers ── */
+.screen {
+  width: 430px;
+  min-height: 932px;
+  display: none;
+  flex-direction: column;
+  background: #F1FFF3;
+}
+.screen.active { display: flex; }
+
+.full-center {
+  width: 430px;
+  min-height: 932px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F1FFF3;
+  padding: 60px 40px;
+  text-align: center;
+}
+.full-center.active { display: flex; }
+
+/* ── Hero zones ── */
+.hero {
+  background: #00D09E;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 37px;
+}
+.hero-sub { height: 186px; }
+.hero-home {
+  height: 248px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 54px 37px 0;
+  justify-content: flex-start;
+}
+.hero-back {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.1s;
+}
+.hero-back:hover { background: rgba(255,255,255,0.18); }
+.hero-back:active { background: rgba(255,255,255,0.3); }
+.hero-title { color: #fff; font-size: 20px; font-weight: 600; }
+.hero-bell {
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  width: 34px;
+  height: 34px;
+  background: rgba(255,255,255,0.22);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* ── Home hero text ── */
+.home-greeting { color: rgba(255,255,255,0.78); font-size: 14px; margin-bottom: 2px; }
+.home-name { color: #fff; font-size: 22px; font-weight: 700; margin-bottom: 18px; }
+.home-bal-label {
+  color: rgba(255,255,255,0.7);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  margin-bottom: 4px;
+}
+.home-balance { color: #fff; font-size: 34px; font-weight: 700; }
+
+/* ── Content card (floats over hero) ── */
+.content-card {
+  background: #F1FFF3;
+  border-radius: 31px 31px 0 0;
+  margin-top: -32px;
+  flex: 1;
+  padding: 26px 37px 36px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Section label ── */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #0E3E3E;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  opacity: 0.72;
+  margin-bottom: 10px;
+}
+
+/* ── Summary chips (home) ── */
+.summary-row { display: flex; gap: 12px; margin-bottom: 22px; }
+.chip {
+  flex: 1;
+  background: #DFF7E2;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.chip-label { font-size: 11px; color: #0E3E3E; opacity: 0.65; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
+.chip-amount { font-size: 20px; font-weight: 700; color: #093030; }
+.chip-amount.blue { color: #0068FF; }
+
+/* ── Entry card (home → spending) ── */
+.entry-card {
+  background: #DFF7E2;
+  border: 1.5px solid #00D09E;
+  border-radius: 16px;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 22px;
+  transition: opacity 0.1s;
+}
+.entry-card:hover { opacity: 0.88; }
+.entry-card:active { opacity: 0.7; }
+.entry-icon {
+  width: 46px; height: 46px;
+  background: #00D09E;
+  border-radius: 13px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+  margin-right: 14px;
+  flex-shrink: 0;
+}
+.entry-text { flex: 1; }
+.entry-title { font-size: 15px; font-weight: 600; color: #093030; margin-bottom: 2px; }
+.entry-sub { font-size: 13px; color: #0E3E3E; opacity: 0.7; }
+.entry-arrow { font-size: 22px; color: #00D09E; font-weight: 700; line-height: 1; }
+
+/* ── Spending rows ── */
+.spending-row {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1.5px solid #DFF7E2;
+}
+.cat-icon {
+  width: 46px; height: 46px;
+  border-radius: 13px;
+  background: #DFF7E2;
+  flex-shrink: 0;
+  margin-right: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 19px;
+}
+.cat-name { flex: 1; font-size: 15px; font-weight: 500; color: #093030; }
+.cat-stack { flex: 1; display: flex; flex-direction: column; }
+.cat-stack .primary { font-size: 15px; font-weight: 500; color: #093030; }
+.cat-stack .secondary { font-size: 12px; color: #0E3E3E; opacity: 0.6; }
+.cat-amount { font-size: 15px; font-weight: 700; color: #093030; }
+.cat-amount.blue { color: #0068FF; }
+
+/* ── Goal suggestion card ── */
+.goal-card {
+  background: #DFF7E2;
+  border: 1.5px solid #00D09E;
+  border-radius: 18px;
+  padding: 22px;
+  margin-top: 20px;
+}
+.card-label {
+  font-size: 11px; font-weight: 600;
+  color: #00D09E;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.card-heading { font-size: 17px; font-weight: 600; color: #093030; line-height: 1.4; margin-bottom: 6px; }
+.card-sub { font-size: 14px; color: #0E3E3E; margin-bottom: 20px; }
+
+/* ── Buttons ── */
+.btn-primary {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #00D09E;
+  color: #093030;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: opacity 0.1s, transform 0.1s;
+  min-height: 44px;
+}
+.btn-primary:hover { opacity: 0.88; }
+.btn-primary:active { opacity: 0.75; transform: scale(0.99); }
+
+/* ── Link rows ── */
+.links-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.link-blue { color: #0068FF; cursor: pointer; font-weight: 500; padding: 10px 8px; min-width: 44px; text-align: center; }
+.link-grey { color: #0E3E3E; cursor: pointer; padding: 10px 8px; min-width: 44px; text-align: center; opacity: 0.65; }
+.link-sep { color: #0E3E3E; opacity: 0.25; }
+.link-back { display: block; text-align: center; font-size: 14px; color: #0E3E3E; cursor: pointer; padding: 12px 0 4px; opacity: 0.7; }
+.link-back:hover { opacity: 1; }
+
+/* ── Stepper ── */
+.stepper-card {
+  background: #DFF7E2;
+  border: 1.5px solid #00D09E;
+  border-radius: 18px;
+  padding: 22px;
+  margin-top: 20px;
+}
+.stepper-row { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 20px 0 22px; }
+.stepper-btn {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: #F1FFF3;
+  border: 1.5px solid #093030;
+  font-size: 22px; font-weight: 600; color: #093030;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.1s;
+  user-select: none;
+  flex-shrink: 0;
+}
+.stepper-btn:hover { background: #d0f0d8; }
+.stepper-btn:active { background: #b8e8c4; }
+.stepper-value { font-size: 38px; font-weight: 700; color: #093030; min-width: 130px; text-align: center; }
+
+/* ── Success ── */
+.success-icon {
+  width: 80px; height: 80px;
+  background: #00D09E;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 26px;
+}
+.success-heading { font-size: 30px; font-weight: 700; color: #093030; margin-bottom: 10px; }
+.success-goal { font-size: 16px; font-weight: 500; color: #0E3E3E; margin-bottom: 10px; }
+.success-body { font-size: 14px; color: #0E3E3E; max-width: 280px; line-height: 1.65; margin-bottom: 40px; }
+
+/* ── Progress ── */
+.progress-card {
+  background: #fff;
+  border: 1px solid #DFF7E2;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 4px 20px rgba(9,48,48,0.06);
+  margin-bottom: 24px;
+}
+.progress-big { font-size: 38px; font-weight: 700; color: #093030; margin-bottom: 4px; }
+.progress-of { font-size: 14px; color: #0E3E3E; margin-bottom: 18px; }
+.progress-track { width: 100%; height: 10px; background: #DFF7E2; border-radius: 5px; overflow: hidden; margin-bottom: 8px; }
+.progress-fill { height: 100%; background: #00D09E; border-radius: 5px; width: 0%; }
+.progress-note { font-size: 12px; color: #0E3E3E; opacity: 0.7; }
+.no-tx { font-size: 14px; color: #0E3E3E; font-style: italic; padding: 14px 0; opacity: 0.6; }
+.screen-footer { font-size: 12px; color: #0E3E3E; opacity: 0.5; text-align: center; padding: 16px 0 8px; line-height: 1.6; }
+
+/* ── Dismissed ── */
+.dismissed-note { text-align: center; font-size: 12px; color: #0E3E3E; opacity: 0.4; font-style: italic; padding-top: 22px; }
+
+/* ── Bottom nav ── */
+.bottom-nav {
+  background: #DFF7E2;
+  border-radius: 70px 70px 0 0;
+  padding: 22px 46px 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+.nav-tab {
+  display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.nav-tab:hover { background: rgba(0,208,158,0.15); }
+.nav-tab svg { display: block; }
+</style>
+</head>
+<body>
+
+<div class="facilitator-bar">
+  <span>FinWise · H2 Goal Activation</span>
+  <button class="restart-btn" onclick="restart()">↺ Restart</button>
+</div>
+
+<div class="phone-frame">
+
+<!-- ══════════════════════════════════════
+     SCREEN 0 — Home Dashboard
+     ══════════════════════════════════════ -->
+<div class="screen active" id="screen-0">
+  <div class="hero hero-home">
+    <div class="hero-bell">🔔</div>
+    <div class="home-greeting">Good Morning</div>
+    <div class="home-name">Alex Johnson</div>
+    <div class="home-bal-label">Total Balance</div>
+    <div class="home-balance">$7,783.00</div>
+  </div>
+
+  <div class="content-card">
+    <div class="summary-row">
+      <div class="chip">
+        <div class="chip-label">Income</div>
+        <div class="chip-amount">$4,240</div>
+      </div>
+      <div class="chip">
+        <div class="chip-label">Expenses</div>
+        <div class="chip-amount blue">$952</div>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:12px;">May Overview</div>
+    <div class="entry-card" onclick="go('screen-1')" role="button" aria-label="View May Spending">
+      <div class="entry-icon">📊</div>
+      <div class="entry-text">
+        <div class="entry-title">View May Spending</div>
+        <div class="entry-sub">6 categories · $952 total</div>
+      </div>
+      <div class="entry-arrow">›</div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:12px;">Recent Transactions</div>
+    <div class="spending-row">
+      <div class="cat-icon">🍽️</div>
+      <div class="cat-stack"><span class="primary">Nobu Restaurant</span><span class="secondary">Dining · Today</span></div>
+      <div class="cat-amount blue">$68</div>
+    </div>
+    <div class="spending-row">
+      <div class="cat-icon">🛒</div>
+      <div class="cat-stack"><span class="primary">Whole Foods</span><span class="secondary">Groceries · Yesterday</span></div>
+      <div class="cat-amount blue">$94</div>
+    </div>
+    <div class="spending-row" style="border-bottom:none;">
+      <div class="cat-icon">🚗</div>
+      <div class="cat-stack"><span class="primary">Uber</span><span class="secondary">Transport · 2 days ago</span></div>
+      <div class="cat-amount blue">$22</div>
+    </div>
+  </div>
+
+  <!-- Bottom nav — Home active -->
+  <div class="bottom-nav">
+    <div class="nav-tab">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 1 — Spending Summary + Card
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-1">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="go('screen-0')" role="button" aria-label="Back">‹</div>
+    <div class="hero-title">May Spending</div>
+  </div>
+  <div class="content-card">
+    <div class="spending-row"><div class="cat-icon">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+
+    <div class="goal-card">
+      <div class="card-label">Suggested Goal</div>
+      <div class="card-heading">You spent $340 on Dining last month</div>
+      <div class="card-sub">Suggested limit: $306/month</div>
+      <button class="btn-primary" onclick="activateGoal()">Activate goal</button>
+      <div class="links-row">
+        <span class="link-blue" onclick="go('screen-2')">Adjust amount</span>
+        <span class="link-sep">·</span>
+        <span class="link-grey" onclick="go('screen-5')">Not now</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 2 — Adjust Amount
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-2">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="go('screen-1')" role="button" aria-label="Back">‹</div>
+    <div class="hero-title">May Spending</div>
+  </div>
+  <div class="content-card">
+    <div class="spending-row"><div class="cat-icon">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+
+    <div class="stepper-card">
+      <div class="card-label">Adjust Your Goal</div>
+      <div class="card-heading">Dining spending goal</div>
+      <div class="card-sub">Suggested: $306/month</div>
+      <div class="stepper-row">
+        <button class="stepper-btn" onclick="nudge(-10)" aria-label="Decrease by $10">−</button>
+        <div class="stepper-value" id="stepper-val">$306</div>
+        <button class="stepper-btn" onclick="nudge(10)" aria-label="Increase by $10">+</button>
+      </div>
+      <button class="btn-primary" id="activate-btn" onclick="activateGoal()">Activate with $306</button>
+      <span class="link-back" onclick="go('screen-1')">Back to suggestion</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 3 — Success State
+     ══════════════════════════════════════ -->
+<div class="full-center" id="screen-3">
+  <div class="success-icon">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <path d="M8 21L16 29L32 11" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="success-heading">Goal set!</div>
+  <div class="success-goal" id="success-label">Dining spending goal · $306/month</div>
+  <div class="success-body">We'll track your dining spend against this limit each month.</div>
+  <button class="btn-primary" style="max-width:356px;width:100%;" onclick="go('screen-4')">See my goal</button>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 4 — Goal Progress
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-4">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="go('screen-0')" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-title">Dining Spending Goal</div>
+  </div>
+  <div class="content-card">
+    <div class="progress-card">
+      <div class="section-label">May Progress</div>
+      <div class="progress-big">$0</div>
+      <div class="progress-of">of <span id="limit-label">$306</span> limit</div>
+      <div class="progress-track"><div class="progress-fill"></div></div>
+      <div class="progress-note">0% of monthly limit used</div>
+    </div>
+    <div class="section-label">This Month's Dining</div>
+    <div class="no-tx">No dining transactions yet</div>
+    <div class="screen-footer">FinWise will update your progress as transactions sync.</div>
+  </div>
+
+  <!-- Bottom nav — no active tab -->
+  <div class="bottom-nav">
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 5 — Not Now (dismissed)
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-5">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="go('screen-0')" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-title">May Spending</div>
+  </div>
+  <div class="content-card">
+    <div class="spending-row"><div class="cat-icon">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+    <div class="dismissed-note">Goal suggestion dismissed</div>
+  </div>
+
+  <!-- Bottom nav — no active tab -->
+  <div class="bottom-nav">
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" style="opacity:.32">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+</div><!-- /phone-frame -->
+
+<script>
+let amount = 306;
+
+function go(id) {
+  document.querySelectorAll('.screen, .full-center').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelector('.phone-frame').scrollTop = 0;
+}
+
+function nudge(delta) {
+  amount = Math.max(10, amount + delta);
+  document.getElementById('stepper-val').textContent = '$' + amount;
+  document.getElementById('activate-btn').textContent = 'Activate with $' + amount;
+}
+
+function activateGoal() {
+  document.getElementById('success-label').textContent = 'Dining spending goal · $' + amount + '/month';
+  document.getElementById('limit-label').textContent = '$' + amount;
+  go('screen-3');
+}
+
+function restart() {
+  amount = 306;
+  document.getElementById('stepper-val').textContent = '$306';
+  document.getElementById('activate-btn').textContent = 'Activate with $306';
+  go('screen-0');
+}
+</script>
+</body>
+</html>
