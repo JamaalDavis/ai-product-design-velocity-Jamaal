@@ -1,0 +1,2032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FinWise — Retire Earlier. Spend Smarter.</title>
+  <meta name="description" content="FinWise helps everyday Americans track spending, grow investments, and hit big goals — from first savings to early retirement. Free to start." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=League+Spartan:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Design Tokens ─────────────────────────────────────────── */
+    :root {
+      --color-primary:        #00D09E;
+      --color-primary-dark:   #00b589;
+      --color-surface-light:  #DFF7E2;
+      --color-bg-page:        #F1FFF3;
+      --color-cyprus:         #0E3E3E;
+      --color-letters:        #093030;
+      --color-fence:          #052224;
+      --color-void:           #031314;
+      --color-blue-light:     #6DB6FE;
+      --color-blue-vivid:     #3299FF;
+      --color-blue-ocean:     #0068FF;
+      --color-white:          #FFFFFF;
+      --color-muted:          #7A9E9E;
+      --color-border:         #C8EDD0;
+
+      --font-primary:   'Poppins', sans-serif;
+      --font-secondary: 'League Spartan', sans-serif;
+
+      --radius-pill:   30px;
+      --radius-card:   20px;
+      --radius-tile:   22px;
+      --radius-screen: 40px;
+      --radius-sm:     10px;
+
+      --shadow-card:  0 4px 24px rgba(9,48,48,0.08);
+      --shadow-hover: 0 8px 40px rgba(9,48,48,0.14);
+      --shadow-nav:   0 2px 20px rgba(9,48,48,0.06);
+
+      --spacing-xs:  8px;
+      --spacing-sm:  13px;
+      --spacing-md:  24px;
+      --spacing-lg:  40px;
+      --spacing-xl:  64px;
+      --spacing-2xl: 96px;
+
+      --max-width: 1200px;
+      --transition: 0.2s ease;
+    }
+
+    /* ─── Reset ─────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-primary);
+      background: var(--color-bg-page);
+      color: var(--color-letters);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { font-family: var(--font-primary); cursor: pointer; border: none; }
+
+    /* ─── Utilities ──────────────────────────────────────────────── */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 var(--spacing-md);
+    }
+    .visually-hidden {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    .section-label {
+      font-family: var(--font-secondary);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+      display: block;
+    }
+    .section-title {
+      font-family: var(--font-primary);
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      color: var(--color-cyprus);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-family: var(--font-primary);
+      font-weight: 300;
+      font-size: 17px;
+      color: var(--color-letters);
+      opacity: 0.8;
+      max-width: 560px;
+      line-height: 1.7;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--color-surface-light);
+      color: var(--color-cyprus);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+    .tag-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      flex-shrink: 0;
+    }
+
+    /* ─── Buttons ────────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-primary);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 14px 28px;
+      border-radius: var(--radius-pill);
+      transition: all var(--transition);
+      white-space: nowrap;
+      line-height: 1;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: var(--color-letters);
+    }
+    .btn-primary:hover, .btn-primary:focus-visible {
+      background: var(--color-primary-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0,208,158,0.35);
+    }
+    .btn-ghost {
+      background: var(--color-surface-light);
+      color: var(--color-cyprus);
+    }
+    .btn-ghost:hover, .btn-ghost:focus-visible {
+      background: #c8ead0;
+      transform: translateY(-1px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-primary);
+    }
+    .btn-outline:hover, .btn-outline:focus-visible {
+      background: var(--color-surface-light);
+    }
+    .btn-dark {
+      background: var(--color-cyprus);
+      color: var(--color-white);
+    }
+    .btn-dark:hover, .btn-dark:focus-visible {
+      background: var(--color-fence);
+      transform: translateY(-1px);
+    }
+    .btn-lg { padding: 17px 36px; font-size: 16px; }
+    .btn:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }
+
+    /* ─── Nav ────────────────────────────────────────────────────── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(241,255,243,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      box-shadow: var(--shadow-nav);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav-logo-icon {
+      width: 38px; height: 38px;
+      background: var(--color-primary);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .nav-logo-icon svg { width: 20px; height: 20px; }
+    .nav-logo-text {
+      font-family: var(--font-primary);
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--color-cyprus);
+      letter-spacing: -0.3px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--color-letters);
+      opacity: 0.8;
+      transition: opacity var(--transition), color var(--transition);
+    }
+    .nav-links a:hover { opacity: 1; color: var(--color-primary); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .nav-login {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      transition: background var(--transition);
+    }
+    .nav-login:hover { background: var(--color-surface-light); }
+    .nav-hamburger {
+      display: none;
+      background: none;
+      border: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--color-cyprus);
+      border-radius: 2px;
+      margin: 5px 0;
+      transition: all 0.2s;
+    }
+
+    /* ─── Hero ───────────────────────────────────────────────────── */
+    .hero {
+      padding: var(--spacing-2xl) 0 var(--spacing-xl);
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -160px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(0,208,158,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 64px;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: var(--font-primary);
+      font-size: clamp(36px, 5.5vw, 64px);
+      font-weight: 700;
+      color: var(--color-cyprus);
+      line-height: 1.08;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+    .hero-title span { color: var(--color-primary); }
+    .hero-sub {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--color-letters);
+      opacity: 0.85;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+    .hero-social-proof {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .hero-avatars {
+      display: flex;
+      align-items: center;
+    }
+    .hero-avatars img {
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      border: 2px solid var(--color-bg-page);
+      margin-left: -10px;
+      object-fit: cover;
+    }
+    .hero-avatars img:first-child { margin-left: 0; }
+    .hero-proof-text {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--color-letters);
+      opacity: 0.75;
+    }
+    .hero-proof-text strong { color: var(--color-cyprus); opacity: 1; }
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-phone-wrap {
+      position: relative;
+      width: 280px;
+      margin: 0 auto;
+    }
+    .hero-phone {
+      width: 280px;
+      border-radius: var(--radius-screen);
+      overflow: hidden;
+      box-shadow: 0 32px 80px rgba(9,48,48,0.18), 0 0 0 1px rgba(9,48,48,0.06);
+      position: relative;
+      z-index: 1;
+      background: var(--color-primary);
+    }
+    .phone-screen {
+      background: var(--color-bg-page);
+      padding: 20px 16px;
+      min-height: 540px;
+    }
+    .phone-header {
+      background: var(--color-primary);
+      margin: -20px -16px 16px;
+      padding: 32px 20px 20px;
+      border-radius: 0 0 28px 28px;
+    }
+    .phone-header-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(9,48,48,0.7);
+      margin-bottom: 4px;
+    }
+    .phone-balance {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-letters);
+      letter-spacing: -0.5px;
+    }
+    .phone-balance-sub {
+      font-size: 11px;
+      color: rgba(9,48,48,0.65);
+      margin-top: 2px;
+    }
+    .phone-stat-row {
+      display: flex;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .phone-stat {
+      flex: 1;
+      background: var(--color-white);
+      border-radius: 14px;
+      padding: 12px;
+      box-shadow: 0 2px 8px rgba(9,48,48,0.06);
+    }
+    .phone-stat-icon {
+      width: 30px; height: 30px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .phone-stat-icon.income { background: #6DB6FE; }
+    .phone-stat-icon.expense { background: #3299FF; }
+    .phone-stat-amount {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-cyprus);
+      line-height: 1.2;
+    }
+    .phone-stat-label {
+      font-size: 9px;
+      font-weight: 500;
+      color: var(--color-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .phone-progress-section { margin-bottom: 14px; }
+    .phone-progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--color-letters);
+      margin-bottom: 6px;
+    }
+    .phone-progress-label span:last-child { color: var(--color-primary); font-weight: 700; }
+    .phone-progress-track {
+      height: 7px;
+      background: var(--color-surface-light);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .phone-progress-fill {
+      height: 100%;
+      background: var(--color-primary);
+      border-radius: 100px;
+    }
+    .phone-tx-section { }
+    .phone-tx-title {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .phone-tx-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(9,48,48,0.06);
+    }
+    .phone-tx-icon {
+      width: 32px; height: 32px;
+      border-radius: 10px;
+      background: #6DB6FE;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .phone-tx-info { flex: 1; }
+    .phone-tx-name { font-size: 11px; font-weight: 600; color: var(--color-cyprus); }
+    .phone-tx-date { font-size: 9px; color: var(--color-muted); }
+    .phone-tx-amount { font-size: 12px; font-weight: 700; }
+    .phone-tx-amount.neg { color: #3299FF; }
+    .phone-tx-amount.pos { color: var(--color-primary); }
+    .phone-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: var(--color-surface-light);
+      border-radius: 20px;
+      padding: 12px 8px;
+      margin-top: 14px;
+    }
+    .phone-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+      font-size: 8px;
+      font-weight: 500;
+      color: var(--color-muted);
+    }
+    .phone-nav-item.active { color: var(--color-primary); }
+    .phone-nav-item.active .nav-icon-wrap {
+      background: var(--color-primary);
+      border-radius: 10px;
+      padding: 4px 10px;
+    }
+    .nav-icon-wrap { padding: 4px 10px; }
+    /* floating cards */
+    .float-card {
+      position: absolute;
+      z-index: 2;
+      background: var(--color-white);
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(9,48,48,0.14);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+    .float-card-icon {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .float-card-label { font-size: 10px; font-weight: 500; color: var(--color-muted); }
+    .float-card-value { font-size: 14px; font-weight: 700; color: var(--color-cyprus); }
+    .float-card-1 {
+      right: -70px;
+      top: 80px;
+      animation: floatA 4s ease-in-out infinite;
+    }
+    .float-card-2 {
+      left: -70px;
+      bottom: 120px;
+      animation: floatB 4.5s ease-in-out infinite;
+    }
+    @keyframes floatA {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes floatB {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(7px); }
+    }
+
+    /* ─── Logos / Trust bar ──────────────────────────────────────── */
+    .trust-bar {
+      background: var(--color-surface-light);
+      padding: 24px 0;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .trust-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-secondary);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+      opacity: 0.65;
+    }
+    .trust-item svg { opacity: 0.6; }
+    .trust-stat {
+      text-align: center;
+    }
+    .trust-stat-number {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-cyprus);
+      display: block;
+      line-height: 1;
+    }
+    .trust-stat-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--color-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .trust-divider {
+      width: 1px; height: 32px;
+      background: var(--color-border);
+      flex-shrink: 0;
+    }
+
+    /* ─── Features ───────────────────────────────────────────────── */
+    .features {
+      padding: var(--spacing-2xl) 0;
+    }
+    .features-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .features-header .section-sub { margin: 0 auto; }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-card);
+      transition: box-shadow var(--transition), transform var(--transition);
+      border: 1px solid var(--color-border);
+    }
+    .feature-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+    .feature-icon {
+      width: 52px; height: 52px;
+      border-radius: var(--radius-tile);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .feature-icon.blue  { background: #6DB6FE; }
+    .feature-icon.vivid { background: #3299FF; }
+    .feature-icon.green { background: var(--color-primary); }
+    .feature-icon.teal  { background: var(--color-surface-light); }
+    .feature-icon.dark  { background: var(--color-cyprus); }
+    .feature-icon.ocean { background: #0068FF; }
+    .feature-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .feature-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--color-letters);
+      opacity: 0.8;
+    }
+    .feature-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 16px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-primary);
+      background: var(--color-surface-light);
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    /* ─── One-click linking ──────────────────────────────────────── */
+    .linking {
+      background: var(--color-cyprus);
+      padding: var(--spacing-2xl) 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .linking::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%;
+      transform: translateX(-50%);
+      width: 800px; height: 400px;
+      background: radial-gradient(ellipse, rgba(0,208,158,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .linking-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 80px;
+    }
+    .linking-content .section-title { color: var(--color-white); }
+    .linking-content .section-sub   { color: rgba(255,255,255,0.7); }
+    .linking-content .section-label { color: var(--color-primary); }
+    .linking-cta { margin-top: 32px; }
+    .account-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .account-tile {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-card);
+      padding: 18px 14px;
+      text-align: center;
+      transition: all var(--transition);
+      cursor: pointer;
+    }
+    .account-tile:hover {
+      background: rgba(0,208,158,0.12);
+      border-color: var(--color-primary);
+    }
+    .account-tile.connected {
+      background: rgba(0,208,158,0.1);
+      border-color: var(--color-primary);
+    }
+    .account-tile-emoji { font-size: 24px; margin-bottom: 8px; }
+    .account-tile-name {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.3;
+    }
+    .account-tile-check {
+      display: none;
+      width: 18px; height: 18px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      margin: 6px auto 0;
+      align-items: center;
+      justify-content: center;
+    }
+    .account-tile.connected .account-tile-check { display: flex; }
+    .account-tile-check svg { width: 10px; height: 10px; }
+    .linking-note {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ─── How it works ───────────────────────────────────────────── */
+    .how {
+      padding: var(--spacing-2xl) 0;
+      background: var(--color-bg-page);
+    }
+    .how-header { text-align: center; margin-bottom: 64px; }
+    .how-header .section-sub { margin: 0 auto; }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      position: relative;
+    }
+    .how-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px; left: calc(16.66% + 20px);
+      width: calc(66.66% - 40px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--color-primary), var(--color-blue-vivid));
+      z-index: 0;
+    }
+    .how-step { text-align: center; position: relative; z-index: 1; }
+    .how-step-num {
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-letters);
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      box-shadow: 0 4px 16px rgba(0,208,158,0.3);
+    }
+    .how-step-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+      margin-bottom: 10px;
+    }
+    .how-step-desc {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--color-letters);
+      opacity: 0.8;
+    }
+
+    /* ─── Goals section ──────────────────────────────────────────── */
+    .goals {
+      padding: var(--spacing-2xl) 0;
+      background: var(--color-surface-light);
+    }
+    .goals-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 80px;
+    }
+    .goals-visual { }
+    .goals-cards-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .goal-card {
+      background: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 20px 24px;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: transform var(--transition);
+    }
+    .goal-card:hover { transform: translateX(4px); }
+    .goal-emoji {
+      font-size: 26px;
+      width: 52px; height: 52px;
+      background: var(--color-bg-page);
+      border-radius: var(--radius-tile);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .goal-info { flex: 1; }
+    .goal-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+      margin-bottom: 6px;
+    }
+    .goal-bar-track {
+      height: 6px;
+      background: var(--color-surface-light);
+      border-radius: 100px;
+      overflow: hidden;
+      margin-bottom: 4px;
+    }
+    .goal-bar-fill {
+      height: 100%;
+      background: var(--color-primary);
+      border-radius: 100px;
+      transition: width 0.8s ease;
+    }
+    .goal-pct {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .goal-amount {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--color-cyprus);
+      text-align: right;
+      white-space: nowrap;
+    }
+    .goal-amount span {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    .goals-content { }
+
+    /* ─── Pricing ────────────────────────────────────────────────── */
+    .pricing {
+      padding: var(--spacing-2xl) 0;
+      background: var(--color-bg-page);
+    }
+    .pricing-header { text-align: center; margin-bottom: 56px; }
+    .pricing-header .section-sub { margin: 0 auto; }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .pricing-card {
+      background: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 36px 32px;
+      box-shadow: var(--shadow-card);
+      border: 1.5px solid var(--color-border);
+      position: relative;
+    }
+    .pricing-card.popular {
+      border-color: var(--color-primary);
+      box-shadow: 0 8px 40px rgba(0,208,158,0.2);
+    }
+    .popular-badge {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-primary);
+      color: var(--color-letters);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 16px;
+      border-radius: 100px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .pricing-plan {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .pricing-amount {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .pricing-dollar {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-cyprus);
+      line-height: 1;
+      padding-bottom: 4px;
+    }
+    .pricing-number {
+      font-size: 52px;
+      font-weight: 700;
+      color: var(--color-cyprus);
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+    .pricing-period {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-muted);
+      padding-bottom: 6px;
+    }
+    .pricing-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--color-letters);
+      opacity: 0.7;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--color-letters);
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(9,48,48,0.05);
+    }
+    .pricing-features li:last-child { border-bottom: none; }
+    .check-icon {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .check-icon svg { width: 10px; height: 10px; }
+    .cross-icon {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--color-surface-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .cross-icon svg { width: 10px; height: 10px; }
+    .pricing-cta { width: 100%; }
+
+    /* ─── Testimonials ───────────────────────────────────────────── */
+    .testimonials {
+      padding: var(--spacing-2xl) 0;
+      background: var(--color-surface-light);
+    }
+    .testimonials-header { text-align: center; margin-bottom: 56px; }
+    .testimonials-header .section-sub { margin: 0 auto; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--color-white);
+      border-radius: var(--radius-card);
+      padding: 28px 26px;
+      box-shadow: var(--shadow-card);
+      border: 1px solid var(--color-border);
+      transition: transform var(--transition);
+    }
+    .testimonial-card:hover { transform: translateY(-3px); }
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 16px;
+    }
+    .star { color: var(--color-primary); font-size: 16px; }
+    .testimonial-quote {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--color-letters);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .testimonial-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--color-surface-light);
+    }
+    .testimonial-avatar-placeholder {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--color-letters);
+      flex-shrink: 0;
+    }
+    .testimonial-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-cyprus);
+    }
+    .testimonial-meta {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--color-muted);
+    }
+
+    /* ─── Final CTA ──────────────────────────────────────────────── */
+    .cta-section {
+      padding: var(--spacing-2xl) 0;
+      background: var(--color-primary);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23093030' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+    }
+    .cta-section .section-title {
+      color: var(--color-letters);
+      margin-bottom: 16px;
+    }
+    .cta-section .section-sub {
+      color: rgba(9,48,48,0.75);
+      margin: 0 auto 36px;
+    }
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .cta-note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: rgba(9,48,48,0.6);
+    }
+
+    /* ─── Footer ─────────────────────────────────────────────────── */
+    .footer {
+      background: var(--color-void);
+      padding: var(--spacing-xl) 0 var(--spacing-md);
+      color: rgba(255,255,255,0.5);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: var(--spacing-xl);
+    }
+    .footer-brand .nav-logo-text { color: var(--color-white); }
+    .footer-brand-desc {
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.7;
+      margin: 16px 0 24px;
+      max-width: 260px;
+    }
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social-btn {
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: background var(--transition);
+      cursor: pointer;
+    }
+    .footer-social-btn:hover { background: rgba(0,208,158,0.2); }
+    .footer-col-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-white);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links a {
+      font-size: 13px;
+      font-weight: 300;
+      color: rgba(255,255,255,0.45);
+      transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--color-primary); }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: var(--spacing-md);
+      border-top: 1px solid rgba(255,255,255,0.07);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom-text { font-size: 12px; }
+    .footer-bottom-links { display: flex; gap: 20px; }
+    .footer-bottom-links a {
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      transition: color var(--transition);
+    }
+    .footer-bottom-links a:hover { color: var(--color-primary); }
+    .footer-series {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,208,158,0.1);
+      color: var(--color-primary);
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-top: 14px;
+    }
+
+    /* ─── Announcement bar ───────────────────────────────────────── */
+    .announcement {
+      background: var(--color-cyprus);
+      text-align: center;
+      padding: 10px var(--spacing-md);
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+    }
+    .announcement a {
+      color: var(--color-primary);
+      font-weight: 700;
+      margin-left: 6px;
+    }
+    .announcement a:hover { text-decoration: underline; }
+
+    /* ─── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .float-card-1, .float-card-2 { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; flex-direction: column; }
+      .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-ctas { justify-content: center; }
+      .hero-social-proof { justify-content: center; }
+      .hero-sub { margin: 0 auto 36px; }
+      .hero-visual { order: -1; }
+      .hero-phone-wrap { width: 220px; }
+      .hero-phone { width: 220px; }
+      .linking-inner { grid-template-columns: 1fr; gap: 40px; }
+      .goals-inner { grid-template-columns: 1fr; }
+      .goals-visual { order: -1; }
+      .pricing-grid { grid-template-columns: 1fr; max-width: 420px; }
+      .how-steps { grid-template-columns: 1fr; }
+      .how-steps::before { display: none; }
+      .features-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .account-grid { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .trust-bar-inner { gap: 24px; }
+      .trust-divider { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding-top: 48px; }
+      .section-title { font-size: 28px; }
+      .hero-title { font-size: 34px; }
+      .btn-lg { padding: 15px 28px; font-size: 15px; }
+      .cta-buttons { flex-direction: column; width: 100%; }
+      .cta-buttons .btn { width: 100%; }
+    }
+
+    /* ─── Skip link ──────────────────────────────────────────────── */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--color-primary);
+      color: var(--color-letters);
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 0 0 8px 0;
+      z-index: 999;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Announcement bar -->
+<div class="announcement" role="banner" aria-label="Announcement">
+  🎉 FinWise raised $14M Series A — we're just getting started.
+  <a href="#pricing">Grab your free account →</a>
+</div>
+
+<!-- Navigation -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="FinWise home">
+        <div class="nav-logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="14" width="4" height="7" rx="1" fill="white"/>
+            <rect x="10" y="9" width="4" height="12" rx="1" fill="white"/>
+            <rect x="17" y="4" width="4" height="17" rx="1" fill="white"/>
+            <path d="M5 10l5-5 4 3 6-7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="nav-logo-text">FinWise</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#" class="nav-login">Log in</a>
+        <a href="#pricing" class="btn btn-primary">Get started free</a>
+      </div>
+
+      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Copy -->
+      <div class="hero-copy">
+        <div class="hero-eyebrow">
+          <div class="tag"><span class="tag-dot"></span>Austin, TX · Founded 2021</div>
+        </div>
+        <h1 class="hero-title" id="hero-title">
+          Retire earlier.<br/>
+          <span>Spend smarter.</span>
+        </h1>
+        <p class="hero-sub">
+          FinWise connects all your accounts — investments, savings, everyday spending — so you always know exactly where you stand and how close you are to the life you're building.
+        </p>
+        <div class="hero-ctas">
+          <a href="#pricing" class="btn btn-primary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            Create free account
+          </a>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg">See how it works</a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="hero-avatars" aria-hidden="true">
+            <img src="https://i.pravatar.cc/68?img=12" alt="" width="34" height="34" loading="eager"/>
+            <img src="https://i.pravatar.cc/68?img=25" alt="" width="34" height="34" loading="eager"/>
+            <img src="https://i.pravatar.cc/68?img=47" alt="" width="34" height="34" loading="eager"/>
+            <img src="https://i.pravatar.cc/68?img=32" alt="" width="34" height="34" loading="eager"/>
+          </div>
+          <p class="hero-proof-text">Trusted by <strong>80,000+ Americans</strong> tracking their financial future</p>
+        </div>
+      </div>
+
+      <!-- Phone visual -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-phone-wrap">
+
+          <!-- Floating cards -->
+          <div class="float-card float-card-1">
+            <div class="float-card-icon" style="background:#DFF7E2;">📈</div>
+            <div>
+              <div class="float-card-label">Portfolio gain</div>
+              <div class="float-card-value">+$2,340 this month</div>
+            </div>
+          </div>
+          <div class="float-card float-card-2">
+            <div class="float-card-icon" style="background:#DFF7E2;">🎯</div>
+            <div>
+              <div class="float-card-label">Retirement goal</div>
+              <div class="float-card-value">78% funded</div>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="hero-phone">
+            <div class="phone-screen">
+              <!-- Header -->
+              <div class="phone-header">
+                <div class="phone-header-label">Total Balance</div>
+                <div class="phone-balance">$7,783.00</div>
+                <div class="phone-balance-sub">↑ 3.2% vs last month · 30% of expenses. Looks Good.</div>
+              </div>
+
+              <!-- Income / Expense stats -->
+              <div class="phone-stat-row">
+                <div class="phone-stat">
+                  <div class="phone-stat-icon income">📥</div>
+                  <div class="phone-stat-label">Income</div>
+                  <div class="phone-stat-amount">$4,120.00</div>
+                </div>
+                <div class="phone-stat">
+                  <div class="phone-stat-icon expense">📤</div>
+                  <div class="phone-stat-label">Expense</div>
+                  <div class="phone-stat-amount">$1,187.40</div>
+                </div>
+              </div>
+
+              <!-- Goal progress -->
+              <div class="phone-progress-section">
+                <div class="phone-progress-label">
+                  <span>🏖️ Early Retirement</span>
+                  <span>78%</span>
+                </div>
+                <div class="phone-progress-track">
+                  <div class="phone-progress-fill" style="width:78%"></div>
+                </div>
+              </div>
+              <div class="phone-progress-section">
+                <div class="phone-progress-label">
+                  <span>🏠 Buy a house</span>
+                  <span>45%</span>
+                </div>
+                <div class="phone-progress-track">
+                  <div class="phone-progress-fill" style="width:45%"></div>
+                </div>
+              </div>
+
+              <!-- Transactions -->
+              <div class="phone-tx-section">
+                <div class="phone-tx-title">Recent</div>
+                <div class="phone-tx-item">
+                  <div class="phone-tx-icon">🛒</div>
+                  <div class="phone-tx-info">
+                    <div class="phone-tx-name">Whole Foods</div>
+                    <div class="phone-tx-date">Today, 9:22am</div>
+                  </div>
+                  <div class="phone-tx-amount neg">−$84.50</div>
+                </div>
+                <div class="phone-tx-item">
+                  <div class="phone-tx-icon" style="background:#3299FF;">📊</div>
+                  <div class="phone-tx-info">
+                    <div class="phone-tx-name">Dividend — AAPL</div>
+                    <div class="phone-tx-date">Yesterday</div>
+                  </div>
+                  <div class="phone-tx-amount pos">+$126.00</div>
+                </div>
+                <div class="phone-tx-item">
+                  <div class="phone-tx-icon" style="background:#DFF7E2;font-size:12px;">🏠</div>
+                  <div class="phone-tx-info">
+                    <div class="phone-tx-name">Rent</div>
+                    <div class="phone-tx-date">Apr 1</div>
+                  </div>
+                  <div class="phone-tx-amount neg">−$1,850</div>
+                </div>
+              </div>
+
+              <!-- Nav -->
+              <div class="phone-nav">
+                <div class="phone-nav-item active">
+                  <div class="nav-icon-wrap">🏠</div>
+                  <span>Home</span>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="nav-icon-wrap">📊</div>
+                  <span>Analysis</span>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="nav-icon-wrap">↔️</div>
+                  <span>Transfers</span>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="nav-icon-wrap">📂</div>
+                  <span>Goals</span>
+                </div>
+                <div class="phone-nav-item">
+                  <div class="nav-icon-wrap">👤</div>
+                  <span>Profile</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Trust bar -->
+<div class="trust-bar" aria-label="Trust indicators">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-stat">
+        <span class="trust-stat-number">80K+</span>
+        <span class="trust-stat-label">Active users</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat">
+        <span class="trust-stat-number">$14M</span>
+        <span class="trust-stat-label">Series A raised</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat">
+        <span class="trust-stat-number">4.9★</span>
+        <span class="trust-stat-label">App Store rating</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-stat">
+        <span class="trust-stat-number">256-bit</span>
+        <span class="trust-stat-label">Bank-grade encryption</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        SOC 2 Type II certified
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features -->
+<section class="features" id="features" aria-labelledby="features-title">
+  <div class="container">
+    <div class="features-header">
+      <span class="section-label">Everything you need</span>
+      <h2 class="section-title" id="features-title">One app. Your entire<br/>financial life.</h2>
+      <p class="section-sub">Stop juggling spreadsheets, bank apps, and brokerage portals. FinWise brings it all into one clean, intelligent view.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon blue" aria-hidden="true">📈</div>
+        <h3 class="feature-title">Investment tracking</h3>
+        <p class="feature-desc">Pull in stocks, crypto, RSUs, and ETFs from any brokerage. See your real net worth — not just your checking balance.</p>
+        <span class="feature-badge">✓ Stocks · Crypto · RSUs</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon green" aria-hidden="true">🏦</div>
+        <h3 class="feature-title">One-click account linking</h3>
+        <p class="feature-desc">Connect all your banks, investment accounts, and wallets in seconds. No CSV imports. No manual entry. Just link and go.</p>
+        <span class="feature-badge">✓ 10,000+ institutions</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon vivid" aria-hidden="true">💸</div>
+        <h3 class="feature-title">Automatic spend tracking</h3>
+        <p class="feature-desc">Every transaction is automatically categorised — groceries, rent, travel, coffee — and mapped against your monthly budget in real time.</p>
+        <span class="feature-badge">✓ Auto-categorised</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon teal" aria-hidden="true">🎯</div>
+        <h3 class="feature-title">Personal &amp; family goals</h3>
+        <p class="feature-desc">Build a dog house. Take the family to Japan. Buy a piano. Set a goal, choose a timeline, and watch FinWise tell you exactly what to save each month.</p>
+        <span class="feature-badge">✓ Family sharing</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon dark" aria-hidden="true">🌅</div>
+        <h3 class="feature-title">Early retirement planner</h3>
+        <p class="feature-desc">Tell FinWise when you want to retire. It reverse-engineers your savings rate, investment return assumptions, and monthly spend target to get you there.</p>
+        <span class="feature-badge">✓ FIRE calculator included</span>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon ocean" aria-hidden="true">📊</div>
+        <h3 class="feature-title">Smart analytics</h3>
+        <p class="feature-desc">Beautiful weekly and monthly reports show you spending trends, income growth, and investment performance — without needing an accounting degree.</p>
+        <span class="feature-badge">✓ Weekly digest email</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- One-click linking -->
+<section class="linking" aria-labelledby="linking-title">
+  <div class="container">
+    <div class="linking-inner">
+      <div class="linking-content">
+        <span class="section-label">One-click linking</span>
+        <h2 class="section-title" id="linking-title">Connect every account in under 60 seconds.</h2>
+        <p class="section-sub">Banks, brokerages, crypto wallets, and employer stock plans — FinWise connects to 10,000+ institutions. No logins to remember. No manual imports. Just tap, authorise, done.</p>
+        <div class="linking-cta">
+          <a href="#pricing" class="btn btn-primary btn-lg">Link my accounts</a>
+        </div>
+      </div>
+      <div class="linking-visual" aria-hidden="true">
+        <div class="account-grid" id="accountGrid">
+          <div class="account-tile connected" data-name="Chase">
+            <div class="account-tile-emoji">🏦</div>
+            <div class="account-tile-name">Chase</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile connected" data-name="Robinhood">
+            <div class="account-tile-emoji">📈</div>
+            <div class="account-tile-name">Robinhood</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="Coinbase">
+            <div class="account-tile-emoji">₿</div>
+            <div class="account-tile-name">Coinbase</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="Fidelity">
+            <div class="account-tile-emoji">💼</div>
+            <div class="account-tile-name">Fidelity</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="Bank of America">
+            <div class="account-tile-emoji">🏛️</div>
+            <div class="account-tile-name">Bank of America</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="Schwab">
+            <div class="account-tile-emoji">📊</div>
+            <div class="account-tile-name">Schwab</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="Vanguard">
+            <div class="account-tile-emoji">🏦</div>
+            <div class="account-tile-name">Vanguard</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="Wells Fargo">
+            <div class="account-tile-emoji">🔴</div>
+            <div class="account-tile-name">Wells Fargo</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="account-tile" data-name="+ More">
+            <div class="account-tile-emoji">➕</div>
+            <div class="account-tile-name">10,000+ more</div>
+            <div class="account-tile-check">
+              <svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+        </div>
+        <p class="linking-note">Click any tile to connect · 256-bit encryption · read-only access</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how" id="how-it-works" aria-labelledby="how-title">
+  <div class="container">
+    <div class="how-header">
+      <span class="section-label">Simple by design</span>
+      <h2 class="section-title" id="how-title">Up and running in 3 minutes.</h2>
+      <p class="section-sub">No financial jargon. No setup headaches. Just your money, finally making sense.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num" aria-hidden="true">1</div>
+        <h3 class="how-step-title">Create your free account</h3>
+        <p class="how-step-desc">Sign up with your email in under 30 seconds. No credit card required. Free forever for core features.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num" aria-hidden="true">2</div>
+        <h3 class="how-step-title">Link your accounts</h3>
+        <p class="how-step-desc">One click connects your bank, brokerage, crypto wallets, and employer 401(k). FinWise imports everything automatically.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num" aria-hidden="true">3</div>
+        <h3 class="how-step-title">Set goals &amp; track progress</h3>
+        <p class="how-step-desc">Tell FinWise what you're building toward. It shows you exactly how to get there — and celebrates every milestone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Goals section -->
+<section class="goals" id="goals" aria-labelledby="goals-title">
+  <div class="container">
+    <div class="goals-inner">
+      <div class="goals-visual" aria-hidden="true">
+        <div class="goals-cards-stack">
+          <div class="goal-card">
+            <div class="goal-emoji">🌅</div>
+            <div class="goal-info">
+              <div class="goal-name">Early Retirement — age 52</div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:78%"></div></div>
+              <div class="goal-pct">78% funded · On track</div>
+            </div>
+            <div>
+              <div class="goal-amount">$296,400<span>of $380,000</span></div>
+            </div>
+          </div>
+          <div class="goal-card">
+            <div class="goal-emoji">🏠</div>
+            <div class="goal-info">
+              <div class="goal-name">Buy a house</div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:45%"></div></div>
+              <div class="goal-pct">45% funded · Save $800/mo</div>
+            </div>
+            <div>
+              <div class="goal-amount">$45,000<span>of $100,000</span></div>
+            </div>
+          </div>
+          <div class="goal-card">
+            <div class="goal-emoji">✈️</div>
+            <div class="goal-info">
+              <div class="goal-name">Japan family trip</div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:62%"></div></div>
+              <div class="goal-pct">62% funded · 4 months left</div>
+            </div>
+            <div>
+              <div class="goal-amount">$4,960<span>of $8,000</span></div>
+            </div>
+          </div>
+          <div class="goal-card">
+            <div class="goal-emoji">🎹</div>
+            <div class="goal-info">
+              <div class="goal-name">Buy a piano</div>
+              <div class="goal-bar-track"><div class="goal-bar-fill" style="width:20%"></div></div>
+              <div class="goal-pct">20% funded · Just getting started</div>
+            </div>
+            <div>
+              <div class="goal-amount">$600<span>of $3,000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="goals-content">
+        <span class="section-label">Personal &amp; family goals</span>
+        <h2 class="section-title" id="goals-title">Set goals for the moments that matter most.</h2>
+        <p class="section-sub">From big life milestones to small joys, FinWise helps you save toward anything. Set up individual or shared family goals, assign a timeline, and get a clear monthly savings target.</p>
+        <ul style="margin: 24px 0; display: flex; flex-direction: column; gap: 12px;">
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--color-cyprus)">
+            <span style="color:var(--color-primary);font-size:18px;">✓</span> Early retirement planning with FIRE calculator
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--color-cyprus)">
+            <span style="color:var(--color-primary);font-size:18px;">✓</span> Share goals with a partner or family
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--color-cyprus)">
+            <span style="color:var(--color-primary);font-size:18px;">✓</span> Automatic monthly contribution recommendations
+          </li>
+          <li style="display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--color-cyprus)">
+            <span style="color:var(--color-primary);font-size:18px;">✓</span> Milestone notifications to keep you motivated
+          </li>
+        </ul>
+        <a href="#pricing" class="btn btn-primary btn-lg">Start setting goals</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing" aria-labelledby="pricing-title">
+  <div class="container">
+    <div class="pricing-header">
+      <span class="section-label">Simple pricing</span>
+      <h2 class="section-title" id="pricing-title">Free to start. Upgrade when you're ready.</h2>
+      <p class="section-sub">No credit card needed to get going. Upgrade to Pro any time to unlock advanced planning and investment tools.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <!-- Free -->
+      <div class="pricing-card">
+        <div class="pricing-plan">Free</div>
+        <div class="pricing-amount">
+          <span class="pricing-dollar">$</span>
+          <span class="pricing-number">0</span>
+          <span class="pricing-period">/mo</span>
+        </div>
+        <p class="pricing-desc">Everything you need to get started tracking your money and building better habits.</p>
+        <ul class="pricing-features">
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Link up to 3 accounts
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Automatic spend categorisation
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Monthly budget tracker
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Up to 2 savings goals
+          </li>
+          <li>
+            <span class="cross-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3l6 6M9 3l-6 6" stroke="#7A9E9E" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            <span style="color:var(--color-muted)">Investment tracking (stocks, crypto, RSUs)</span>
+          </li>
+          <li>
+            <span class="cross-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3l6 6M9 3l-6 6" stroke="#7A9E9E" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            <span style="color:var(--color-muted)">Family goal sharing</span>
+          </li>
+          <li>
+            <span class="cross-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3l6 6M9 3l-6 6" stroke="#7A9E9E" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+            <span style="color:var(--color-muted)">FIRE / retirement planner</span>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-ghost pricing-cta" style="text-align:center;display:flex;justify-content:center;">Get started free</a>
+      </div>
+
+      <!-- Pro -->
+      <div class="pricing-card popular">
+        <span class="popular-badge">Most popular</span>
+        <div class="pricing-plan">Pro</div>
+        <div class="pricing-amount">
+          <span class="pricing-dollar">$</span>
+          <span class="pricing-number">9</span>
+          <span class="pricing-period">/mo</span>
+        </div>
+        <p class="pricing-desc">The full FinWise experience — built for people serious about hitting financial independence.</p>
+        <ul class="pricing-features">
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Unlimited account linking
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Automatic spend categorisation
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Advanced monthly &amp; weekly budgeting
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Unlimited savings &amp; family goals
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Investment tracking (stocks, crypto, RSUs)
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Family goal sharing &amp; joint budgets
+          </li>
+          <li>
+            <span class="check-icon" aria-hidden="true"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#093030" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            FIRE / early retirement planner
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary pricing-cta" style="text-align:center;display:flex;justify-content:center;">Start 30-day free trial</a>
+      </div>
+
+    </div>
+    <p style="text-align:center;margin-top:20px;font-size:13px;color:var(--color-muted);">No credit card required for free plan · Cancel Pro anytime · Billed monthly or annually (save 20%)</p>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" aria-labelledby="testimonials-title">
+  <div class="container">
+    <div class="testimonials-header">
+      <span class="section-label">Real people, real results</span>
+      <h2 class="section-title" id="testimonials-title">Loved by savers across America.</h2>
+      <p class="section-sub">From first-time budgeters to serial investors — FinWise helps everyone build the future they want.</p>
+    </div>
+    <div class="testimonials-grid">
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">
+          <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "I finally feel in control of my money. I linked my Robinhood, Chase, and my company RSUs in like 2 minutes. Now I see my real net worth every morning."
+        </blockquote>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/80?img=12" alt="Marcus T." class="testimonial-avatar" width="40" height="40" loading="lazy"/>
+          <div>
+            <div class="testimonial-name">Marcus T.</div>
+            <div class="testimonial-meta">Software engineer, Austin TX</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">
+          <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "The retirement planner changed how I think about money. I'm 34 and now I know exactly how much I need to save every month to retire at 52. Wild."
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar-placeholder" aria-hidden="true">S</div>
+          <div>
+            <div class="testimonial-name">Sarah K.</div>
+            <div class="testimonial-meta">Marketing director, Denver CO</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars" aria-label="5 stars">
+          <span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span><span class="star" aria-hidden="true">★</span>
+        </div>
+        <blockquote class="testimonial-quote">
+          "My husband and I share a family Japan trip goal. We can both see progress, contribute, and it actually makes saving fun instead of stressful."
+        </blockquote>
+        <div class="testimonial-author">
+          <img src="https://i.pravatar.cc/80?img=47" alt="Priya R." class="testimonial-avatar" width="40" height="40" loading="lazy"/>
+          <div>
+            <div class="testimonial-name">Priya R.</div>
+            <div class="testimonial-meta">Nurse practitioner, Seattle WA</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="cta-section" aria-labelledby="cta-title">
+  <div class="container">
+    <h2 class="section-title" id="cta-title">Your financial future<br/>starts today.</h2>
+    <p class="section-sub">Free account. No credit card. Link your first account in under a minute.</p>
+    <div class="cta-buttons">
+      <a href="#" class="btn btn-dark btn-lg">
+        Create free account
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#" class="btn btn-outline btn-lg" style="border-color: rgba(9,48,48,0.3); color: var(--color-letters);">See Pro features</a>
+    </div>
+    <p class="cta-note">Join 80,000+ Americans already building their future with FinWise · Austin, TX · Founded 2021</p>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="14" width="4" height="7" rx="1" fill="white"/>
+              <rect x="10" y="9" width="4" height="12" rx="1" fill="white"/>
+              <rect x="17" y="4" width="4" height="17" rx="1" fill="white"/>
+              <path d="M5 10l5-5 4 3 6-7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="nav-logo-text">FinWise</span>
+        </div>
+        <p class="footer-brand-desc">Helping everyday Americans track spending, grow investments, and build the life they want — one goal at a time.</p>
+        <div class="footer-series">
+          <span>💰</span> Series A · $14M · Austin TX
+        </div>
+        <div class="footer-social" style="margin-top:20px;">
+          <div class="footer-social-btn" role="link" aria-label="Twitter">𝕏</div>
+          <div class="footer-social-btn" role="link" aria-label="LinkedIn">in</div>
+          <div class="footer-social-btn" role="link" aria-label="Instagram">📸</div>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Product</div>
+        <nav class="footer-links" aria-label="Product links">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">How it works</a>
+          <a href="#">Investment tracking</a>
+          <a href="#">Retirement planner</a>
+          <a href="#">Family goals</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <nav class="footer-links" aria-label="Company links">
+          <a href="#">About us</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-col-title">Legal</div>
+        <nav class="footer-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Security</a>
+          <a href="#">CCPA</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom-text">© 2025 FinWise Inc. All rights reserved. Austin, TX.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Account tile toggle interaction
+  document.getElementById('accountGrid').addEventListener('click', function(e) {
+    const tile = e.target.closest('.account-tile');
+    if (tile) {
+      tile.classList.toggle('connected');
+    }
+  });
+
+  // Smooth scroll for nav links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Intersection observer for goal bars animation
+  const bars = document.querySelectorAll('.goal-bar-fill');
+  const widths = [];
+  bars.forEach(bar => {
+    widths.push(bar.style.width);
+    bar.style.width = '0%';
+  });
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        bars.forEach((bar, i) => {
+          setTimeout(() => { bar.style.width = widths[i]; }, i * 120);
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+  const goalsSection = document.querySelector('.goals');
+  if (goalsSection) observer.observe(goalsSection);
+
+  // Nav hamburger (basic toggle for mobile)
+  const hamburger = document.querySelector('.nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', function() {
+    const expanded = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', !expanded);
+    navLinks.style.display = expanded ? '' : 'flex';
+    navLinks.style.flexDirection = expanded ? '' : 'column';
+    navLinks.style.position = expanded ? '' : 'absolute';
+    navLinks.style.top = expanded ? '' : '68px';
+    navLinks.style.left = expanded ? '' : '0';
+    navLinks.style.right = expanded ? '' : '0';
+    navLinks.style.background = expanded ? '' : 'var(--color-bg-page)';
+    navLinks.style.padding = expanded ? '' : '16px 24px 24px';
+    navLinks.style.boxShadow = expanded ? '' : '0 8px 20px rgba(9,48,48,0.08)';
+    navLinks.style.zIndex = expanded ? '' : '99';
+  });
+</script>
+
+</body>
+</html>
