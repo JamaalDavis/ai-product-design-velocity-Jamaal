@@ -218,3 +218,21 @@ As a user who activates the suggested goal, I want to immediately see my goal pr
 6. **Does the auto-drafted draft write to the goals model before activation?** No — the draft is a UI suggestion only. Goal is created in the backend only on "Activate" tap. **Owner:** Engineering. **Default:** Confirmed by FR-09 and FR-14.
 
 7. **Free-tier limit edge case:** If an account already has `goals_set = 1` at spending summary load (edge case: goal set before viewing summary), FR-02 suppresses the card. Confirm `goals_set` is available at runtime when the spending summary loads. **Owner:** Engineering.
+
+---
+
+## 10. Product Evaluation — Decision Log (V2)
+
+Produced after the product-evaluation Skill audit against H2's primary metric (`set_first_goal` completion rate, target 35%) and guardrails (dismissed rate ≤70%, abandoned rate ≤60%, session exit time unchanged). V2 changes are those marked **Closed**.
+
+| Finding | Confidence | Proposed label | Decision | Reason |
+|---|---|---|---|---|
+| "Adjust amount" buried as text link — mechanism-critical ownership path visually equated with the dismiss action | inferred | Do this | Close | The mechanism bets that users will feel ownership of the goal. A text link undercuts that; it looks optional. Threatens `goal_draft_dismissed` guardrail. Promoted to full secondary button. |
+| No scroll hint between spending list and goal card — users on shorter viewports may never discover the card | inferred | Do this | Close | Card must be seen to move the primary metric. Added scroll chevron. |
+| "Limit" framing is punitive — contradicts the motivation mechanism | inferred | Do this | Close | Every word on the activation card should reinforce "this goal is for you," not "you spend too much." Replaced with "target" throughout. |
+| No reversibility signal on activation — commitment anxiety inflates dismissal rate | inferred | Do this | Close | Reducing perceived commitment cost is the core mechanism. Added "You can adjust or delete this goal any time" below the Activate button. |
+| `span role=button` elements missing keyboard handlers — keyboard-only users cannot activate or dismiss | evidence | Do this | Close | Accessibility blocker on the primary CTA path. Added `keydown` handlers for Enter and Space; added `go()` focus management for screen reader users. |
+| Ambiguous dual input on Screen 2 — stepper plus unconstrained text field with no floor feedback | evidence | Do this | Close | US-02 requires amount adjustment before activation; ambiguous inputs block it. Removed dual-entry ambiguity; added $10 floor with feedback. |
+| No undo on the success screen — user has committed with no visible recovery path | inferred | Try this | Close | Lowers commitment cost at the post-activation moment; also surfaces undo-rate data for future iteration. Added 10-second timed undo. |
+| Screen 4 empty state copy backward-looking ("You haven't spent anything yet") | inferred | Try this | Close | Forward-looking copy ("Your spending will appear here as you use your card") supports goal-holder identity the feature is building. Updated. |
+| Redundant percentage labels alongside progress bar on Screens 4 and 4b — cognitive noise | inferred | Backlog | Close | Real issue but doesn't threaten activation rate or guardrails. Removed for clarity in this iteration. |
