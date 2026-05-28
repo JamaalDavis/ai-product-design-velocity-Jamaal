@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FinWise — Goal Activation Prototype</title>
+<title>FinWise</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
@@ -17,35 +17,7 @@ body {
   min-height: 100vh;
   padding: 32px 20px 80px;
   font-family: 'Poppins', sans-serif;
-  gap: 14px;
 }
-
-/* ── Facilitator bar ── */
-.facilitator-bar {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 8px 18px 8px 22px;
-  background: rgba(9,48,48,0.38);
-  border-radius: 30px;
-  color: rgba(255,255,255,0.9);
-  font-size: 12px;
-  font-weight: 500;
-}
-.restart-btn {
-  background: rgba(0,208,158,0.28);
-  border: 1px solid rgba(0,208,158,0.6);
-  border-radius: 20px;
-  color: #fff;
-  font-size: 12px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  padding: 5px 14px;
-  cursor: pointer;
-  min-height: 30px;
-  transition: background 0.12s;
-}
-.restart-btn:hover { background: rgba(0,208,158,0.45); }
 
 /* ── Phone frame ── */
 .phone-frame {
@@ -102,6 +74,13 @@ body {
   padding: 54px 37px 0;
   justify-content: flex-start;
 }
+.hero-profile {
+  height: 210px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
 .hero-back {
   position: absolute;
   left: 18px;
@@ -109,11 +88,8 @@ body {
   transform: translateY(-50%);
   color: #fff;
   font-size: 24px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   border-radius: 50%;
   transition: background 0.1s;
@@ -123,31 +99,31 @@ body {
 .hero-title { color: #fff; font-size: 20px; font-weight: 600; }
 .hero-bell {
   position: absolute;
-  right: 20px;
-  top: 18px;
-  width: 34px;
-  height: 34px;
+  right: 20px; top: 18px;
+  width: 34px; height: 34px;
   background: rgba(255,255,255,0.22);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; cursor: pointer;
 }
 
 /* ── Home hero text ── */
 .home-greeting { color: rgba(255,255,255,0.78); font-size: 14px; margin-bottom: 2px; }
 .home-name { color: #fff; font-size: 22px; font-weight: 700; margin-bottom: 18px; }
-.home-bal-label {
-  color: rgba(255,255,255,0.7);
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.09em;
-  margin-bottom: 4px;
-}
+.home-bal-label { color: rgba(255,255,255,0.7); font-size: 11px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.09em; margin-bottom: 4px; }
 .home-balance { color: #fff; font-size: 34px; font-weight: 700; }
+
+/* ── Profile hero ── */
+.profile-avatar {
+  width: 68px; height: 68px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 700; color: #fff;
+  margin-bottom: 8px;
+}
+.profile-hero-name { color: #fff; font-size: 19px; font-weight: 700; }
+.profile-hero-plan { color: rgba(255,255,255,0.72); font-size: 13px; }
 
 /* ── Content card (floats over hero) ── */
 .content-card {
@@ -162,71 +138,50 @@ body {
 
 /* ── Section label ── */
 .section-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: #0E3E3E;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  opacity: 0.72;
+  font-size: 11px; font-weight: 600; color: #0E3E3E;
+  letter-spacing: 0.09em; text-transform: uppercase; opacity: 0.72;
   margin-bottom: 10px;
 }
 
 /* ── Summary chips (home) ── */
 .summary-row { display: flex; gap: 12px; margin-bottom: 22px; }
-.chip {
-  flex: 1;
-  background: #DFF7E2;
-  border-radius: 14px;
-  padding: 14px 16px;
-}
+.chip { flex: 1; background: #DFF7E2; border-radius: 14px; padding: 14px 16px; }
 .chip-label { font-size: 11px; color: #0E3E3E; opacity: 0.65; text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 4px; }
 .chip-amount { font-size: 20px; font-weight: 700; color: #093030; }
 .chip-amount.blue { color: #0068FF; }
 
-/* ── Entry card (home → spending) ── */
+/* ── Entry card ── */
 .entry-card {
-  background: #DFF7E2;
-  border: 1.5px solid #00D09E;
-  border-radius: 16px;
-  padding: 16px 18px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  margin-bottom: 22px;
-  transition: opacity 0.1s;
+  background: #DFF7E2; border: 1.5px solid #00D09E; border-radius: 16px;
+  padding: 16px 18px; display: flex; align-items: center;
+  cursor: pointer; margin-bottom: 22px; transition: opacity 0.1s;
 }
 .entry-card:hover { opacity: 0.88; }
 .entry-card:active { opacity: 0.7; }
-.entry-icon {
-  width: 46px; height: 46px;
-  background: #00D09E;
-  border-radius: 13px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 20px;
-  margin-right: 14px;
-  flex-shrink: 0;
-}
+.entry-icon { width: 46px; height: 46px; background: #00D09E; border-radius: 13px; display: flex; align-items: center; justify-content: center; font-size: 20px; margin-right: 14px; flex-shrink: 0; }
 .entry-text { flex: 1; }
 .entry-title { font-size: 15px; font-weight: 600; color: #093030; margin-bottom: 2px; }
 .entry-sub { font-size: 13px; color: #0E3E3E; opacity: 0.7; }
 .entry-arrow { font-size: 22px; color: #00D09E; font-weight: 700; line-height: 1; }
 
+/* ── Home active goal card ── */
+.home-goal-card {
+  background: #DFF7E2; border: 1.5px solid #00D09E; border-radius: 16px;
+  padding: 14px 18px; margin-bottom: 20px; cursor: pointer; transition: opacity 0.1s;
+}
+.home-goal-card:hover { opacity: 0.88; }
+.home-goal-card:active { opacity: 0.7; }
+.home-goal-header { display: flex; align-items: center; margin-bottom: 8px; }
+.home-goal-icon { width: 36px; height: 36px; background: #00D09E; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 17px; margin-right: 10px; flex-shrink: 0; }
+.home-goal-title { font-size: 14px; font-weight: 600; color: #093030; flex: 1; }
+.home-goal-spent { font-size: 14px; font-weight: 700; color: #0068FF; }
+.home-goal-meta { font-size: 12px; color: #0E3E3E; opacity: 0.6; margin-bottom: 10px; }
+.home-goal-track { width: 100%; height: 7px; background: rgba(0,208,158,0.2); border-radius: 4px; overflow: hidden; }
+.home-goal-fill-bar { height: 100%; background: #00D09E; border-radius: 4px; }
+
 /* ── Spending rows ── */
-.spending-row {
-  display: flex;
-  align-items: center;
-  padding: 13px 0;
-  border-bottom: 1.5px solid #DFF7E2;
-}
-.cat-icon {
-  width: 46px; height: 46px;
-  border-radius: 13px;
-  background: #DFF7E2;
-  flex-shrink: 0;
-  margin-right: 14px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 19px;
-}
+.spending-row { display: flex; align-items: center; padding: 13px 0; border-bottom: 1.5px solid #DFF7E2; }
+.cat-icon { width: 46px; height: 46px; border-radius: 13px; background: #DFF7E2; flex-shrink: 0; margin-right: 14px; display: flex; align-items: center; justify-content: center; font-size: 19px; }
 .cat-name { flex: 1; font-size: 15px; font-weight: 500; color: #093030; }
 .cat-stack { flex: 1; display: flex; flex-direction: column; }
 .cat-stack .primary { font-size: 15px; font-weight: 500; color: #093030; }
@@ -235,51 +190,36 @@ body {
 .cat-amount.blue { color: #0068FF; }
 
 /* ── Goal suggestion card ── */
-.goal-card {
-  background: #DFF7E2;
-  border: 1.5px solid #00D09E;
-  border-radius: 18px;
-  padding: 22px;
-  margin-top: 20px;
-}
-.card-label {
-  font-size: 11px; font-weight: 600;
-  color: #00D09E;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-}
+.goal-card { background: #DFF7E2; border: 1.5px solid #00D09E; border-radius: 18px; padding: 22px; margin-top: 20px; }
+.card-label { font-size: 11px; font-weight: 600; color: #00D09E; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 10px; }
 .card-heading { font-size: 17px; font-weight: 600; color: #093030; line-height: 1.4; margin-bottom: 6px; }
 .card-sub { font-size: 14px; color: #0E3E3E; margin-bottom: 20px; }
 
+/* ── Edge case note ── */
+.edge-note { text-align: center; font-size: 13px; color: #0E3E3E; opacity: 0.5; font-style: italic; padding: 22px 0 8px; line-height: 1.65; }
+
 /* ── Buttons ── */
 .btn-primary {
-  display: block;
-  width: 100%;
-  height: 50px;
-  background: #00D09E;
-  color: #093030;
-  border: none;
-  border-radius: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-bottom: 14px;
-  transition: opacity 0.1s, transform 0.1s;
-  min-height: 44px;
+  display: block; width: 100%; height: 50px; background: #00D09E;
+  color: #093030; border: none; border-radius: 30px;
+  font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600;
+  cursor: pointer; margin-bottom: 14px; transition: opacity 0.1s, transform 0.1s; min-height: 44px;
 }
 .btn-primary:hover { opacity: 0.88; }
 .btn-primary:active { opacity: 0.75; transform: scale(0.99); }
 
-/* ── Link rows ── */
-.links-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  font-size: 14px;
+/* ── Secondary button ── */
+.btn-secondary {
+  display: block; width: 100%; height: 50px; background: transparent;
+  color: #00D09E; border: 2px solid #00D09E; border-radius: 30px;
+  font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600;
+  cursor: pointer; margin-bottom: 14px; transition: all 0.1s; min-height: 44px;
 }
+.btn-secondary:hover { background: rgba(0,208,158,0.08); }
+.btn-secondary:active { background: rgba(0,208,158,0.15); transform: scale(0.99); }
+
+/* ── Link rows ── */
+.links-row { display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 14px; }
 .link-blue { color: #0068FF; cursor: pointer; font-weight: 500; padding: 10px 8px; min-width: 44px; text-align: center; }
 .link-grey { color: #0E3E3E; cursor: pointer; padding: 10px 8px; min-width: 44px; text-align: center; opacity: 0.65; }
 .link-sep { color: #0E3E3E; opacity: 0.25; }
@@ -287,78 +227,39 @@ body {
 .link-back:hover { opacity: 1; }
 
 /* ── Stepper ── */
-.stepper-card {
-  background: #DFF7E2;
-  border: 1.5px solid #00D09E;
-  border-radius: 18px;
-  padding: 22px;
-  margin-top: 20px;
-}
+.stepper-card { background: #DFF7E2; border: 1.5px solid #00D09E; border-radius: 18px; padding: 22px; margin-top: 20px; }
 .stepper-row { display: flex; align-items: center; justify-content: center; gap: 18px; margin: 20px 0 22px; }
 .stepper-btn {
-  width: 44px; height: 44px;
-  border-radius: 50%;
-  background: #F1FFF3;
-  border: 1.5px solid #093030;
-  font-size: 22px; font-weight: 600; color: #093030;
-  cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Poppins', sans-serif;
-  transition: background 0.1s;
-  user-select: none;
-  flex-shrink: 0;
+  width: 44px; height: 44px; border-radius: 50%; background: #F1FFF3;
+  border: 1.5px solid #093030; font-size: 22px; font-weight: 600; color: #093030;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-family: 'Poppins', sans-serif; transition: background 0.1s; user-select: none; flex-shrink: 0;
 }
 .stepper-btn:hover { background: #d0f0d8; }
 .stepper-btn:active { background: #b8e8c4; }
 .stepper-value { font-size: 38px; font-weight: 700; color: #093030; min-width: 130px; text-align: center; }
 .goal-input {
-  width: 150px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #093030;
-  border: 2px solid #2DCE8A;
-  border-radius: 12px;
-  padding: 10px 12px;
-  outline: none;
-  background: #fff;
-  display: block;
-  margin: 0 auto 18px;
+  width: 150px; text-align: center; font-family: 'Poppins', sans-serif;
+  font-size: 20px; font-weight: 600; color: #093030; border: 2px solid #2DCE8A;
+  border-radius: 12px; padding: 10px 12px; outline: none; background: #fff;
+  display: block; margin: 0 auto 18px;
 }
-.goal-input:focus {
-  border-color: #0E9C6C;
-  box-shadow: 0 0 0 3px rgba(45,206,138,0.2);
-}
-.goal-input::-webkit-outer-spin-button,
-.goal-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.goal-input:focus { border-color: #0E9C6C; box-shadow: 0 0 0 3px rgba(45,206,138,0.2); }
+.goal-input::-webkit-outer-spin-button, .goal-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .goal-input[type=number] { -moz-appearance: textfield; }
 
 /* ── Success ── */
-.success-icon {
-  width: 80px; height: 80px;
-  background: #00D09E;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 26px;
-}
+.success-icon { width: 80px; height: 80px; background: #00D09E; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 26px; }
 .success-heading { font-size: 30px; font-weight: 700; color: #093030; margin-bottom: 10px; }
 .success-goal { font-size: 16px; font-weight: 500; color: #0E3E3E; margin-bottom: 10px; }
 .success-body { font-size: 14px; color: #0E3E3E; max-width: 280px; line-height: 1.65; margin-bottom: 40px; }
 
 /* ── Progress ── */
-.progress-card {
-  background: #fff;
-  border: 1px solid #DFF7E2;
-  border-radius: 18px;
-  padding: 22px;
-  box-shadow: 0 4px 20px rgba(9,48,48,0.06);
-  margin-bottom: 24px;
-}
+.progress-card { background: #fff; border: 1px solid #DFF7E2; border-radius: 18px; padding: 22px; box-shadow: 0 4px 20px rgba(9,48,48,0.06); margin-bottom: 24px; }
 .progress-big { font-size: 38px; font-weight: 700; color: #093030; margin-bottom: 4px; }
 .progress-of { font-size: 14px; color: #0E3E3E; margin-bottom: 18px; }
 .progress-track { width: 100%; height: 10px; background: #DFF7E2; border-radius: 5px; overflow: hidden; margin-bottom: 8px; }
-.progress-fill { height: 100%; background: #00D09E; border-radius: 5px; width: 0%; }
+.progress-fill { height: 100%; background: #00D09E; border-radius: 5px; }
 .progress-note { font-size: 12px; color: #0E3E3E; opacity: 0.7; }
 .no-tx { font-size: 14px; color: #0E3E3E; font-style: italic; padding: 14px 0; opacity: 0.6; }
 .screen-footer { font-size: 12px; color: #0E3E3E; opacity: 0.5; text-align: center; padding: 16px 0 8px; line-height: 1.6; }
@@ -366,23 +267,66 @@ body {
 /* ── Dismissed ── */
 .dismissed-note { text-align: center; font-size: 12px; color: #0E3E3E; opacity: 0.4; font-style: italic; padding-top: 22px; }
 
+/* ── Profile content ── */
+.profile-info-row { display: flex; align-items: center; padding: 14px 0; border-bottom: 1.5px solid #DFF7E2; }
+.profile-info-label { flex: 1; font-size: 14px; color: #093030; font-weight: 500; }
+.profile-info-value { font-size: 14px; color: #0E3E3E; opacity: 0.6; }
+.profile-divider { height: 1.5px; background: #DFF7E2; margin: 20px 0; }
+.setup-label {
+  font-size: 10px; font-weight: 600; color: #0E3E3E; opacity: 0.45;
+  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px;
+}
+.setup-sublabel { font-size: 12px; color: #0E3E3E; opacity: 0.55; margin-bottom: 14px; line-height: 1.5; }
+.setup-btn {
+  width: 100%; background: #F1FFF3; border: 1.5px solid #DFF7E2;
+  border-radius: 14px; padding: 12px 16px; cursor: pointer;
+  font-family: 'Poppins', sans-serif; transition: all 0.12s;
+  display: flex; align-items: center; gap: 12px; margin-bottom: 8px; min-height: 56px; text-align: left;
+}
+.setup-btn:hover { border-color: #00D09E; background: #ecfff1; }
+.setup-btn.active { border-color: #00D09E; background: #DFF7E2; }
+.setup-badge {
+  width: 28px; height: 28px; background: #DFF7E2; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; color: #0E3E3E; flex-shrink: 0; opacity: 0.55;
+}
+.setup-badge.active-badge { background: #00D09E; color: #093030; opacity: 1; }
+.setup-btn-title { font-size: 13px; font-weight: 600; color: #093030; margin-bottom: 1px; }
+.setup-btn-desc { font-size: 11px; color: #0E3E3E; opacity: 0.6; line-height: 1.4; }
+.signout-row { text-align: center; padding: 22px 0 8px; }
+.signout-link { font-size: 14px; color: #0E3E3E; opacity: 0.4; cursor: default; }
+
+/* ── Scroll hint ── */
+.scroll-hint {
+  display: flex; align-items: center; justify-content: center; gap: 5px;
+  padding: 14px 0 0;
+  font-size: 11px; font-weight: 600; color: #00D09E;
+  letter-spacing: 0.07em; text-transform: uppercase;
+}
+
+/* ── Goal reassurance ── */
+.goal-reassurance {
+  text-align: center; font-size: 12px; color: #0E3E3E;
+  opacity: 0.6; line-height: 1.5; margin: -6px 0 14px;
+}
+
+/* ── Undo row ── */
+.undo-row { text-align: center; margin-bottom: 20px; }
+.undo-link {
+  font-size: 13px; color: #6B7280; cursor: pointer;
+  text-decoration: underline; padding: 8px; display: inline-block;
+}
+.undo-link:hover { color: #374151; }
+
 /* ── Bottom nav ── */
 .bottom-nav {
-  background: #DFF7E2;
-  border-radius: 70px 70px 0 0;
-  padding: 22px 46px 34px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0;
-  margin-top: auto;
+  background: #DFF7E2; border-radius: 70px 70px 0 0;
+  padding: 22px 46px 34px; display: flex; justify-content: space-between;
+  align-items: center; flex-shrink: 0; margin-top: auto;
 }
 .nav-tab {
   display: flex; align-items: center; justify-content: center;
-  width: 44px; height: 44px;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background 0.1s;
+  width: 44px; height: 44px; border-radius: 12px; cursor: pointer; transition: background 0.1s;
 }
 .nav-tab:hover { background: rgba(0,208,158,0.15); }
 .nav-tab svg { display: block; }
@@ -390,117 +334,125 @@ body {
 </head>
 <body>
 
-<div class="facilitator-bar">
-  <span>FinWise · H2 Goal Activation</span>
-  <button class="restart-btn" onclick="restart()">↺ Restart</button>
-</div>
-
 <div class="phone-frame">
 
 <!-- ══════════════════════════════════════
-     SCREEN 0 — Home Dashboard
+     SCREEN 0 — Home Dashboard (Scenarios A & B)
      ══════════════════════════════════════ -->
 <div class="screen active" id="screen-0">
   <div class="hero hero-home">
-    <div class="hero-bell">🔔</div>
+    <div class="hero-bell" aria-hidden="true">🔔</div>
     <div class="home-greeting">Good Morning</div>
     <div class="home-name">Alex Johnson</div>
     <div class="home-bal-label">Total Balance</div>
     <div class="home-balance">$7,783.00</div>
   </div>
-
   <div class="content-card">
     <div class="summary-row">
-      <div class="chip">
-        <div class="chip-label">Income</div>
-        <div class="chip-amount">$4,240</div>
-      </div>
-      <div class="chip">
-        <div class="chip-label">Expenses</div>
-        <div class="chip-amount blue">$952</div>
-      </div>
+      <div class="chip"><div class="chip-label">Income</div><div class="chip-amount">$4,240</div></div>
+      <div class="chip"><div class="chip-label">Expenses</div><div class="chip-amount blue">$952</div></div>
     </div>
-
     <div class="section-label" style="margin-bottom:12px;">May Overview</div>
-    <div class="entry-card" onclick="go('screen-1')" role="button" aria-label="View May Spending">
-      <div class="entry-icon">📊</div>
+    <div class="entry-card" onclick="viewSpending()" role="button" aria-label="View May Spending">
+      <div class="entry-icon" aria-hidden="true">📊</div>
       <div class="entry-text">
         <div class="entry-title">View May Spending</div>
         <div class="entry-sub">6 categories · $952 total</div>
       </div>
-      <div class="entry-arrow">›</div>
+      <div class="entry-arrow" aria-hidden="true">›</div>
     </div>
-
     <div class="section-label" style="margin-bottom:12px;">Recent Transactions</div>
     <div class="spending-row">
-      <div class="cat-icon">🍽️</div>
+      <div class="cat-icon" aria-hidden="true">🍽️</div>
       <div class="cat-stack"><span class="primary">Nobu Restaurant</span><span class="secondary">Dining · Today</span></div>
       <div class="cat-amount blue">$68</div>
     </div>
     <div class="spending-row">
-      <div class="cat-icon">🛒</div>
+      <div class="cat-icon" aria-hidden="true">🛒</div>
       <div class="cat-stack"><span class="primary">Whole Foods</span><span class="secondary">Groceries · Yesterday</span></div>
       <div class="cat-amount blue">$94</div>
     </div>
     <div class="spending-row" style="border-bottom:none;">
-      <div class="cat-icon">🚗</div>
+      <div class="cat-icon" aria-hidden="true">🚗</div>
       <div class="cat-stack"><span class="primary">Uber</span><span class="secondary">Transport · 2 days ago</span></div>
       <div class="cat-amount blue">$22</div>
     </div>
   </div>
-
-  <!-- Bottom nav — Home active -->
-  <div class="bottom-nav">
-    <div class="nav-tab">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+  <!-- bottom nav: home active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" aria-label="Home" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    <div class="nav-tab" onclick="navSpending()" style="opacity:.32" aria-label="Spending">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     SCREEN 1 — Spending Summary + Card
+     SCREEN 1 — Spending Summary + Goal Card (Scenario A)
+     US-01, US-02, US-03
      ══════════════════════════════════════ -->
 <div class="screen" id="screen-1">
   <div class="hero hero-sub">
-    <div class="hero-back" onclick="go('screen-0')" role="button" aria-label="Back">‹</div>
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back">‹</div>
     <div class="hero-title">May Spending</div>
   </div>
   <div class="content-card">
-    <div class="spending-row"><div class="cat-icon">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
-    <div class="spending-row"><div class="cat-icon">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
-    <div class="spending-row"><div class="cat-icon">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
-    <div class="spending-row"><div class="cat-icon">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
-    <div class="spending-row"><div class="cat-icon">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
-    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
-
-    <div class="goal-card">
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon" aria-hidden="true">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+    <div class="scroll-hint" aria-hidden="true">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 2v9M3 8l3.5 3.5L10 8" stroke="#00D09E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Suggested goal</span>
+    </div>
+    <div class="goal-card" role="region" aria-label="Suggested goal">
       <div class="card-label">Suggested Goal</div>
       <div class="card-heading">You spent $340 on Dining last month</div>
-      <div class="card-sub">Suggested limit: $306/month</div>
+      <div class="card-sub">Suggested target: $306/month</div>
       <button class="btn-primary" onclick="activateGoal()">Activate goal</button>
-      <div class="links-row">
-        <span class="link-blue" onclick="go('screen-2')">Adjust amount</span>
-        <span class="link-sep">·</span>
-        <span class="link-grey" onclick="go('screen-5')">Not now</span>
+      <button class="btn-secondary" onclick="go('screen-2')">Adjust amount</button>
+      <p class="goal-reassurance">You can adjust or remove this goal anytime.</p>
+      <div style="text-align:center;">
+        <span class="link-grey" onclick="go('screen-5')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('screen-5');}" role="button" tabindex="0">Not now</span>
       </div>
+    </div>
+  </div>
+  <!-- bottom nav: spending active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" aria-label="Spending" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     SCREEN 2 — Adjust Amount
+     SCREEN 2 — Adjust Amount (Scenario A)
+     US-02
      ══════════════════════════════════════ -->
 <div class="screen" id="screen-2">
   <div class="hero hero-sub">
@@ -508,127 +460,474 @@ body {
     <div class="hero-title">May Spending</div>
   </div>
   <div class="content-card">
-    <div class="spending-row"><div class="cat-icon">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
-    <div class="spending-row"><div class="cat-icon">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
-    <div class="spending-row"><div class="cat-icon">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
-    <div class="spending-row"><div class="cat-icon">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
-    <div class="spending-row"><div class="cat-icon">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
-    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
-
-    <div class="stepper-card">
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon" aria-hidden="true">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+    <div class="stepper-card" role="region" aria-label="Adjust goal amount">
       <div class="card-label">Adjust Your Goal</div>
       <div class="card-heading">Dining spending goal</div>
       <div class="card-sub">Suggested: $306/month</div>
       <div class="stepper-row">
-        <button class="stepper-btn" onclick="nudge(-10)" aria-label="Decrease by $10">−</button>
-        <div class="stepper-value" id="stepper-val">$306</div>
+        <button class="stepper-btn" id="stepper-minus" onclick="nudge(-10)" aria-label="Decrease by $10">−</button>
+        <div class="stepper-value" id="stepper-val" aria-live="polite">$306</div>
         <button class="stepper-btn" onclick="nudge(10)" aria-label="Increase by $10">+</button>
       </div>
-      <input
-        type="number"
-        class="goal-input"
-        id="goal-input"
-        value="306"
-        min="10"
-        aria-label="Type a custom goal amount"
-        oninput="setCustomAmount(this.value)"
-      />
       <button class="btn-primary" id="activate-btn" onclick="activateGoal()">Activate with $306</button>
-      <span class="link-back" onclick="go('screen-1')">Back to suggestion</span>
+      <span class="link-back" onclick="go('screen-1')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('screen-1');}" role="button" tabindex="0">Back to suggestion</span>
+    </div>
+  </div>
+  <!-- bottom nav: spending active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" aria-label="Spending" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     SCREEN 3 — Success State
+     SCREEN 3 — Success State (US-06)
      ══════════════════════════════════════ -->
 <div class="full-center" id="screen-3">
-  <div class="success-icon">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <div class="success-icon" aria-hidden="true">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
       <path d="M8 21L16 29L32 11" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </div>
-  <div class="success-heading">Goal set!</div>
+  <div class="success-heading" role="status" aria-live="polite">Goal set!</div>
   <div class="success-goal" id="success-label">Dining spending goal · $306/month</div>
-  <div class="success-body">We'll track your dining spend against this limit each month.</div>
+  <div class="success-body">We'll track your dining spend against this target each month.</div>
+  <div id="undo-row" class="undo-row" style="display:none;">
+    <span class="undo-link" onclick="undoActivate()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();undoActivate();}" role="button" tabindex="0">Undo</span>
+  </div>
   <button class="btn-primary" style="max-width:356px;width:100%;" onclick="go('screen-4')">See my goal</button>
 </div>
 
 <!-- ══════════════════════════════════════
-     SCREEN 4 — Goal Progress
+     SCREEN 4 — Goal Progress, After Activation (US-06)
      ══════════════════════════════════════ -->
 <div class="screen" id="screen-4">
   <div class="hero hero-sub">
-    <div class="hero-back" onclick="go('screen-0')" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back to home">‹</div>
     <div class="hero-title">Dining Spending Goal</div>
   </div>
   <div class="content-card">
     <div class="progress-card">
       <div class="section-label">May Progress</div>
       <div class="progress-big">$0</div>
-      <div class="progress-of">of <span id="limit-label">$306</span> limit</div>
-      <div class="progress-track"><div class="progress-fill"></div></div>
-      <div class="progress-note">0% of monthly limit used</div>
+      <div class="progress-of">of <span id="limit-label">$306</span> target</div>
+      <div class="progress-track"><div class="progress-fill" style="width:0%"></div></div>
     </div>
     <div class="section-label">This Month's Dining</div>
-    <div class="no-tx">No dining transactions yet</div>
-    <div class="screen-footer">FinWise will update your progress as transactions sync.</div>
+    <div class="no-tx">Your next dining purchase will appear here.</div>
+    <div class="screen-footer">FinWise updates your progress automatically as each transaction clears.</div>
   </div>
-
-  <!-- Bottom nav — no active tab -->
-  <div class="bottom-nav">
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+  <!-- bottom nav: home active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    <div class="nav-tab" onclick="navSpending()" style="opacity:.32" aria-label="Spending">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     SCREEN 5 — Not Now (dismissed)
+     SCREEN 4b — Goal Progress, Returning User (Scenario C)
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-4b">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-title">Dining Spending Goal</div>
+  </div>
+  <div class="content-card">
+    <div class="progress-card">
+      <div class="section-label">May Progress</div>
+      <div class="progress-big">$68</div>
+      <div class="progress-of">of $306 target</div>
+      <div class="progress-track" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-fill" style="width:22%"></div>
+      </div>
+    </div>
+    <div class="section-label">This Month's Dining</div>
+    <div class="spending-row" style="border-bottom:none;">
+      <div class="cat-icon" aria-hidden="true">🍽️</div>
+      <div class="cat-stack"><span class="primary">Nobu Restaurant</span><span class="secondary">Today</span></div>
+      <div class="cat-amount blue">$68</div>
+    </div>
+    <div class="screen-footer">FinWise will update your progress as transactions sync.</div>
+  </div>
+  <!-- bottom nav: home active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" style="opacity:.32" aria-label="Spending">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" aria-label="Goals" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00D09E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 5 — Dismissed / Not Now (US-03)
      ══════════════════════════════════════ -->
 <div class="screen" id="screen-5">
   <div class="hero hero-sub">
-    <div class="hero-back" onclick="go('screen-0')" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back to home">‹</div>
     <div class="hero-title">May Spending</div>
   </div>
   <div class="content-card">
-    <div class="spending-row"><div class="cat-icon">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
-    <div class="spending-row"><div class="cat-icon">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
-    <div class="spending-row"><div class="cat-icon">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
-    <div class="spending-row"><div class="cat-icon">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
-    <div class="spending-row"><div class="cat-icon">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
-    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
-    <div class="dismissed-note">Goal suggestion dismissed</div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon" aria-hidden="true">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+    <div class="dismissed-note" role="status">Goal suggestion dismissed</div>
   </div>
+  <!-- bottom nav: spending active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" aria-label="Spending" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
 
-  <!-- Bottom nav — no active tab -->
-  <div class="bottom-nav">
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+<!-- ══════════════════════════════════════
+     SCREEN 7 — Spending Summary, No Card (Scenario B: Insufficient Data)
+     US-04
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-7">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-title">May Spending</div>
+  </div>
+  <div class="content-card">
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$68</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$94</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$22</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon" aria-hidden="true">📦</div><div class="cat-name">Other</div><div class="cat-amount">$12</div></div>
+    <div class="edge-note">Check back in a few days — your personalised goal suggestion will appear once you have 7 days of spending data.<br><br>In the meantime, you can <span style="color:#0068FF;cursor:default;">set a goal manually</span> from the Goals tab.</div>
+  </div>
+  <!-- bottom nav: spending active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    <div class="nav-tab" onclick="navSpending()" aria-label="Spending" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    <div class="nav-tab" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
     </div>
-    <div class="nav-tab" style="opacity:.32">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 8 — Home, Returning User (Scenario C)
+     US-05
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-8">
+  <div class="hero hero-home">
+    <div class="hero-bell" aria-hidden="true">🔔</div>
+    <div class="home-greeting">Good Morning</div>
+    <div class="home-name">Alex Johnson</div>
+    <div class="home-bal-label">Total Balance</div>
+    <div class="home-balance">$7,783.00</div>
+  </div>
+  <div class="content-card">
+    <div class="summary-row">
+      <div class="chip"><div class="chip-label">Income</div><div class="chip-amount">$4,240</div></div>
+      <div class="chip"><div class="chip-label">Expenses</div><div class="chip-amount blue">$952</div></div>
+    </div>
+    <div class="section-label" style="margin-bottom:10px;">Active Goal</div>
+    <div class="home-goal-card" onclick="go('screen-4b')" role="button" aria-label="View Dining Spending Goal — 22% used">
+      <div class="home-goal-header">
+        <div class="home-goal-icon" aria-hidden="true">🍽️</div>
+        <div class="home-goal-title">Dining Spending Goal</div>
+        <div class="home-goal-spent">$68</div>
+      </div>
+      <div class="home-goal-meta">$68 of $306 · 22% of limit used · May</div>
+      <div class="home-goal-track" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100">
+        <div class="home-goal-fill-bar" style="width:22%"></div>
+      </div>
+    </div>
+    <div class="section-label" style="margin-bottom:12px;">May Overview</div>
+    <div class="entry-card" onclick="go('screen-9')" role="button" aria-label="View May Spending">
+      <div class="entry-icon" aria-hidden="true">📊</div>
+      <div class="entry-text">
+        <div class="entry-title">View May Spending</div>
+        <div class="entry-sub">6 categories · $952 total</div>
+      </div>
+      <div class="entry-arrow" aria-hidden="true">›</div>
+    </div>
+    <div class="section-label" style="margin-bottom:12px;">Recent Transactions</div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🍽️</div>
+      <div class="cat-stack"><span class="primary">Nobu Restaurant</span><span class="secondary">Dining · Today</span></div>
+      <div class="cat-amount blue">$68</div>
+    </div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🛒</div>
+      <div class="cat-stack"><span class="primary">Whole Foods</span><span class="secondary">Groceries · Yesterday</span></div>
+      <div class="cat-amount blue">$94</div>
+    </div>
+    <div class="spending-row" style="border-bottom:none;">
+      <div class="cat-icon" aria-hidden="true">🚗</div>
+      <div class="cat-stack"><span class="primary">Uber</span><span class="secondary">Transport · 2 days ago</span></div>
+      <div class="cat-amount blue">$22</div>
+    </div>
+  </div>
+  <!-- bottom nav: home active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" aria-label="Home" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" style="opacity:.32" aria-label="Spending">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN 9 — Spending Summary, No Card (Scenario C: Has Goal)
+     US-05 — summary unchanged for accounts with goals_set ≥ 1
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-9">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-title">May Spending</div>
+  </div>
+  <div class="content-card">
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🍽️</div><div class="cat-name">Dining</div><div class="cat-amount">$340</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛒</div><div class="cat-name">Groceries</div><div class="cat-amount">$220</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🚗</div><div class="cat-name">Transport</div><div class="cat-amount">$180</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🎭</div><div class="cat-name">Entertainment</div><div class="cat-amount">$95</div></div>
+    <div class="spending-row"><div class="cat-icon" aria-hidden="true">🛍️</div><div class="cat-name">Shopping</div><div class="cat-amount">$74</div></div>
+    <div class="spending-row" style="border-bottom:none;"><div class="cat-icon" aria-hidden="true">📦</div><div class="cat-name">Other</div><div class="cat-amount">$43</div></div>
+  </div>
+  <!-- bottom nav: spending active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" aria-label="Spending" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="#00D09E" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN — Profile (facilitator setup lives here)
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-profile">
+  <div class="hero hero-profile">
+    <div class="profile-avatar" aria-hidden="true">AJ</div>
+    <div class="profile-hero-name">Alex Johnson</div>
+    <div class="profile-hero-plan">Free Plan</div>
+  </div>
+  <div class="content-card">
+    <div class="profile-info-row">
+      <span class="profile-info-label">Email</span>
+      <span class="profile-info-value">alex.j@email.com</span>
+    </div>
+    <div class="profile-info-row">
+      <span class="profile-info-label">Member since</span>
+      <span class="profile-info-value">January 2026</span>
+    </div>
+    <div class="profile-info-row" style="border-bottom:none;">
+      <span class="profile-info-label">Linked accounts</span>
+      <span class="profile-info-value">Chase Checking</span>
+    </div>
+
+    <div class="profile-divider"></div>
+
+    <div class="setup-label">Prototype Setup</div>
+    <div class="setup-sublabel">Set the user state before handing off to a test participant. This resets the app to the beginning of that scenario.</div>
+
+    <button class="setup-btn active" id="setup-btn-A" onclick="startScenario('A')">
+      <div class="setup-badge active-badge" id="setup-badge-A">A</div>
+      <div>
+        <div class="setup-btn-title">Happy Path</div>
+        <div class="setup-btn-desc">New user sees auto-draft goal card · US-01, 02, 03, 06</div>
+      </div>
+    </button>
+    <button class="setup-btn" id="setup-btn-B" onclick="startScenario('B')">
+      <div class="setup-badge" id="setup-badge-B">B</div>
+      <div>
+        <div class="setup-btn-title">Limited Data</div>
+        <div class="setup-btn-desc">New user, &lt;7 days history, no card shown · US-04</div>
+      </div>
+    </button>
+    <button class="setup-btn" id="setup-btn-C" onclick="startScenario('C')">
+      <div class="setup-badge" id="setup-badge-C">C</div>
+      <div>
+        <div class="setup-btn-title">Goal Already Set</div>
+        <div class="setup-btn-desc">Returning user with active goal, no card · US-05</div>
+      </div>
+    </button>
+
+    <div class="signout-row">
+      <span class="signout-link">Sign Out</span>
+    </div>
+  </div>
+  <!-- bottom nav: profile active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" style="opacity:.32" aria-label="Spending">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" style="opacity:.32" aria-label="Transactions">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" aria-label="Profile" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00D09E" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     SCREEN — Transactions
+     ══════════════════════════════════════ -->
+<div class="screen" id="screen-transactions">
+  <div class="hero hero-sub">
+    <div class="hero-back" onclick="navHome()" role="button" aria-label="Back to home">‹</div>
+    <div class="hero-title">Transactions</div>
+  </div>
+  <div class="content-card">
+    <div class="section-label" style="margin-bottom:4px;">Today</div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🍽️</div>
+      <div class="cat-stack"><span class="primary">Nobu Restaurant</span><span class="secondary">Dining</span></div>
+      <div class="cat-amount blue">$68</div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:4px; margin-top:16px;">Yesterday</div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🛒</div>
+      <div class="cat-stack"><span class="primary">Whole Foods</span><span class="secondary">Groceries</span></div>
+      <div class="cat-amount blue">$94</div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:4px; margin-top:16px;">May 24</div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🚗</div>
+      <div class="cat-stack"><span class="primary">Uber</span><span class="secondary">Transport</span></div>
+      <div class="cat-amount blue">$22</div>
+    </div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🎭</div>
+      <div class="cat-stack"><span class="primary">Netflix</span><span class="secondary">Entertainment</span></div>
+      <div class="cat-amount blue">$15</div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:4px; margin-top:16px;">May 23</div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🛍️</div>
+      <div class="cat-stack"><span class="primary">Zara</span><span class="secondary">Shopping</span></div>
+      <div class="cat-amount blue">$74</div>
+    </div>
+    <div class="spending-row">
+      <div class="cat-icon" aria-hidden="true">🍽️</div>
+      <div class="cat-stack"><span class="primary">Chipotle</span><span class="secondary">Dining</span></div>
+      <div class="cat-amount blue">$18</div>
+    </div>
+    <div class="spending-row" style="border-bottom:none;">
+      <div class="cat-icon" aria-hidden="true">🛒</div>
+      <div class="cat-stack"><span class="primary">Trader Joe's</span><span class="secondary">Groceries</span></div>
+      <div class="cat-amount blue">$56</div>
+    </div>
+  </div>
+  <!-- bottom nav: transactions active -->
+  <div class="bottom-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-tab" onclick="navHome()" style="opacity:.32" aria-label="Home">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5L12 3L21 9.5V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9.5Z"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navSpending()" style="opacity:.32" aria-label="Spending">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navGoals()" style="opacity:.32" aria-label="Goals">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navTransactions()" aria-label="Transactions" aria-current="page">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00D09E" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 10h16M4 14h10"/></svg>
+    </div>
+    <div class="nav-tab" onclick="navProfile()" style="opacity:.32" aria-label="Profile">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#093030" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
     </div>
   </div>
 </div>
@@ -637,41 +936,93 @@ body {
 
 <script>
 let amount = 306;
+let scenario = 'A';
+let goalActivated = false;
+let undoTimer = null;
 
 function go(id) {
   document.querySelectorAll('.screen, .full-center').forEach(s => s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
+  const el = document.getElementById(id);
+  el.classList.add('active');
   document.querySelector('.phone-frame').scrollTop = 0;
+  el.setAttribute('tabindex', '-1');
+  el.focus({ preventScroll: true });
+}
+
+function navHome() {
+  go(scenario === 'C' ? 'screen-8' : 'screen-0');
+}
+
+function navSpending() {
+  if (scenario === 'B') go('screen-7');
+  else if (scenario === 'C') go('screen-9');
+  else go('screen-1');
+}
+
+function navGoals() {
+  if (scenario === 'C') go('screen-4b');
+  else if (goalActivated) go('screen-4');
+  else navHome();
+}
+
+function navTransactions() {
+  go('screen-transactions');
+}
+
+function navProfile() {
+  go('screen-profile');
+}
+
+function startScenario(s) {
+  scenario = s;
+  goalActivated = false;
+  amount = 306;
+  if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
+  document.getElementById('undo-row').style.display = 'none';
+  document.getElementById('stepper-val').textContent = '$306';
+  document.getElementById('activate-btn').textContent = 'Activate with $306';
+  ['A', 'B', 'C'].forEach(x => {
+    document.getElementById('setup-btn-' + x).classList.toggle('active', x === s);
+    const badge = document.getElementById('setup-badge-' + x);
+    badge.classList.toggle('active-badge', x === s);
+  });
+  go(s === 'C' ? 'screen-8' : 'screen-0');
+}
+
+function viewSpending() {
+  go(scenario === 'B' ? 'screen-7' : 'screen-1');
 }
 
 function nudge(delta) {
-  amount = Math.max(10, amount + delta);
+  const next = amount + delta;
+  if (next < 10) {
+    const btn = document.getElementById('stepper-minus');
+    btn.style.opacity = '0.3';
+    btn.setAttribute('aria-disabled', 'true');
+    setTimeout(() => { btn.style.opacity = ''; btn.removeAttribute('aria-disabled'); }, 600);
+    return;
+  }
+  amount = next;
   document.getElementById('stepper-val').textContent = '$' + amount;
   document.getElementById('activate-btn').textContent = 'Activate with $' + amount;
-  document.getElementById('goal-input').value = amount;
-}
-
-function setCustomAmount(val) {
-  const n = parseInt(val, 10);
-  if (!isNaN(n) && n >= 10) {
-    amount = n;
-    document.getElementById('stepper-val').textContent = '$' + amount;
-    document.getElementById('activate-btn').textContent = 'Activate with $' + amount;
-  }
 }
 
 function activateGoal() {
+  goalActivated = true;
   document.getElementById('success-label').textContent = 'Dining spending goal · $' + amount + '/month';
   document.getElementById('limit-label').textContent = '$' + amount;
   go('screen-3');
+  const undoRow = document.getElementById('undo-row');
+  undoRow.style.display = 'block';
+  if (undoTimer) clearTimeout(undoTimer);
+  undoTimer = setTimeout(() => { undoRow.style.display = 'none'; }, 10000);
 }
 
-function restart() {
-  amount = 306;
-  document.getElementById('stepper-val').textContent = '$306';
-  document.getElementById('activate-btn').textContent = 'Activate with $306';
-  document.getElementById('goal-input').value = 306;
-  go('screen-0');
+function undoActivate() {
+  if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
+  goalActivated = false;
+  document.getElementById('undo-row').style.display = 'none';
+  go('screen-1');
 }
 </script>
 </body>
