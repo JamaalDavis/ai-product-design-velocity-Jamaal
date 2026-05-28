@@ -237,7 +237,19 @@ body {
 }
 .stepper-btn:hover { background: #d0f0d8; }
 .stepper-btn:active { background: #b8e8c4; }
-.stepper-value { font-size: 38px; font-weight: 700; color: #093030; min-width: 130px; text-align: center; }
+.stepper-val-wrap { display: flex; align-items: baseline; justify-content: center; min-width: 130px; }
+.stepper-dollar { font-size: 38px; font-weight: 700; color: #093030; }
+.stepper-input {
+  font-size: 38px; font-weight: 700; color: #093030;
+  width: 110px; background: transparent; border: none;
+  border-bottom: 2px dashed transparent; outline: none;
+  font-family: 'Poppins', sans-serif; cursor: pointer;
+  transition: border-color 0.15s; -moz-appearance: textfield;
+  padding: 0 2px;
+}
+.stepper-input:focus { border-bottom: 2px dashed #00D09E; cursor: text; }
+.stepper-input::-webkit-outer-spin-button,
+.stepper-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .goal-input {
   width: 150px; text-align: center; font-family: 'Poppins', sans-serif;
   font-size: 20px; font-weight: 600; color: #093030; border: 2px solid #2DCE8A;
@@ -472,7 +484,12 @@ body {
       <div class="card-sub">Suggested: $306/month</div>
       <div class="stepper-row">
         <button class="stepper-btn" id="stepper-minus" onclick="nudge(-10)" aria-label="Decrease by $10">−</button>
-        <div class="stepper-value" id="stepper-val" aria-live="polite">$306</div>
+        <div class="stepper-val-wrap">
+          <span class="stepper-dollar" aria-hidden="true">$</span>
+          <input type="number" class="stepper-input" id="stepper-val" value="306" min="10"
+            aria-label="Goal amount in dollars" aria-live="polite"
+            oninput="setAmount(this.value)" onblur="validateAmount()">
+        </div>
         <button class="stepper-btn" onclick="nudge(10)" aria-label="Increase by $10">+</button>
       </div>
       <button class="btn-primary" id="activate-btn" onclick="activateGoal()">Activate with $306</button>
@@ -979,7 +996,7 @@ function startScenario(s) {
   amount = 306;
   if (undoTimer) { clearTimeout(undoTimer); undoTimer = null; }
   document.getElementById('undo-row').style.display = 'none';
-  document.getElementById('stepper-val').textContent = '$306';
+  document.getElementById('stepper-val').value = 306;
   document.getElementById('activate-btn').textContent = 'Activate with $306';
   ['A', 'B', 'C'].forEach(x => {
     document.getElementById('setup-btn-' + x).classList.toggle('active', x === s);
@@ -1003,8 +1020,24 @@ function nudge(delta) {
     return;
   }
   amount = next;
-  document.getElementById('stepper-val').textContent = '$' + amount;
+  document.getElementById('stepper-val').value = amount;
   document.getElementById('activate-btn').textContent = 'Activate with $' + amount;
+}
+
+function setAmount(val) {
+  const n = parseInt(val, 10);
+  if (!isNaN(n) && n >= 1) {
+    amount = n;
+    document.getElementById('activate-btn').textContent = 'Activate with $' + amount;
+  }
+}
+
+function validateAmount() {
+  if (isNaN(amount) || amount < 10) {
+    amount = 10;
+    document.getElementById('stepper-val').value = 10;
+    document.getElementById('activate-btn').textContent = 'Activate with $10';
+  }
 }
 
 function activateGoal() {
