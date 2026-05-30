@@ -105,6 +105,7 @@ Skills are installed globally at `~/.claude/skills/`. The copies in `skills/` ar
 | `/build-html-prototype` | Builds a self-contained clickable HTML file from a prototype brief |
 | `/figma-make-spec` | Reads a Figma file via MCP, extracts design tokens and components into `[company]-figma-spec.md` |
 | `/figma-prototype-builder` | Builds screens and wired navigation directly inside a Figma file using MCP |
+| `/ready-to-pitch` | Turns product work, PRDs, prototypes, and research into a slide-by-slide presentation spec with speaker script |
 
 **Skill invocation order:**
 ```
