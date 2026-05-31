@@ -372,9 +372,33 @@ body {
         </div>
 
         <div>
-          <img src="charts/h2-onboarding-funnel.png"
-               alt="Onboarding funnel: Complete Profile Setup 92.3%, Link First Account 84.4%, View First Spending Summary 51.6%, Link Second Account 44.2%, Set First Goal 18.9%, Customise First Category 11.8%. 63% drop-off annotated between spending summary and set first goal."
-               style="width:100%;height:auto;max-height:370px;object-fit:contain;border-radius:6px;" />
+          <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--sub);margin-bottom:14px;">Onboarding funnel</div>
+          <svg width="520" height="217" viewBox="0 0 420 175" role="img"
+               aria-label="Onboarding funnel: Connect account 100%, View first transactions 73.4%, View spending summary 51.6%, Set first goal 18.9%. Largest drop is 32.7 percentage points between spending summary and set first goal.">
+            <defs><style>.fnt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}</style></defs>
+            <!-- Step 1: Connect account 100% = 200px -->
+            <text class="fnt" x="158" y="21" fill="#4B5563" font-size="15" font-weight="600" text-anchor="end">Connect account</text>
+            <rect x="165" y="5" width="200" height="28" rx="4" fill="#2563EB"/>
+            <text class="fnt" x="370" y="23" fill="#1D4ED8" font-size="16" font-weight="800">100%</text>
+            <line x1="185" y1="33" x2="185" y2="44" stroke="#D1D5DB" stroke-width="1.5"/>
+            <!-- Step 2: View first transactions 73.4% = 147px -->
+            <text class="fnt" x="158" y="60" fill="#4B5563" font-size="15" font-weight="600" text-anchor="end">View first transactions</text>
+            <rect x="165" y="44" width="147" height="28" rx="4" fill="#3B82F6"/>
+            <text class="fnt" x="317" y="62" fill="#1D4ED8" font-size="16" font-weight="800">73.4%</text>
+            <line x1="185" y1="72" x2="185" y2="83" stroke="#D1D5DB" stroke-width="1.5"/>
+            <!-- Step 3: View spending summary 51.6% = 103px -->
+            <text class="fnt" x="158" y="99" fill="#4B5563" font-size="15" font-weight="600" text-anchor="end">View spending summary</text>
+            <rect x="165" y="83" width="103" height="28" rx="4" fill="#60A5FA"/>
+            <text class="fnt" x="273" y="101" fill="#1D4ED8" font-size="16" font-weight="800">51.6%</text>
+            <!-- Gap annotation -->
+            <line x1="165" y1="122" x2="390" y2="122" stroke="#FECACA" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <polygon points="165,127 171,120 177,127" fill="#DC2626"/>
+            <text class="fnt" x="181" y="127" fill="#DC2626" font-size="13" font-weight="700">32.7pp — largest single gap in onboarding</text>
+            <!-- Step 4: Set first goal 18.9% = 38px (amber) -->
+            <text class="fnt" x="158" y="157" fill="#4B5563" font-size="15" font-weight="600" text-anchor="end">Set first goal</text>
+            <rect x="165" y="141" width="38" height="28" rx="4" fill="#F59E0B"/>
+            <text class="fnt" x="208" y="158" fill="#D97706" font-size="16" font-weight="800">18.9%</text>
+          </svg>
         </div>
       </div>
 
@@ -397,10 +421,42 @@ body {
       <div class="h1" style="margin-top:10px;">Goal-setting is the single strongest predictor<br>of whether a user stays and pays.</div>
       <div class="sub">Engagement Impact Modeling (EIM) on 1,800 FinWise accounts — identifying which product behaviors predict retention and revenue. Snapshot: 2026-03-01. Three measures, all pointing the same direction.</div>
 
-      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;">
-        <img src="charts/h2-goal-outcomes.png"
-             alt="Goal-Setting vs No Goal — Churn and Upgrade Rates: 90-day churn 37.5% (no goal, n=1460) vs 14.4% (set goal, n=340), 2.6x lower churn. Free-to-Pro upgrade rate 5.4% (no goal) vs 14.5% (set goal), 2.7x higher upgrade."
-             style="max-width:100%;max-height:340px;object-fit:contain;border-radius:6px;" />
+      <div style="flex:1;display:flex;flex-direction:column;justify-content:center;">
+        <svg width="860" height="250" viewBox="0 0 740 215" role="img"
+             aria-label="Comparison chart: 90-day churn goal-setters 14.4% vs non-goal-setters 37.5%, 2.6x difference. Free to Pro upgrade 14.5% vs 5.4%, 2.7x difference. Share of upgrade events 98.7% goal-setters vs 1.3%.">
+          <defs><style>.cn{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif}</style></defs>
+          <!-- Legend -->
+          <rect x="0" y="0" width="12" height="12" rx="2" fill="#2563EB"/>
+          <text class="cn" x="16" y="11" fill="#4B5563" font-size="13" font-weight="600">Goal-setters</text>
+          <rect x="110" y="0" width="12" height="12" rx="2" fill="#EF4444"/>
+          <text class="cn" x="126" y="11" fill="#4B5563" font-size="13" font-weight="600">Non-goal-setters</text>
+          <!-- ── Group 1: 90-day churn ── -->
+          <text class="cn" x="0" y="32" fill="#6B7280" font-size="12" font-weight="700" letter-spacing="0.06em">90-DAY CHURN RATE</text>
+          <text class="cn" x="152" y="50" fill="#6B7280" font-size="12" text-anchor="end">Goal-setters</text>
+          <rect x="158" y="36" width="66" height="22" rx="3" fill="#2563EB"/>
+          <text class="cn" x="229" y="51" fill="#1D4ED8" font-size="15" font-weight="800">14.4%</text>
+          <text class="cn" x="152" y="74" fill="#6B7280" font-size="12" text-anchor="end">Non-goal-setters</text>
+          <rect x="158" y="62" width="173" height="22" rx="3" fill="#EF4444"/>
+          <text class="cn" x="336" y="77" fill="#DC2626" font-size="15" font-weight="800">37.5%</text>
+          <text class="cn" x="730" y="72" fill="#DC2626" font-size="34" font-weight="900" text-anchor="end">2.6×</text>
+          <!-- ── Group 2: Upgrade rate ── -->
+          <text class="cn" x="0" y="106" fill="#6B7280" font-size="12" font-weight="700" letter-spacing="0.06em">FREE → PRO UPGRADE RATE</text>
+          <text class="cn" x="152" y="124" fill="#6B7280" font-size="12" text-anchor="end">Goal-setters</text>
+          <rect x="158" y="110" width="67" height="22" rx="3" fill="#2563EB"/>
+          <text class="cn" x="230" y="125" fill="#1D4ED8" font-size="15" font-weight="800">14.5%</text>
+          <text class="cn" x="152" y="148" fill="#6B7280" font-size="12" text-anchor="end">Non-goal-setters</text>
+          <rect x="158" y="136" width="25" height="22" rx="3" fill="#9CA3AF"/>
+          <text class="cn" x="188" y="151" fill="#6B7280" font-size="15" font-weight="800">5.4%</text>
+          <text class="cn" x="730" y="146" fill="#16A34A" font-size="34" font-weight="900" text-anchor="end">2.7×</text>
+          <!-- ── Group 3: Upgrade events share ── -->
+          <text class="cn" x="0" y="180" fill="#6B7280" font-size="12" font-weight="700" letter-spacing="0.06em">SHARE OF ALL UPGRADE EVENTS</text>
+          <text class="cn" x="152" y="198" fill="#6B7280" font-size="12" text-anchor="end">Goal-setters</text>
+          <rect x="158" y="184" width="454" height="22" rx="3" fill="#2563EB"/>
+          <text class="cn" x="617" y="199" fill="#1D4ED8" font-size="16" font-weight="900">98.7%</text>
+          <text class="cn" x="152" y="214" fill="#6B7280" font-size="12" text-anchor="end">Non-goal-setters</text>
+          <rect x="158" y="202" width="6" height="10" rx="2" fill="#9CA3AF"/>
+          <text class="cn" x="169" y="214" fill="#9CA3AF" font-size="12" font-weight="700">1.3%</text>
+        </svg>
       </div>
 
       <div class="quote dark">98.7% of every upgrade event FinWise has ever recorded came from accounts that hit the savings goal paywall. The upgrade path runs entirely through goal-setting.</div>
@@ -415,7 +471,7 @@ body {
       <div class="badge">The Failure Point</div>
       <div class="h1">Users see their data. Then they leave — not because they<br>don't want a goal, but because deciding feels hard in the moment.</div>
 
-      <div class="cols" style="flex:1;margin-top:10px;grid-template-columns:1fr 1fr 0.7fr;align-items:center;">
+      <div class="cols c55" style="flex:1;margin-top:10px;">
         <div>
           <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--sub);margin-bottom:14px;">The gap</div>
           <div style="display:flex;align-items:center;gap:18px;margin-bottom:16px;">
@@ -453,10 +509,6 @@ body {
             </div>
           </div>
           <div style="margin-top:18px;font-size:13px;color:var(--sub);line-height:1.7;font-style:italic;">This is a friction problem.<br>Friction problems have friction solutions.</div>
-        </div>
-
-        <div style="display:flex;justify-content:center;align-items:center;height:100%;">
-          <img data-shot="s1" class="pimg" alt="Screen 1: Spending summary with auto-drafted goal card showing what users see at the drop-off point" style="height:430px;width:auto;" />
         </div>
       </div>
     </div>

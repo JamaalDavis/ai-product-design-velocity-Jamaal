@@ -7,3 +7,5 @@ skills/product-evaluation/__MACOSX/
 finwise/node_modules/
 finwise/package.json
 finwise/package-lock.json
+finwise/enhance-pitch-deck/node_modules/
+finwise/enhance-pitch-deck/dist/
