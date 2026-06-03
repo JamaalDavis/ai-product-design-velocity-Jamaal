@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, Target, TrendingUp, Users, DollarSign, Zap, CheckCircle2, Calendar, ArrowRight } from 'lucide-react';
 import screen1 from '../assets/screen1.png';
@@ -136,6 +136,33 @@ const slides = [
 export default function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(0);
+  const [scale, setScale] = useState(1);
+  const touchStartX = useRef(0);
+  const touchStartY = useRef(0);
+
+  useEffect(() => {
+    const updateScale = () => {
+      const scaleX = window.innerWidth / 1280;
+      const scaleY = window.innerHeight / 720;
+      setScale(Math.min(scaleX, scaleY) * 0.97);
+    };
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, []);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const dx = touchStartX.current - e.changedTouches[0].clientX;
+    const dy = Math.abs(touchStartY.current - e.changedTouches[0].clientY);
+    if (Math.abs(dx) > 40 && Math.abs(dx) > dy) {
+      if (dx > 0) nextSlide(); else prevSlide();
+    }
+  };
 
   const nextSlide = () => {
     setDirection(1);
@@ -185,8 +212,13 @@ export default function App() {
   };
 
   return (
-    <div className="w-full h-full min-h-screen bg-slate-950 flex items-center justify-center overflow-hidden p-8">
-      <div className="relative w-full max-w-7xl aspect-[16/9] bg-white rounded-2xl shadow-2xl overflow-hidden">
+    <div className="w-screen h-screen bg-slate-950 flex items-center justify-center overflow-hidden">
+      <div
+        className="relative bg-white rounded-2xl shadow-2xl overflow-hidden flex-shrink-0"
+        style={{ width: 1280, height: 720, transform: `scale(${scale})`, transformOrigin: 'center center' }}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+      >
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div
             key={currentSlide}
